@@ -4,6 +4,10 @@
 // If need, change your variables before importing Bulma
 @import "~bulma/bulma.sass";
 
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
 
 html {
     background-image: url("../images/background.png");
