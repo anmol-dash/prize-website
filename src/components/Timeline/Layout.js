@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Text, Subtitle, SubText } from "../Typography"
+import { Title, Text, Subtitle, SubText } from "../shared/Typography"
 import { MIDNIGHT_BLUE } from "../../utils/constants"
 
 export const Columns = s.div.attrs(() => ({
