@@ -29,3 +29,28 @@ const TimelineLeftCol = s(TimelineCol)`
 const TimelineRightCol = s(TimelineCol)`
     border-left: .2rem solid white;
 `
+
+
+const TimelineHeaderWrapper = s.div`
+    display: flex;
+    margin: -.1rem;
+    width: 101%;
+`
+
+const TimelineHeaderLine = s.hr`
+    flex: 1;
+    height: .3rem;
+    ${({ right }) => right ? "margin-right" : "margin-left"}: 4rem;
+`
+
+
+const TimelineHeader = ({ children, right = false, title = false }) => {
+    const TimelineHeaderTitle = title ? Title : Subtitle
+    return <TimelineHeaderWrapper>
+        {right && <TimelineHeaderLine right />}
+        <TimelineHeaderTitle>{children}</TimelineHeaderTitle>
+        {!right && <TimelineHeaderLine left />}
+    </TimelineHeaderWrapper>
+}
+
+
