@@ -141,7 +141,7 @@ const TimelineLayout = ({ className }) => (
                         Discord is a place and maybe you could join it. Just kidding, unless...
                     </TimelineCenteredText>
                     <TimelineCenteredText>
-                        <Text>Team-Formation Speed Dating</Text>
+                        <Text as="h1">Team-Formation Speed Dating</Text>
                         Like the Stanford marriage pact, but for cofounders, and way less awkward.
                     </TimelineCenteredText>
 
@@ -169,7 +169,6 @@ const TimelineLayout = ({ className }) => (
                         Some of the coolest people you'll ever meet.
                         No joke. Okay, maybe partial joke. But still
                         pretty cool. Pull up!
-
                     </TimelineCenteredText>
                     <TimelineButton right>
                         RSVP here
