@@ -7,7 +7,7 @@ const FooterLink = s.a`
     color: white;
 `
 
-const FooterLayout = ({ className }) => <footer class={`footer has-text-centered ${className}`}>
+const FooterLayout = ({ className }) => <footer className={`footer has-text-centered ${className}`}>
     <Text>
         Reach out to <FooterLink href="mailto:pennclimateventures@gmail.com">pennclimateventures@gmail.com</FooterLink>
         <br />
