@@ -5,6 +5,7 @@ import "./styles.scss"
 import { 
   Hero,
   Prizes,
+  Timeline,
   Donors,
   Footer
 } from "../components"
@@ -14,6 +15,7 @@ const IndexPage = () => {
     <>
       <Hero />
       <Prizes />
+      <Timeline />
       <Donors />
       <Footer />
     </>
