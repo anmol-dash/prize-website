@@ -22,7 +22,7 @@ const NavButton = s(Button).attrs(() => ({
 `
 
 export const Navbar = () => {
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
     const toggleNavbar = () => setVisible(!visible);
     return <nav css={`display: flex; width: 100%;`} className="navbar" role="navigation" aria-label="main navigation">
         <div className="navbar-brand" css={`margin-left: 1rem;`}>
