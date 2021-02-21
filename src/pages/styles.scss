@@ -1,17 +1,25 @@
 @charset "utf-8";
 
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-Medium.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../fonts/Metropolis-Bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
 // If need, change your variables before importing Bulma
 @import "~bulma/bulma.sass";
 
 body {
-    color: white;
+    color: #07004D;
     font-family: 'Roboto', sans-serif;
-}
-
-html {
-    background-image: url("../images/background.png");
-    background:linear-gradient(rgba(black ,0.5), rgba(black ,0.5)), url("../images/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
