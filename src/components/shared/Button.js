@@ -1,10 +1,11 @@
 import React from 'react'
-import s from 'styled-components'
 import { Text } from "../shared/Typography"
 import { MIDNIGHT_BLUE } from "../../utils/constants"
 
-const Button = ({ children, right }) => (
-    <button css={`
+const Button = ({ className, children, right, fontSize }) => (
+    <button 
+        className={className}
+        css={`
         background-color: transparent;
         border: .2rem solid ${MIDNIGHT_BLUE};
         outline: none;
@@ -19,7 +20,7 @@ const Button = ({ children, right }) => (
             color: white;
         }
     `}>
-        <Text>
+        <Text fontSize={fontSize}>
             {children}
         </Text>
     </button>
