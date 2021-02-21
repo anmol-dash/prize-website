@@ -169,8 +169,7 @@ const TimelineLayout = ({ className }) => (
                         Some of the coolest people you'll ever meet.
                         No joke. Okay, maybe partial joke. But still
                         pretty cool. Pull up!
-                        <br />
-                        <br />
+
                     </TimelineCenteredText>
                     <TimelineButton right>
                         RSVP here
