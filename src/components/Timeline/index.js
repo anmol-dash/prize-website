@@ -2,6 +2,9 @@ import React from "react"
 import s from "styled-components"
 import { Title, Text, Subtitle, SubText } from "../Typography"
 
+const TimelineTitle = s(Subtitle)`
+    margin-bottom: 1.5vw;
+`
 
 const TimelineColumns = s.div.attrs(() => ({
     className: "columns"
@@ -30,6 +33,9 @@ const TimelineRightCol = s(TimelineCol)`
     border-left: .2rem solid white;
 `
 
+const TimelineSpacer = s.div`
+    height: ${({ height }) => height || `2vw`};
+`
 
 const TimelineHeaderWrapper = s.div`
     display: flex;
