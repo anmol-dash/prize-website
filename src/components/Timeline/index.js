@@ -43,6 +43,23 @@ const TimelineHeaderLine = s.hr`
     ${({ right }) => right ? "margin-right" : "margin-left"}: 4rem;
 `
 
+const TimelineButton = ({ children, right }) => (
+    <button css={`
+        background-color: transparent;
+        border: .2rem solid white;
+        outline: none;
+        float: ${right ? "right" : "left"};
+        padding: 1rem 3rem 1rem 3rem;
+        color: white;
+        cursor: pointer;
+        border-radius: 999px;
+    `}>
+        <Text>
+            {children}
+        </Text>
+    </button>
+)
+
 
 const TimelineHeader = ({ children, right = false, title = false }) => {
     const TimelineHeaderTitle = title ? Title : Subtitle
