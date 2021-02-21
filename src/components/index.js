@@ -1,4 +1,4 @@
-export * from './shared/Typography'
+export * from './Navbar'
 export * from './Hero'
 export * from './Prizes';
 export * from './Timeline'
