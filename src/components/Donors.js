@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { SubText, Text } from "./Typography"
+import { SubText, Text } from "./shared/Typography"
 
 const LevelItem = s.div.attrs(() => ({
   className: "level-item has-text-left"

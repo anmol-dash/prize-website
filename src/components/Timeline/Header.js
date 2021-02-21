@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Subtitle } from "../Typography"
+import { Title, Subtitle } from "../shared/Typography"
 import { MIDNIGHT_BLUE } from "../../utils/constants"
 
 const Wrapper = s.div`

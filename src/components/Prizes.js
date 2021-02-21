@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Subtitle } from "./Typography"
+import { Title, Subtitle } from "./shared/Typography"
 
 const LevelItem = s.div.attrs(() => ({
   className: "level-item has-text-centered"

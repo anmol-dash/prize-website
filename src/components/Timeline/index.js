@@ -1,6 +1,9 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Text, Subtitle, SubText } from "../Typography"
+
+import { Title, Text, Subtitle, SubText } from "../shared/Typography"
+import Button from "../shared/Button"
+
 import {
     Columns,
     Left,

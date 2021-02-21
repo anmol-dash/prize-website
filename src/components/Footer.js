@@ -1,6 +1,6 @@
 import React from 'react'
 import s from "styled-components"
-import { Text } from './Typography'
+import { Text } from './shared/Typography'
 import { MIDNIGHT_BLUE } from '../utils/constants'
 
 const FooterLink = s.a`

@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Subtitle } from "./Typography"
+import { Title, Subtitle } from "./shared/Typography"
 
 const HeroTitle = s(Title)`
   margin-top: -2rem;
