@@ -1,5 +1,4 @@
-import React from "react"
-import s from "styled-components"
+import React, { useRef } from "react"
 import "./styles.scss"
 
 import {
@@ -12,11 +11,13 @@ import {
 } from "../components"
 
 const IndexPage = () => {
+  const sectionRef = useRef(null)
+  const scrollTo = () => sectionRef && sectionRef.current.scrollIntoView()
   return (
     <>
       <Navbar />
-      <Hero />
-      <Prizes />
+      <Hero scrollTo={scrollTo} />
+      <Prizes ref={sectionRef} />
       <Timeline />
       <Donors />
       <Footer />
