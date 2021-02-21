@@ -14,8 +14,8 @@ const Level = s.div`
   margin-top: 2vw;
 `
 
-const PrizesLayout = ({ className }) => (
-  <div className={`container is-fluid has-text-centered ${className}`}>
+const PrizesLayout = React.forwardRef(({ className }, ref) => (
+  <div ref={ref} className={`container is-fluid has-text-centered ${className}`}>
     <Subtitle>Dive into the most pressing environmental issues of today.</Subtitle>
     <Level className={`level is-mobile`}>
       <LevelItem>
@@ -32,7 +32,7 @@ const PrizesLayout = ({ className }) => (
       </LevelItem>
     </Level>
   </div>
-)
+))
 
 export const Prizes = s(PrizesLayout)`
   margin-top: 10vw;
