@@ -2,7 +2,8 @@ import React from "react"
 import s from "styled-components"
 import "./styles.scss"
 
-import { 
+import {
+  Navbar, 
   Hero,
   Prizes,
   Timeline,
@@ -13,6 +14,7 @@ import {
 const IndexPage = () => {
   return (
     <>
+      <Navbar />
       <Hero />
       <Prizes />
       <Timeline />
