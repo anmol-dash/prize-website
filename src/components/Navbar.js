@@ -32,8 +32,10 @@ export const Navbar = () => {
             {visible || <div className="navbar-item">
                 <img 
                     css={`
+                        &&& {
+                            max-height: 100%;
+                        }
                         margin-left: 1rem;
-                        max-height: 100%;
                         width: 116px;
                     `}
                     src={Logo} 
