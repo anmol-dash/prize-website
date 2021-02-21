@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import s from "styled-components"
 import Button from '../components/shared/Button'
+import Logo from '../images/logo.png'
 import Filled from '../images/svg/arrow-filled.svg'
 import Empty from '../images/svg/arrow-empty.svg'
 
@@ -24,10 +25,21 @@ export const Navbar = () => {
     const [visible, setVisible] = useState(true);
     const toggleNavbar = () => setVisible(!visible);
     return <nav css={`display: flex; width: 100%;`} className="navbar" role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
+        <div className="navbar-brand" css={`margin-left: 1rem;`}>
             <div className="navbar-item">
                 <Toggle toggleNavbar={toggleNavbar} visible={visible} />
             </div>
+            {visible || <div className="navbar-item">
+                <img 
+                    css={`
+                        margin-left: 1rem;
+                        max-height: 100%;
+                        width: 116px;
+                    `}
+                    src={Logo} 
+                />
+            </div>
+            }
         </div>
         <NavButton visible={visible}>About the Prize</NavButton>
         <NavButton visible={visible}>Official Rules</NavButton>
