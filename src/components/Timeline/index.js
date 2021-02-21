@@ -1,62 +1,28 @@
 import React from "react"
 import s from "styled-components"
 import { Title, Text, Subtitle, SubText } from "../Typography"
+import {
+    Columns,
+    Left,
+    Right,
+    Spacer
+} from "./Layout"
+import Header from "./Header"
+
+import { MIDNIGHT_BLUE } from "../../utils/constants"
 
 const TimelineTitle = s(Subtitle)`
     margin-bottom: 1.5vw;
 `
 
-const TimelineColumns = s.div.attrs(() => ({
-    className: "columns"
-}))`
-:before {
-    content: '';
-    position: absolute;
-    top: -.1rem;
-    width: 6%;
-    left: 47%;
-    border-bottom: .3rem solid white;
-}
-`
-
-const TimelineCol = s.div.attrs(() => ({
-    className: 'column'
-}))`
-    padding: 0
-`
-
-const TimelineLeftCol = s(TimelineCol)`
-    border-right: .2rem solid white;
-`
-
-const TimelineRightCol = s(TimelineCol)`
-    border-left: .2rem solid white;
-`
-
-const TimelineSpacer = s.div`
-    height: ${({ height }) => height || `2vw`};
-`
-
-const TimelineHeaderWrapper = s.div`
-    display: flex;
-    margin: -.1rem;
-    width: 101%;
-`
-
-const TimelineHeaderLine = s.hr`
-    flex: 1;
-    height: .3rem;
-    ${({ right }) => right ? "margin-right" : "margin-left"}: 4rem;
-`
-
 const TimelineButton = ({ children, right }) => (
     <button css={`
         background-color: transparent;
-        border: .2rem solid white;
+        border: .2rem solid ${MIDNIGHT_BLUE};
         outline: none;
         float: ${right ? "right" : "left"};
         padding: 1rem 3rem 1rem 3rem;
-        color: white;
+        color: ${MIDNIGHT_BLUE};
         cursor: pointer;
         border-radius: 999px;
     `}>
@@ -65,17 +31,6 @@ const TimelineButton = ({ children, right }) => (
         </Text>
     </button>
 )
-
-
-const TimelineHeader = ({ children, right = false, title = false }) => {
-    const TimelineHeaderTitle = title ? Title : Subtitle
-    return <TimelineHeaderWrapper>
-        {right && <TimelineHeaderLine right />}
-        <TimelineHeaderTitle>{children}</TimelineHeaderTitle>
-        {!right && <TimelineHeaderLine left />}
-    </TimelineHeaderWrapper>
-}
-
 
 const TimelineCenteredText = s(SubText).attrs(() => ({
     className: 'has-text-left'
@@ -91,12 +46,12 @@ const TimelineLayout = ({ className }) => (
         <div css={`
             position: relative;
         `}>
-            <TimelineColumns>
-                <TimelineLeftCol>
-                    <TimelineSpacer height="2vw" />
-                    <TimelineHeader>
+            <Columns>
+                <Left>
+                    <Spacer height="2vw" />
+                    <Header>
                         Eligibility
-                    </TimelineHeader>
+                    </Header>
                     <TimelineCenteredText>
                         Teams must include at least one current Penn student.
                         <br />
@@ -104,24 +59,24 @@ const TimelineLayout = ({ className }) => (
                     </TimelineCenteredText>
                     <br />
                     <TimelineButton>Full rules here</TimelineButton>
-                    <TimelineSpacer height="10vw" />
+                    <Spacer height="10vw" />
 
-                    <TimelineHeader>
+                    <Header>
                         Attend a
-                    </TimelineHeader>
+                    </Header>
                     <Subtitle css={`float: left;`}>State-of-the-Field Panel</Subtitle>
 
-                    <TimelineSpacer height="10vw" />
-                    <TimelineHeader>
+                    <Spacer height="10vw" />
+                    <Header>
                         Workshop
-                    </TimelineHeader>
+                    </Header>
                     <Subtitle css={`float: left;`}>your proposal</Subtitle>
-                </TimelineLeftCol>
-                <TimelineRightCol>
-                    <TimelineSpacer height="5vw" />
-                    <TimelineHeader right>
+                </Left>
+                <Right>
+                    <Spacer height="5vw" />
+                    <Header right>
                         Join our ListServ
-                    </TimelineHeader>
+                    </Header>
                     <TimelineCenteredText>
                         Teams must include at least one current Penn student.
                         <br />
@@ -130,11 +85,11 @@ const TimelineLayout = ({ className }) => (
                     <br />
                     <TimelineButton right>Sign up here</TimelineButton>
 
-                    <TimelineSpacer height="5vw" />
+                    <Spacer height="5vw" />
 
-                    <TimelineHeader right>
+                    <Header right>
                         Meet Others!
-                    </TimelineHeader>
+                    </Header>
                     <TimelineCenteredText>
                         <Text as="a" href="idk man">Discord</Text>
                         <br />
@@ -145,11 +100,11 @@ const TimelineLayout = ({ className }) => (
                         Like the Stanford marriage pact, but for cofounders, and way less awkward.
                     </TimelineCenteredText>
 
-                    <TimelineSpacer height="5vw" />
+                    <Spacer height="5vw" />
 
-                    <TimelineHeader right>
+                    <Header right>
                         Register Your Team
-                    </TimelineHeader>
+                    </Header>
                     <TimelineCenteredText>
                         Like doing your taxes except less painful and you don't get a tax return.
                         So actually, nothing like doing your taxes.
@@ -160,11 +115,11 @@ const TimelineLayout = ({ className }) => (
                         </TimelineButton>
                     </TimelineCenteredText>
 
-                    <TimelineSpacer height="5vw" />
+                    <Spacer height="5vw" />
 
-                    <TimelineHeader right>
+                    <Header right>
                         Meet PCV's Team
-                    </TimelineHeader>
+                    </Header>
                     <TimelineCenteredText>
                         Some of the coolest people you'll ever meet.
                         No joke. Okay, maybe partial joke. But still
@@ -174,17 +129,17 @@ const TimelineLayout = ({ className }) => (
                         RSVP here
                     </TimelineButton>
 
-                    <TimelineSpacer height="10vw" />
+                    <Spacer height="10vw" />
 
-                    <TimelineHeader right>
+                    <Header right>
                         Submit Your Decks!
-                    </TimelineHeader>
+                    </Header>
                     <br />
                     <TimelineButton right>
                         SUBMIT here
                     </TimelineButton>
-                </TimelineRightCol>
-            </TimelineColumns>
+                </Right>
+            </Columns>
         </div>
         <Subtitle className="has-text-left" css={`padding-right: 50%; margin-top: -5vw`}>
             Live Finals,
