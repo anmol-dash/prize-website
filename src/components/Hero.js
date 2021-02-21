@@ -20,7 +20,7 @@ const InlineBlock = s.div`
 const HeroLayout = ({ className }) => (
   <div className={`container is-fluid has-text-centered ${className}`}>
     <InlineBlock>
-      <SpacedTitle>APRIL 3rd - 17th</SpacedTitle>
+      <SpacedSubtitle>APRIL 3rd - 17th</SpacedSubtitle>
       <HeroTitle>Penn Climate Ventures Prize</HeroTitle>
       <SpacedSubtitle>building out Penn's climate innovation ecosystem</SpacedSubtitle>
       <SpacedSubtitle>bringing environmental impact into Penn's startup scene</SpacedSubtitle>
