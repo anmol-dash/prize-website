@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
 import { Title, Subtitle } from "../shared/Typography"
-import { MIDNIGHT_BLUE } from "../../utils/constants"
+import { OXFORD_BLUE } from "../../utils/constants"
 
 const Wrapper = s.div`
     display: flex;
@@ -13,10 +13,14 @@ const Line = s.hr`
     flex: 1;
     height: .3rem;
     ${({ right }) => right ? "margin-right" : "margin-left"}: 4rem;
-    background-color: ${MIDNIGHT_BLUE}
+    background-color: ${OXFORD_BLUE}
 `
-const Header = ({ children, right = false, title = false }) => {
-    const HeaderTitle = title ? Title : Subtitle
+
+const HeaderTitle = s(Subtitle)`
+    font-family: Roboto Condensed;
+`
+
+const Header = ({ children, right = false }) => {
     return <Wrapper>
         {right && <Line right />}
         <HeaderTitle>{children}</HeaderTitle>

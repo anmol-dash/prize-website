@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 @font-face {
     font-family: "Metropolis";
     src: url("../fonts/Metropolis-Medium.otf");
@@ -20,8 +21,8 @@
 @import "~bulma/bulma.sass";
 
 body {
-    color: #07004D;
-    font-family: 'Roboto', sans-serif;
+    color: #05052C;
+    font-family: 'Roboto Condensed ', sans-serif;
 }
 
 html {

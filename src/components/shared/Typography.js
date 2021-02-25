@@ -2,7 +2,7 @@ import s from "styled-components"
 
 export const Title = s.h1`
   font-size: ${({ fontSize }) => fontSize || '8rem'};
-  font-family: Roboto;
+  font-family: Roboto Condensed; 
 `
 
 export const Subtitle = s.h2`
