@@ -30,7 +30,7 @@ export const Navbar = () => {
             <div className="navbar-item">
                 <Toggle toggleNavbar={toggleNavbar} visible={visible} />
             </div>
-            {visible || <div className="navbar-item">
+            {visible || <a href="/" className="navbar-item">
                 <img 
                     css={`
                         &&& {
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     `}
                     src={Logo} 
                 />
-            </div>
+            </a>
             }
         </div>
         <NavButton visible={visible}>About the Prize</NavButton>
