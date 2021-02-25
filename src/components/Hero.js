@@ -22,7 +22,7 @@ const HeroLayout = ({ className, scrollTo }) => (
     <InlineBlock>
       <SpacedSubtitle>APRIL 3rd - 17th</SpacedSubtitle>
       <HeroTitle>Penn Climate Ventures Prize</HeroTitle>
-      <SpacedSubtitle>building out Penn's climate innovation ecosystem</SpacedSubtitle>
+      <SpacedSubtitle>building Penn's climate innovation ecosystem</SpacedSubtitle>
       <SpacedSubtitle>bringing environmental impact into Penn's startup scene</SpacedSubtitle>
       <SpacedSubtitle>breaking Penn's talent into a critical space</SpacedSubtitle>
     </InlineBlock>

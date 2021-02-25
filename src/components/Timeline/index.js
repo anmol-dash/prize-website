@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
 
-import { Title, Text, Subtitle, SubText } from "../shared/Typography"
+import { Text, Subtitle, SubText } from "../shared/Typography"
 import Button from "../shared/Button"
 
 import {
@@ -61,7 +61,11 @@ const TimelineLayout = ({ className }) => (
                         Teams must present a pre-revenue actionable solution that addresses climate change.
                     </TimelineCenteredText>
                     <br />
-                    <TimelineButton>Full rules here</TimelineButton>
+                    <Button
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="###"
+                    >Full rules here</Button>
                     <Spacer height="10vw" />
 
                     <Header>
@@ -78,7 +82,7 @@ const TimelineLayout = ({ className }) => (
                 <Right>
                     <Spacer height="5vw" />
                     <Header right>
-                        Join our ListServ
+                        Register
                     </Header>
                     <TimelineCenteredText>
                         Teams must include at least one current Penn student.
@@ -86,7 +90,14 @@ const TimelineLayout = ({ className }) => (
                         Teams must present a pre-revenue actionable solution that addresses climate change.
                     </TimelineCenteredText>
                     <br />
-                    <TimelineButton right>Sign up here</TimelineButton>
+                    <Button 
+                        right
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="https://tinyurl.com/PCVPrizeS21"
+                    >
+                        Sign up here
+                    </Button>
 
                     <Spacer height="5vw" />
 
@@ -113,9 +124,14 @@ const TimelineLayout = ({ className }) => (
                         So actually, nothing like doing your taxes.
                         <br />
                         <br />
-                        <TimelineButton>
+                        <Button
+                            right
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            href="https://tinyurl.com/PCVPrizeTeamRegistration"
+                        >
                             Register here
-                        </TimelineButton>
+                        </Button>
                     </TimelineCenteredText>
 
                     <Spacer height="5vw" />
@@ -128,9 +144,9 @@ const TimelineLayout = ({ className }) => (
                         No joke. Okay, maybe partial joke. But still
                         pretty cool. Pull up!
                     </TimelineCenteredText>
-                    <TimelineButton right>
+                    <Button right>
                         RSVP here
-                    </TimelineButton>
+                    </Button>
 
                     <Spacer height="10vw" />
 
@@ -138,9 +154,14 @@ const TimelineLayout = ({ className }) => (
                         Submit Your Decks!
                     </Header>
                     <br />
-                    <TimelineButton right>
+                    <Button
+                        right
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="https://tinyurl.com/PCVPrizeSubmission"
+                    >
                         SUBMIT here
-                    </TimelineButton>
+                    </Button>
                 </Right>
             </Columns>
         </div>
