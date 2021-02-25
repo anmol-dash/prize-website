@@ -15,7 +15,7 @@ const Template = ({ data: {
     <>  
         <Helmet title={frontmatter.title} defer={false} />
         <Navbar />
-        <div className="container">
+        <div className="container is-fluid">
             <div
                 id="markdown"
                 dangerouslySetInnerHTML={{ __html: html }}
