@@ -18,7 +18,7 @@ const Level = s.div`
 
 const DonorsLayout = ({ className }) => (
   <div className={`container is-fluid has-text-centered ${className}`}>
-    <i><Text>This event could not have been possible without the support of:</Text></i>
+    <b><Text>This event could not have been possible without the support of:</Text></b>
     <Level className="level">
       <LevelItem>
         <SubText>Penn Partners: Wharton Risk Center, Wharton Energy Network, Climate Leaders @ Penn, Penn Environmental Group</SubText>
