@@ -226,7 +226,7 @@ const TimelineLayout = ({ className }) => (
         <TimelineTitle>
             <Button
                 right
-                css={`margin-right: 45%; margin-top: 1vw`}
+                css={`display: inline-block; margin-top: 1vw`}
                 target="_blank"
                 rel="noreferrer noopener"
                 href="https://tinyurl.com/PCVPrizeSubmission"
