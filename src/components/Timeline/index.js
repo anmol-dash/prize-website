@@ -50,9 +50,9 @@ const TimelineLayout = ({ className }) => (
                         Eligibility
                     </Header>
                     <TimelineCenteredText>
-                        Teams must include at least one current Penn student.
+                        All students are eligible.
                         <br />
-                        Teams must present a pre-revenue actionable solution that addresses climate change.
+                        Teams need at least one Penn student to compete in finals.
                     </TimelineCenteredText>
                     <br />
                     <Button
@@ -60,26 +60,33 @@ const TimelineLayout = ({ className }) => (
                         rel="noreferrer noopener"
                         href="/faq"
                     >Rules and FAQs</Button>
-                    <Spacer height="10vw" />
-
+                    <Spacer height="15vw" />
                     <Header>
                         Attend a
                     </Header>
                     <Subtitle roboto css={`text-align: left; width: 100%;`}>State-of-the-Field Panel</Subtitle>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
-                        <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                    <Event date={"3/29\n\n\n"} right>
+                        <Text>Energy and Transportation</Text>
+                        <SubText>
+                            <b>Dr. Arthur Van Benthem</b> @ Wharton <br></br>
+                            <b>Dr. Lauren Hartle</b> @ <a href="https://www.primeimpactfund.com/">Prime Impact Fund</a>
+                        </SubText>
                     </Event>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
-                        <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                    <Event date={"3/30\n\n\n"} right>
+                        <Text>Waste and Circularity</Text>
+                        <SubText>
+                            <b>Dr. Jim Hagan</b> @ Penn<br></br>
+                            <b>Shuo Yang</b> @ <a href="https://fiftyyears.com/">Fifty Years</a>
+                        </SubText>
                     </Event>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
-                        <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                    <Event date={"4/2\n\n\n"} right>
+                        <Text>Food and Agriculture</Text>
+                        <SubText>
+                            <b>Rob Trice</b> @ <a href="https://betterfoodventures.com/">Better Food Ventures</a>
+                        </SubText>
                     </Event>
 
                     <Spacer height="5vw" />
@@ -88,36 +95,35 @@ const TimelineLayout = ({ className }) => (
                     </Header>
                     <Subtitle roboto css={`text-align: left; width: 100%;`}>your proposal</Subtitle>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
+                    <Event date={"April\n\n\n"} right>
                         <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                        <SubText>What does it mean to be feasible?</SubText>
                     </Event>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
-                        <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                    <Event date={"April\n\n\n"} right>
+                        <Text>Impact Analysis</Text>
+                        <SubText>Can your solution can make a difference?</SubText>
                     </Event>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
-                        <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                    <Event date={"April\n\n\n"} right>
+                        <Text>Regulations</Text>
+                        <SubText>How will policy affect your startup?</SubText>
                     </Event>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} right>
-                        <Text>Product Development</Text>
-                        <SubText>Description of the speaker event/who will be there</SubText>
+                    <Event date={"April\n\n\n"} right>
+                        <Text>What VCs Look For</Text>
+                        <SubText>How can you secure funding?</SubText>
                     </Event>
 
                 </Left>
                 <Right>
-                    <Spacer height="5vw" />
+                    <Spacer height="15vw" />
                     <Header right>
                         Register
                     </Header>
                     <TimelineCenteredText>
-                        Teams must include at least one current Penn student.
+                        Stay updated on event details and the PCV Prize.
                         <br />
-                        Teams must present a pre-revenue actionable solution that addresses climate change.
                     </TimelineCenteredText>
                     <br />
                     <Button
@@ -126,45 +132,51 @@ const TimelineLayout = ({ className }) => (
                         rel="noreferrer noopener"
                         href="https://tinyurl.com/PCVPrizeS21"
                     >
-                        Sign up here
+                        Sign Up by 4/5
                     </Button>
 
-                    <Spacer height="6vw" />
+                    <Spacer height="15vw" />
 
                     <Header right>
                         Meet Others!
                     </Header>
                     <TimelineCenteredText>
-                        <Text as="a" href="idk man">Discord</Text>
-                        <br />
-                        Discord is a place and maybe you could join it. Just kidding, unless...
+                        <Text>Discord</Text>
+                        Register to start building your team through our online PCV Prize community.
                     </TimelineCenteredText>
-                    <TimelineCenteredText>
-                        <Text as="h1">Team-Formation Speed Dating</Text>
-                        Like the Stanford marriage pact, but for cofounders, and way less awkward.
-                    </TimelineCenteredText>
-
+                    
                     <Spacer height="4vw" />
 
-                    <a>
-                        <Header right>
-                            Opening Ceremony
+                    
+                    <Header right>
+                        Opening Keynote
                     </Header>
-                        <Subtitle roboto className="has-text-right">
-                            with Dr. Arun Majumdar
+                    <Subtitle roboto className="has-text-right">
+                        w/ Dr. Arun Majumdar
                     </Subtitle>
-                    </a>
-                    <Event date={"DATE\nTIME\nEST\n"} left>
-                        <TimelineCenteredText>Very cool big clout climate VC dude that we use to attract other big clout people</TimelineCenteredText>
+                    
+                    <Event date={"4/3\n1 PM\n EST\n"} left>
+                        <TimelineCenteredText>
+                            Founding Director @ <a href="https://arpa-e.energy.gov/"> ARPA-E </a>
+                            <br />
+                            Climate, innovation, and our future.
+                        </TimelineCenteredText>
                     </Event>
+
+                    <Event date={"4/3\n2 PM\n EST\n"} left>
+                        <TimelineCenteredText>
+                            <Text as="h1">Find a Team</Text>
+                            Speed-dating, but for climate co-founders.
+                        </TimelineCenteredText>
+                    </Event>
+                    
 
                     <Spacer height="4vw" />
                     <Header right>
                         Register Your Team
                     </Header>
                     <TimelineCenteredText>
-                        Like doing your taxes except less painful and you don't get a tax return.
-                        So actually, nothing like doing your taxes.
+                        Full team eligbility rules <a href="/faq">here</a>
                         <br />
                         <br />
                         <Button
@@ -173,48 +185,57 @@ const TimelineLayout = ({ className }) => (
                             rel="noreferrer noopener"
                             href="https://tinyurl.com/PCVPrizeTeamRegistration"
                         >
-                            Register here
+                            Submit by 4/5
                         </Button>
                     </TimelineCenteredText>
 
                     <Spacer height="4vw" />
 
                     <Header right>
-                        Meet PCV's Team
+                        From PCV
                     </Header>
                     <Spacer height="2vw" />
-                    <Event date={"DATE\nTIME\nEST\n"} left>
+                    <Event date={"April\n\n\n"} left>
+                        <Text>Pitch Office Hours</Text>
                         <TimelineCenteredText>
-                            Some of the coolest people you'll ever meet.
-                            No joke. Okay, maybe partial joke. But still
-                            pretty cool. Pull up!
-                        </TimelineCenteredText>                    </Event>
-                    <Button right>
-                        RSVP here
-                    </Button>
+                            Perfect your pitches. By appointment.
+                            <br />
+                        </TimelineCenteredText>                    
+                    </Event>
 
-                    <Spacer height="10vw" />
+                    <Event date={"April\n\n\n"} left>
+                        <Text>What comes next?</Text>
+                        <TimelineCenteredText>
+                            Climate founder AMAs.
+                        </TimelineCenteredText>                    
+                    </Event>
 
-                    <Header right fontSize="6rem" maxWidth="70%">
-                        Submit Your Decks! 4/17 11:59 PM
+                    <Spacer height="5vw" />
+
+                    <Header right fontSize="6rem" maxWidth="80%">
+                        Submit Your Decks! 4/16
+                        <br />
+                        11:59 PM
                     </Header>
-                    <br />
-                    <Button
-                        right
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        href="https://tinyurl.com/PCVPrizeSubmission"
-                    >
-                        SUBMIT here
-                    </Button>
                 </Right>
             </Columns>
         </div>
+        <TimelineTitle>
+            <Button
+                right
+                css={`margin-right: 35%; margin-top: 1vw`}
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://tinyurl.com/PCVPrizeSubmission"
+            >
+                Submit Here
+            </Button>
+        </TimelineTitle>
         <Spacer height="10vw"/>
-        <Title fontSize="6rem" className="has-text-left" css={`padding-right: 50%; margin-top: -5vw`}>
+        <Title fontSize="6rem" className="has-text-left" css={`padding-right: 30%; margin-top: 3vw`}>
             Live Finals,
-            4/24 at TIME EST.
-            See you there! :)
+            4/24 at 12 PM EST.
+            See you there!
         </Title>
     </div>
 )

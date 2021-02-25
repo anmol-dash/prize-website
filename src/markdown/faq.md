@@ -54,14 +54,26 @@ title: "FAQ"
 <details>
     <summary>Who can participate?</summary>
     All undergraduate or graduate students at any institution around the world can compete in the PCV Prize.
-    <br>
-    Importantly, each team must include at least one Penn undergraduate or graduate student to be eligible to become a finalist and compete for, well, our prizes.
+    <br />
+    Importantly, each team must include at least one Penn undergraduate or graduate student to be eligible to become a finalist and compete for, well, our prize.
+    <br />
+    The PCV Prize team reserves the right to determine a team’s eligibility for the final round.
+</details>
+
+<details>
+    <summary>How many people can I have on my team?</summary>
+    Up to 5 students can be a part of the same team. If you hope to compete in the final round, make sure you have at least one Penn student on your team.
 </details>
 
 <details>
     <summary>What if I don't have a team?</summary>
-    No worries! We're holding a team formation event 
-    For interested individuals without teams, there will be a team formation event held in the week before the Prize competition begins -- please register as an individual if you are interested in finding a team through this event. Students do not have to be US citizens and non-Penn students do not need to be studying at US colleges or universities. The PCV Prize team reserves the right to determine a team’s eligibility.
+    No worries! We're holding a team formation event directly after our opening keynote. Make sure to
+    <a 
+        target="_blank"
+        rel="noreferrer noopener"
+        href="http://tinyurl.com/PCVPrizeS21">
+        register as an individual
+    </a> if you are interested in finding a team through this event. Students do not have to be US citizens and non-Penn students do not need to be studying at US colleges or universities.
 </details>
 
 <details>
