@@ -21,16 +21,24 @@ const DonorsLayout = ({ className }) => (
     <b><Text>This event could not have been possible without the support of:</Text></b>
     <Level className="level">
       <LevelItem>
-        <SubText>Penn Partners: Wharton Risk Center, Wharton Energy Network, Climate Leaders @ Penn, Penn Environmental Group</SubText>
+        <Text>Penn Institutions</Text>
+        <SubText>
+          <a href="https://riskcenter.wharton.upenn.edu/">Wharton Risk Center</a>
+          <br />
+          <a href="https://www.whartonenergy.com/">Wharton Energy Network</a>
+          <br />
+          <a href="https://www.sp2.upenn.edu/">School of Social Policy & Practice</a>
+        </SubText>
       </LevelItem>
       <LevelItem>
-        <SubText>Donors: BIG MONEY PEOPLE GO HERE. NAMES NAMES NAMES AND MORE NAMES. PEOPLE NAMES. THING NAMES. BIG NAMES.</SubText>
-      </LevelItem>
-      <LevelItem>
-      <SubText>Donors: BIG MONEY PEOPLE GO HERE. NAMES NAMES NAMES AND MORE NAMES. PEOPLE NAMES. THING NAMES. BIG NAMES.</SubText>
-      </LevelItem>
-      <LevelItem>
-      <SubText>Donors: BIG MONEY PEOPLE GO HERE. NAMES NAMES NAMES AND MORE NAMES. PEOPLE NAMES. THING NAMES. BIG NAMES.</SubText>
+        <Text>Student Groups</Text>
+        <SubText>
+          <a href="https://www.climateleadersatpenn.com/">Climate Leaders @ Penn</a>
+          <br />
+          <a href="http://pennenvironmentalgroup.weebly.com/">Penn Environmental Group</a>
+          <br />
+          <a href="https://www.agribusiness-club.com/">Agribusiness Club</a>
+        </SubText>
       </LevelItem>
     </Level>
   </div>

@@ -146,7 +146,6 @@ const TimelineLayout = ({ className }) => (
                     </TimelineCenteredText>
                     
                     <Spacer height="4vw" />
-
                     
                     <Header right>
                         Opening Keynote
