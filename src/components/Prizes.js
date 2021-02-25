@@ -19,15 +19,15 @@ const PrizesLayout = React.forwardRef(({ className }, ref) => (
     <Subtitle>Dive into the most pressing environmental issues of today.</Subtitle>
     <Level className="level">
       <LevelItem>
-        <Subtitle>Grand Prize</Subtitle>
+        <Subtitle roboto>Grand Prize</Subtitle>
         <Title>$5000</Title>
       </LevelItem>
       <LevelItem>
-        <Subtitle>Second</Subtitle>
+        <Subtitle roboto>Second</Subtitle>
         <Title>$2500</Title>
       </LevelItem>
       <LevelItem>
-        <Subtitle>Third</Subtitle>
+        <Subtitle roboto>Third</Subtitle>
         <Title>$1250</Title>
       </LevelItem>
     </Level>
