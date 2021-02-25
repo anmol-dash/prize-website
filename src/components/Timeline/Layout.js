@@ -12,7 +12,7 @@ export const Columns = s.div.attrs(() => ({
     top: -.1rem;
     width: 6%;
     left: 47%;
-    border-bottom: .3rem solid ${MIDNIGHT_BLUE};
+    border-bottom: .4rem solid ${MIDNIGHT_BLUE};
 }
 `
 
@@ -23,11 +23,11 @@ export const Col = s.div.attrs(() => ({
 `
 
 export const Left = s(Col)`
-    border-right: .2rem solid ${MIDNIGHT_BLUE};
+    border-right: .3rem solid ${MIDNIGHT_BLUE};
 `
 
 export const Right = s(Col)`
-    border-left: .2rem solid ${MIDNIGHT_BLUE};
+    border-left: .3rem solid ${MIDNIGHT_BLUE};
 `
 
 export const Spacer = s.div`
