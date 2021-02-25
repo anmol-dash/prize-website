@@ -69,7 +69,7 @@ const TimelineLayout = ({ className }) => (
                     <Event date={"3/29\n\n\n"} right>
                         <Text>Energy and Transportation</Text>
                         <SubText>
-                            <b>Dr. Arthur Van Benthem</b> @ Wharton <br></br>
+                            <b>Dr. Arthur Van Benthem</b> @ <a href="https://www.arthurvanbenthem.com/">Wharton</a><br></br>
                             <b>Dr. Lauren Hartle</b> @ <a href="https://www.primeimpactfund.com/">Prime Impact Fund</a>
                         </SubText>
                     </Event>
@@ -77,7 +77,7 @@ const TimelineLayout = ({ className }) => (
                     <Event date={"3/30\n\n\n"} right>
                         <Text>Waste and Circularity</Text>
                         <SubText>
-                            <b>Dr. Jim Hagan</b> @ Penn<br></br>
+                            <b>Dr. Jim Hagan</b> @ <a href="https://www.lps.upenn.edu/degree-programs/mes/faculty/james-hagan">Penn CAS</a><br></br>
                             <b>Shuo Yang</b> @ <a href="https://fiftyyears.com/">Fifty Years</a>
                         </SubText>
                     </Event>
@@ -85,7 +85,7 @@ const TimelineLayout = ({ className }) => (
                     <Event date={"4/2\n\n\n"} right>
                         <Text>Food and Agriculture</Text>
                         <SubText>
-                            <b>Rob Trice</b> @ <a href="https://betterfoodventures.com/">Better Food Ventures</a>
+                            <b>Dr. Zhangxia Dou</b> @ <a href="https://www.vet.upenn.edu/people/faculty-clinician-search/zhengxiadou">Penn Vet</a>
                         </SubText>
                     </Event>
 
@@ -158,7 +158,9 @@ const TimelineLayout = ({ className }) => (
                         <TimelineCenteredText>
                             Founding Director @ <a href="https://arpa-e.energy.gov/"> ARPA-E </a>
                             <br />
-                            Climate, innovation, and our future.
+                            Former VP, Energy @ <a href="https://google.com/"> Google </a>
+                            <br />
+                            Co-Director, Precourt Institute for Energy @ <a href="https://energy.stanford.edu/"> Stanford </a>
                         </TimelineCenteredText>
                     </Event>
 
@@ -194,17 +196,19 @@ const TimelineLayout = ({ className }) => (
                         From PCV
                     </Header>
                     <Spacer height="2vw" />
+
                     <Event date={"April\n\n\n"} left>
-                        <Text>Pitch Office Hours</Text>
+                        
                         <TimelineCenteredText>
+                            <Text as="h1">Pitch Office Hours</Text>
                             Perfect your pitches. By appointment.
                             <br />
                         </TimelineCenteredText>                    
                     </Event>
 
                     <Event date={"April\n\n\n"} left>
-                        <Text>What comes next?</Text>
                         <TimelineCenteredText>
+                            <Text as="h1">What comes next?</Text>
                             Climate founder AMAs.
                         </TimelineCenteredText>                    
                     </Event>
@@ -222,7 +226,7 @@ const TimelineLayout = ({ className }) => (
         <TimelineTitle>
             <Button
                 right
-                css={`margin-right: 35%; margin-top: 1vw`}
+                css={`margin-right: 45%; margin-top: 1vw`}
                 target="_blank"
                 rel="noreferrer noopener"
                 href="https://tinyurl.com/PCVPrizeSubmission"
