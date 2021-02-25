@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
 
-import { Text, Subtitle, SubText } from "../shared/Typography"
+import { Title, Text, Subtitle, SubText } from "../shared/Typography"
 import Button from "../shared/Button"
 
 import {
@@ -38,7 +38,7 @@ const Event = ({ right, date, children }) => {
 }
 
 const TimelineLayout = ({ className }) => (
-    <div className={`container has-text-centered ${className}`}>
+    <div className={`container is-fluid has-text-centered ${className}`}>
         <TimelineTitle>Open to students globally.</TimelineTitle>
         <div css={`
             position: relative;
@@ -58,20 +58,56 @@ const TimelineLayout = ({ className }) => (
                     <Button
                         target="_blank"
                         rel="noreferrer noopener"
-                        href="###"
-                    >Full rules here</Button>
+                        href="/faq"
+                    >Rules and FAQs</Button>
                     <Spacer height="10vw" />
 
                     <Header>
                         Attend a
                     </Header>
-                    <Subtitle css={`float: left;`}>State-of-the-Field Panel</Subtitle>
+                    <Subtitle roboto css={`text-align: left; width: 100%;`}>State-of-the-Field Panel</Subtitle>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
 
-                    <Spacer height="10vw" />
+                    <Spacer height="5vw" />
                     <Header>
                         Workshop
                     </Header>
-                    <Subtitle css={`float: left;`}>your proposal</Subtitle>
+                    <Subtitle roboto css={`text-align: left; width: 100%;`}>your proposal</Subtitle>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} right>
+                        <Text>Product Development</Text>
+                        <SubText>Description of the speaker event/who will be there</SubText>
+                    </Event>
+
                 </Left>
                 <Right>
                     <Spacer height="5vw" />
@@ -84,7 +120,7 @@ const TimelineLayout = ({ className }) => (
                         Teams must present a pre-revenue actionable solution that addresses climate change.
                     </TimelineCenteredText>
                     <br />
-                    <Button 
+                    <Button
                         right
                         target="_blank"
                         rel="noreferrer noopener"
@@ -93,7 +129,7 @@ const TimelineLayout = ({ className }) => (
                         Sign up here
                     </Button>
 
-                    <Spacer height="5vw" />
+                    <Spacer height="6vw" />
 
                     <Header right>
                         Meet Others!
@@ -108,8 +144,21 @@ const TimelineLayout = ({ className }) => (
                         Like the Stanford marriage pact, but for cofounders, and way less awkward.
                     </TimelineCenteredText>
 
-                    <Spacer height="5vw" />
+                    <Spacer height="4vw" />
 
+                    <a>
+                        <Header right>
+                            Opening Ceremony
+                    </Header>
+                        <Subtitle roboto className="has-text-right">
+                            with Dr. Arun Majumdar
+                    </Subtitle>
+                    </a>
+                    <Event date={"DATE\nTIME\nEST\n"} left>
+                        <TimelineCenteredText>Very cool big clout climate VC dude that we use to attract other big clout people</TimelineCenteredText>
+                    </Event>
+
+                    <Spacer height="4vw" />
                     <Header right>
                         Register Your Team
                     </Header>
@@ -128,24 +177,26 @@ const TimelineLayout = ({ className }) => (
                         </Button>
                     </TimelineCenteredText>
 
-                    <Spacer height="5vw" />
+                    <Spacer height="4vw" />
 
                     <Header right>
                         Meet PCV's Team
                     </Header>
-                    <TimelineCenteredText>
-                        Some of the coolest people you'll ever meet.
-                        No joke. Okay, maybe partial joke. But still
-                        pretty cool. Pull up!
-                    </TimelineCenteredText>
+                    <Spacer height="2vw" />
+                    <Event date={"DATE\nTIME\nEST\n"} left>
+                        <TimelineCenteredText>
+                            Some of the coolest people you'll ever meet.
+                            No joke. Okay, maybe partial joke. But still
+                            pretty cool. Pull up!
+                        </TimelineCenteredText>                    </Event>
                     <Button right>
                         RSVP here
                     </Button>
 
                     <Spacer height="10vw" />
 
-                    <Header right>
-                        Submit Your Decks!
+                    <Header right fontSize="6rem" maxWidth="70%">
+                        Submit Your Decks! 4/17 11:59 PM
                     </Header>
                     <br />
                     <Button
@@ -159,11 +210,12 @@ const TimelineLayout = ({ className }) => (
                 </Right>
             </Columns>
         </div>
-        <Subtitle className="has-text-left" css={`padding-right: 50%; margin-top: -5vw`}>
+        <Spacer height="10vw"/>
+        <Title fontSize="6rem" className="has-text-left" css={`padding-right: 50%; margin-top: -5vw`}>
             Live Finals,
             4/24 at TIME EST.
             See you there! :)
-        </Subtitle>
+        </Title>
     </div>
 )
 
