@@ -12,28 +12,9 @@ import {
 } from "./Layout"
 import Header from "./Header"
 
-import { MIDNIGHT_BLUE } from "../../utils/constants"
-
 const TimelineTitle = s(Subtitle)`
     margin-bottom: 1.5vw;
 `
-
-const TimelineButton = ({ children, right }) => (
-    <button css={`
-        background-color: transparent;
-        border: .2rem solid ${MIDNIGHT_BLUE};
-        outline: none;
-        float: ${right ? "right" : "left"};
-        padding: 1rem 3rem 1rem 3rem;
-        color: ${MIDNIGHT_BLUE};
-        cursor: pointer;
-        border-radius: 999px;
-    `}>
-        <Text>
-            {children}
-        </Text>
-    </button>
-)
 
 const TimelineCenteredText = s(SubText).attrs(() => ({
     className: 'has-text-left'
