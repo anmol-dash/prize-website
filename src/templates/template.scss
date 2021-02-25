@@ -22,4 +22,12 @@ h1 {
         font-family: Roboto Condensed ;
     }
 
+    details {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        summary {
+            font-weight: bold;
+        }
+    }
+
 }
