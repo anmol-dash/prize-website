@@ -19,6 +19,7 @@ const NavButton = s(Button).attrs(() => ({
     margin: 1vw;
     font-size: 2rem;
     flex: 1;
+    padding: .5rem;
 `
 
 export const Navbar = () => {
