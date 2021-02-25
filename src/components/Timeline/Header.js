@@ -5,13 +5,14 @@ import { OXFORD_BLUE } from "../../utils/constants"
 
 const Wrapper = s.div`
     display: flex;
-    margin: -.1rem;
+    margin: -.2rem;
     width: 101%;
+    align-items: center;
 `
 
 const Line = s.hr`
     flex: 1;
-    height: .3rem;
+    height: .4rem;
     ${({ right }) => right ? "margin-right" : "margin-left"}: 4rem;
     background-color: ${OXFORD_BLUE}
 `
