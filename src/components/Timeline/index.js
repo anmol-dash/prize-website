@@ -24,6 +24,19 @@ const TimelineCenteredText = s(SubText).attrs(() => ({
     padding: 2rem;
 `
 
+const Event = ({ right, date, children }) => {
+    const Date = () => <div className="column is-3 has-text-left">
+        <Subtitle fontSize="3.5rem" roboto css={`white-space: pre-line; padding: 0;`}>{date}</Subtitle>
+    </div>
+    return <div className="columns">
+        {right && <Date />}
+        <div className={`column is-9 ${right ? 'has-text-left': 'has-text-right'}`}>
+            {children}
+        </div>
+        {!right && <Date />}
+    </div>
+}
+
 const TimelineLayout = ({ className }) => (
     <div className={`container has-text-centered ${className}`}>
         <TimelineTitle>Open to students globally.</TimelineTitle>
