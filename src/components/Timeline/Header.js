@@ -19,12 +19,18 @@ const Line = s.hr`
 
 const HeaderTitle = s(Subtitle)`
     font-family: Roboto Condensed;
+    text-align: ${({ right }) => right ? "left" : "right"};
+    ${({maxWidth}) => maxWidth ? `max-width: ${maxWidth};` : ''}
 `
 
-const Header = ({ children, right = false }) => {
+const Header = ({ children, right = false, fontSize, maxWidth }) => {
     return <Wrapper>
         {right && <Line right />}
-        <HeaderTitle>{children}</HeaderTitle>
+        <HeaderTitle
+            maxWidth={maxWidth}
+            fontSize={fontSize}>
+            {children}
+        </HeaderTitle>
         {!right && <Line left />}
     </Wrapper>
 }
