@@ -178,8 +178,6 @@ const TimelineLayout = ({ className }) => (
                     </Header>
                     <TimelineCenteredText>
                         Full team eligbility rules <a href="/faq">here</a>
-                        <br />
-                        <br />
                         <Button
                             right
                             target="_blank"
