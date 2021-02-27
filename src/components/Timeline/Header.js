@@ -21,14 +21,17 @@ const HeaderTitle = s(Subtitle)`
     font-family: Roboto Condensed;
     text-align: ${({ right }) => right ? "left" : "right"};
     ${({maxWidth}) => maxWidth ? `max-width: ${maxWidth};` : ''}
+    ${({textTop}) => textTop && `margin-top: ${textTop};`}
 `
 
-const Header = ({ children, right = false, fontSize, maxWidth }) => {
+const Header = ({ children, right = false, fontSize, maxWidth, textTop }) => {
     return <Wrapper>
         {right && <Line right />}
         <HeaderTitle
             maxWidth={maxWidth}
-            fontSize={fontSize}>
+            fontSize={fontSize}
+            textTop={textTop}
+            >
             {children}
         </HeaderTitle>
         {!right && <Line left />}
