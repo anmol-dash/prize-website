@@ -31,6 +31,12 @@ const FooterLayout = ({ className }) => <footer className={`footer has-text-cent
         <FooterButton>About PCV</FooterButton>
         <FooterButton>Collaborate</FooterButton>
     </div>
+    <br />
+    <br />
+    <br />
+    <Text fontSize="2rem">
+        Special thanks to <a href="https://github.com/sigmachirality" target="_blank">Daniel Tao</a> for web dev ❤️
+    </Text>
 </footer>
 
 export const Footer = s(FooterLayout)`
