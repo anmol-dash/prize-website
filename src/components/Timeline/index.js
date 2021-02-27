@@ -27,12 +27,12 @@ const TimelineCenteredText = s(SubText).attrs(() => ({
 `
 
 const Event = ({ right, date, children }) => {
-    const Date = () => <div className="column is-3 has-text-left">
+    const Date = () => <div className={`column is-3 has-text-left`}>
         <Subtitle fontSize="3.5rem" roboto css={`white-space: pre-line; padding: 0;`}>{date}</Subtitle>
     </div>
     return <div className="columns">
         {right && <Date />}
-        <div className={`column is-9 ${right ? 'has-text-left': 'has-text-right'}`}>
+        <div className={`column p-0 is-10 ${right ? 'has-text-left': 'has-text-right'}`}>
             {children}
         </div>
         {!right && <Date />}
