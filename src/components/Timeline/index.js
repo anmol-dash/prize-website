@@ -32,7 +32,7 @@ const Event = ({ right, date, children }) => {
     </div>
     return <div className="columns">
         {right && <Date />}
-        <div className={`column p-0 is-10 ${right ? 'has-text-left': 'has-text-right'}`}>
+        <div className={`column p-0 ${right ? 'is-9 has-text-left': 'is-10 has-text-right'}`}>
             {children}
         </div>
         {!right && <Date />}
