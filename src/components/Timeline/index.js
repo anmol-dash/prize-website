@@ -281,24 +281,6 @@ const TimelineLayout = ({ className }) => (
                 <Text><b>Lidiya Dervisheva</b></Text>
                 <SubText>Partner<br />@ Next47</SubText>
             </div>
-            <div>
-            <img css={`
-                width: 13vw;
-                height: 13vw;
-                border-radius: 999px;
-            `} src={Head} />
-            <Spacer />
-                <Text><b>TBA</b></Text>
-            </div>
-            <div>
-            <img css={`
-                width: 13vw;
-                height: 13vw;
-                border-radius: 999px;
-            `} src={Head} />
-            <Spacer />
-                <Text><b>TBA</b></Text>
-            </div>
         </div>
     </div>
 )
