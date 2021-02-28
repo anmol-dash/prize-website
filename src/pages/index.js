@@ -1,4 +1,5 @@
 import React, { useRef } from "react"
+import Helmet from "react-helmet"
 import "./styles.scss"
 
 import {
@@ -15,6 +16,7 @@ const IndexPage = () => {
   const scrollTo = () => sectionRef && sectionRef.current.scrollIntoView()
   return (
     <>
+      <Helmet title="Penn Climate Ventures Prize" defer={false} />
       <Navbar />
       <Hero scrollTo={scrollTo} />
       <Prizes ref={sectionRef} />
