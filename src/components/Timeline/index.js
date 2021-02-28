@@ -1,6 +1,7 @@
 import React from "react"
 import s from "styled-components"
 import Seth from '../../images/seth.jpg'
+import Lidiya from '../../images/lidiya.jpg'
 import Head from '../../images/head.png'
 
 import { Title, Text, Subtitle, SubText } from "../shared/Typography"
@@ -270,13 +271,15 @@ const TimelineLayout = ({ className }) => (
                 <SubText>Founding Partner<br />@ Fifty Years</SubText>
             </div>
             <div>
-            <img css={`
-                width: 13vw;
-                height: 13vw;
-                border-radius: 999px;
-            `} src={Head} />
-            <Spacer />
-                <Text><b>TBA</b></Text>
+                <img css={`
+                    width: 13vw;
+                    height: 13vw;
+                    border-radius: 999px;
+                    object-fit: cover;
+                `} src={Lidiya} />
+                <Spacer />
+                <Text><b>Lidiya Dervisheva</b></Text>
+                <SubText>Partner<br />@ Next47</SubText>
             </div>
             <div>
             <img css={`
