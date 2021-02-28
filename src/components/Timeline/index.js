@@ -1,5 +1,8 @@
 import React from "react"
 import s from "styled-components"
+import Seth from '../../images/seth.jpg'
+import Lidiya from '../../images/lidiya.jpg'
+import Head from '../../images/head.png'
 
 import { Title, Text, Subtitle, SubText } from "../shared/Typography"
 import Button from "../shared/Button"
@@ -25,12 +28,12 @@ const TimelineCenteredText = s(SubText).attrs(() => ({
 `
 
 const Event = ({ right, date, children }) => {
-    const Date = () => <div className="column is-3 has-text-left">
+    const Date = () => <div className={`column is-3 has-text-left`}>
         <Subtitle fontSize="3.5rem" roboto css={`white-space: pre-line; padding: 0;`}>{date}</Subtitle>
     </div>
     return <div className="columns">
         {right && <Date />}
-        <div className={`column is-9 ${right ? 'has-text-left': 'has-text-right'}`}>
+        <div className={`column ${right ? 'is-9 has-text-left': 'p-0 is-10 has-text-right'}`}>
             {children}
         </div>
         {!right && <Date />}
@@ -39,7 +42,7 @@ const Event = ({ right, date, children }) => {
 
 const TimelineLayout = ({ className }) => (
     <div className={`container is-fluid has-text-centered ${className}`}>
-        <TimelineTitle>Open to students globally.</TimelineTitle>
+        <TimelineTitle fontSize={"3rem"}>Open to students globally.</TimelineTitle>
         <div css={`
             position: relative;
         `}>
@@ -60,7 +63,7 @@ const TimelineLayout = ({ className }) => (
                         rel="noreferrer noopener"
                         href="/faq"
                     >Rules and FAQs</Button>
-                    <Spacer height="15vw" />
+                    <Spacer height="10vw" />
                     <Header>
                         Attend a
                     </Header>
@@ -117,7 +120,7 @@ const TimelineLayout = ({ className }) => (
 
                 </Left>
                 <Right>
-                    <Spacer height="15vw" />
+                    <Spacer height="10vw" />
                     <Header right>
                         Register
                     </Header>
@@ -135,7 +138,7 @@ const TimelineLayout = ({ className }) => (
                         Sign Up by 4/5
                     </Button>
 
-                    <Spacer height="15vw" />
+                    <Spacer height="10vw" />
 
                     <Header right>
                         Meet Others!
@@ -177,7 +180,8 @@ const TimelineLayout = ({ className }) => (
                         Register Your Team
                     </Header>
                     <TimelineCenteredText>
-                        Full team eligbility rules <a href="/faq">here</a>
+                        Full team eligibility rules <a href="/faq">here</a>
+                        <Spacer height="2vw" />
                         <Button
                             right
                             target="_blank"
@@ -210,34 +214,92 @@ const TimelineLayout = ({ className }) => (
                             Climate founder AMAs.
                         </TimelineCenteredText>                    
                     </Event>
-
-                    <Spacer height="5vw" />
-
-                    <Header right fontSize="6rem" maxWidth="80%">
-                        Submit Your Decks! 4/16
-                        <br />
-                        11:59 PM
-                    </Header>
                 </Right>
             </Columns>
         </div>
         <TimelineTitle>
+        <Spacer height="4vw" />
+        <div className="has-text-centered" css={`width: 100%; display: block;`}>
             <Button
-                right
-                css={`display: inline-block; margin-top: 1vw`}
-                target="_blank"
-                rel="noreferrer noopener"
-                href="https://tinyurl.com/PCVPrizeSubmission"
-            >
-                Submit Here
-            </Button>
+                css={
+                `
+                    font-size: 4rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 1vw;
+                    margin-bottom: 2rem;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    display: block;
+                    float: none;
+                    width: 60%;
+                `
+                }
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://tinyurl.com/PCVPrizeSubmission"
+                >
+                    Submit your decks here!
+                </Button>
+            <Title fontSize="8rem">4/17 11:59PM EST</Title>
+        </div>
         </TimelineTitle>
-        <Spacer height="10vw"/>
-        <Title fontSize="6rem" className="has-text-left" css={`padding-right: 30%; margin-top: 3vw`}>
+        <Spacer height="5vw"/>
+        <Title fontSize="7.5rem" className="has-text-left" css={`margin-top: 3vw`}>
             Live Finals,
             4/24 at 12 PM EST.
-            See you there!
         </Title>
+        <Subtitle
+                fontSize="5rem"
+                className="has-text-left"
+                css={`
+                    font-weight: bold;
+                    justify-self: flex-start;
+                `}
+            >Judges Panel:</Subtitle>
+        <Spacer width="15vw" />
+        <div css={`display: flex; justify-content: space-evenly;`}>
+            <div>
+                <img css={`
+                    width: 13vw;
+                    height: 13vw;
+                    border-radius: 999px;
+
+                `} src={Seth} />
+                <Spacer />
+                <Text><b>Seth Bannon</b></Text>
+                <SubText>Founding Partner<br />@ Fifty Years</SubText>
+            </div>
+            <div>
+                <img css={`
+                    width: 13vw;
+                    height: 13vw;
+                    border-radius: 999px;
+                    object-fit: cover;
+                `} src={Lidiya} />
+                <Spacer />
+                <Text><b>Lidiya Dervisheva</b></Text>
+                <SubText>Partner<br />@ Next47</SubText>
+            </div>
+            <div>
+            <img css={`
+                width: 13vw;
+                height: 13vw;
+                border-radius: 999px;
+            `} src={Head} />
+            <Spacer />
+                <Text><b>TBA</b></Text>
+            </div>
+            <div>
+            <img css={`
+                width: 13vw;
+                height: 13vw;
+                border-radius: 999px;
+            `} src={Head} />
+            <Spacer />
+                <Text><b>TBA</b></Text>
+            </div>
+        </div>
     </div>
 )
 

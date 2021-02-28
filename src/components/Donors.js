@@ -46,4 +46,5 @@ const DonorsLayout = ({ className }) => (
 
 export const Donors = s(DonorsLayout)`
   margin-top: 10vw;
+  margin-bottom: 10vw;
 `

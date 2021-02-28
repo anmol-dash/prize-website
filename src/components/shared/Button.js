@@ -6,13 +6,14 @@ const Button = s.a`
     border: .2rem solid ${MIDNIGHT_BLUE};
     outline: none;
     float: ${({ right }) => right ? "right" : "left"};
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 4.5rem 1rem 4.5rem;
     color: ${MIDNIGHT_BLUE};
     cursor: pointer;
     border-radius: 999px;
     z-index: -1;
-    font-size: ${({ fontSize }) => fontSize || '3rem'};
+    font-size: ${({ fontSize }) => fontSize || '2rem'};
     font-family: Metropolis;
+    font-weight: bold;
 
     :hover {
         background-color: ${MIDNIGHT_BLUE};
