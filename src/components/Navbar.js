@@ -44,11 +44,11 @@ export const Navbar = () => {
             </a>
             }
         </div>
-        <NavButton visible={visible}>About the Prize</NavButton>
-        <NavButton visible={visible}>Official Rules</NavButton>
-        <NavButton visible={visible}>Prize FAQs</NavButton>
-        <NavButton visible={visible}>About PCV</NavButton>
-        <NavButton visible={visible}>Collaborate</NavButton>
-        <NavButton visible={visible}>Contact Us</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/tracks'>Tracks</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/rules'>Official Rules</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/faq'>Prize FAQs</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/about'>About PCV</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/collaborate'>Collaborate</NavButton>
+        <NavButton visible={visible} href='mailto: pennclimateventures@gmail.com'>Contact Us</NavButton>
     </nav>
 }

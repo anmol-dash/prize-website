@@ -6,6 +6,7 @@ import {
   Navbar, 
   Hero,
   Prizes,
+  Partners,
   Timeline,
   Donors,
   Footer
@@ -20,6 +21,7 @@ const IndexPage = () => {
       <Navbar />
       <Hero scrollTo={scrollTo} />
       <Prizes ref={sectionRef} />
+      <Partners />
       <Timeline />
       <Donors />
       <Footer />
