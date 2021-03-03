@@ -1,7 +1,7 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Subtitle } from "../shared/Typography"
-import { OXFORD_BLUE } from "../../utils/constants"
+import { Subtitle } from "../shared/Typography"
+import { OXFORD_BLUE, mediaMaxWidth } from "../../utils/constants"
 
 const Wrapper = s.div`
     display: flex;
@@ -14,7 +14,11 @@ const Line = s.hr`
     flex: 1;
     height: .4rem;
     ${({ right }) => right ? "margin-right" : "margin-left"}: 4rem;
-    background-color: ${OXFORD_BLUE}
+    background-color: ${OXFORD_BLUE};
+
+    ${mediaMaxWidth("768px")} {
+        display: none;
+    }
 `
 
 const HeaderTitle = s(Subtitle)`
