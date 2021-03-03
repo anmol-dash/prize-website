@@ -2,7 +2,7 @@ import React from 'react'
 import s from "styled-components"
 import { Text } from './shared/Typography'
 import Button from './shared/Button'
-import { MIDNIGHT_BLUE } from '../utils/constants'
+import { MIDNIGHT_BLUE, mediaMaxWidth } from '../utils/constants'
 
 const FooterLink = s.a`
     text-decoration: underline;
@@ -10,31 +10,41 @@ const FooterLink = s.a`
 `
 
 const FooterButton = s(Button).attrs(() => ({
-    fontSize: `1.5rem`
+    fontSize: `1rem`
 }))`
     margin: 1vw;
-    font-size: 2rem;
     flex: 1;
     padding: .5rem;
     cursor: pointer;
     z-index: 999;
 `
 
+const FooterLevel = s.div`
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    ${mediaMaxWidth("768px")} {
+        flex-direction: column;
+    }
+`
+
 const FooterLayout = ({ className }) => <footer className={`footer has-text-centered ${className}`}>
-    <Text>
+    <Text css="word-break: break-all;">
         Reach out to <FooterLink href="mailto:pennclimateventures@gmail.com">pennclimateventures@gmail.com</FooterLink>
     </Text>
-    <div css={`display: flex; width: 100%;`}>
-        <FooterButton href="/">About the Prize</FooterButton>
-        <FooterButton>Official Rules</FooterButton>
-        <FooterButton>Prize FAQs</FooterButton>
-        <FooterButton>About PCV</FooterButton>
-        <FooterButton>Collaborate</FooterButton>
-    </div>
+    <FooterLevel>
+        <FooterButton href="/">About</FooterButton>
+        <FooterButton>Rules</FooterButton>
+        <FooterButton>FAQs</FooterButton>
+        <FooterButton>PCV</FooterButton>
+        <FooterButton>Collab</FooterButton>
+    </FooterLevel>
     <br />
     <br />
     <br />
-    <Text fontSize="2rem">
+    <Text fontSize="1rem">
         Special thanks to <a href="https://github.com/sigmachirality" target="_blank">Daniel Tao</a> for web dev ❤️
     </Text>
 </footer>
