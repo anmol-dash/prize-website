@@ -1,6 +1,7 @@
 import React from "react"
 import s from "styled-components"
 import { Title, Subtitle } from "./shared/Typography"
+import { mediaMaxWidth } from "../utils/constants"
 
 const LevelItem = s.div.attrs(() => ({
   className: "level-item has-text-centered"
@@ -8,10 +9,36 @@ const LevelItem = s.div.attrs(() => ({
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  ${mediaMaxWidth("768px")} {
+    flex-direction: row;
+  }
 `
 
 const Level = s.div`
   margin-top: 2vw;
+
+  ${mediaMaxWidth("768px")} {
+    width: 100%;
+    padding: 10%;
+  }
+`
+
+const responsiveText = `
+  ${mediaMaxWidth("768px")} {
+    font-size: calc(2rem + 1vw);
+  }
+`
+
+const PrizeSubtitle = s(Subtitle)`
+  ${responsiveText}
+  ${mediaMaxWidth("768px")} {
+    margin-right: auto;
+  }
+`
+
+const PrizeTitle = s(Title)`
+  ${responsiveText}
 `
 
 const PrizesLayout = React.forwardRef(({ className }, ref) => (
@@ -19,16 +46,16 @@ const PrizesLayout = React.forwardRef(({ className }, ref) => (
     <Subtitle fontSize="1.5rem" css="padding: 2vw;">Dive into the most pressing environmental issues of today.</Subtitle>
     <Level className="level">
       <LevelItem>
-        <Subtitle roboto>Grand Prize</Subtitle>
-        <Title>$5000</Title>
+        <PrizeSubtitle roboto>Grand Prize</PrizeSubtitle>
+        <PrizeTitle>$5000</PrizeTitle>
       </LevelItem>
       <LevelItem>
-        <Subtitle roboto>Second</Subtitle>
-        <Title>$2500</Title>
+        <PrizeSubtitle roboto>Second</PrizeSubtitle>
+        <PrizeTitle>$2500</PrizeTitle>
       </LevelItem>
       <LevelItem>
-        <Subtitle roboto>Third</Subtitle>
-        <Title>$1250</Title>
+        <PrizeSubtitle roboto>Third</PrizeSubtitle>
+        <PrizeTitle>$1250</PrizeTitle>
       </LevelItem>
     </Level>
   </div>
