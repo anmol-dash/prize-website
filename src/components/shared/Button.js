@@ -1,5 +1,5 @@
 import s from 'styled-components'
-import { MIDNIGHT_BLUE } from "../../utils/constants"
+import { MIDNIGHT_BLUE, mediaMaxWidth } from "../../utils/constants"
 
 const Button = s.a`
     background-color: transparent;
@@ -11,13 +11,17 @@ const Button = s.a`
     cursor: pointer;
     border-radius: 999px;
     z-index: -1;
-    font-size: ${({ fontSize }) => fontSize || '2rem'};
+    font-size: calc(${({ fontSize }) => fontSize || '1rem'} + 1vw);
     font-family: Metropolis;
     font-weight: bold;
 
     :hover {
         background-color: ${MIDNIGHT_BLUE};
         color: white;
+    }
+
+    ${mediaMaxWidth("768px")} {
+        padding: .5rem 1.25rem .5rem 1.25rem;
     }
 `
 
