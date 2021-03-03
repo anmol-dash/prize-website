@@ -13,11 +13,10 @@ const Toggle = ({ toggleNavbar, visible }) => {
 
 const NavButton = s(Button).attrs(() => ({
     className: `level-item has-text-centered`,
-    fontSize: `1.5rem`
+    fontSize: `1rem`
 }))`
     visibility: ${({ visible }) => visible ? `visible` : `hidden`};
     margin: 1vw;
-    font-size: 2rem;
     flex: 1;
     padding: .5rem;
 `
@@ -25,7 +24,17 @@ const NavButton = s(Button).attrs(() => ({
 export const Navbar = () => {
     const [visible, setVisible] = useState(false);
     const toggleNavbar = () => setVisible(!visible);
-    return <nav css={`display: flex; width: 100%;`} className="navbar" role="navigation" aria-label="main navigation">
+    return <nav
+        css={`
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            ${visible || `overflow-x: hidden;`}
+        `}
+        className="navbar"
+        role="navigation"
+        aria-label="main navigation"
+        >
         <div className="navbar-brand" css={`margin-left: 1rem;`}>
             <div className="navbar-item">
                 <Toggle toggleNavbar={toggleNavbar} visible={visible} />
@@ -44,11 +53,11 @@ export const Navbar = () => {
             </a>
             }
         </div>
-        <NavButton visible={visible}>About the Prize</NavButton>
-        <NavButton visible={visible}>Official Rules</NavButton>
-        <NavButton visible={visible}>Prize FAQs</NavButton>
-        <NavButton visible={visible}>About PCV</NavButton>
-        <NavButton visible={visible}>Collaborate</NavButton>
-        <NavButton visible={visible}>Contact Us</NavButton>
+        <NavButton visible={visible}>About</NavButton>
+        <NavButton visible={visible}>Rules</NavButton>
+        <NavButton visible={visible}>FAQs</NavButton>
+        <NavButton visible={visible}>About</NavButton>
+        <NavButton visible={visible}>Collab</NavButton>
+        <NavButton visible={visible}>Contact</NavButton>
     </nav>
 }
