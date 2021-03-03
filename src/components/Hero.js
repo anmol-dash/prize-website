@@ -3,14 +3,19 @@ import s from "styled-components"
 import { Title, Subtitle } from "./shared/Typography"
 import Chevron from "../images/svg/chevron.svg"
 
+import { mediaMaxWidth } from "../utils/constants"
+
 const HeroTitle = s(Title)`
   margin-top: -2rem;
+
+  ${mediaMaxWidth("768px")}{
+    margin: 2rem;
+  }
 `
 
-const LeftMargin = Component => s(Component)`
+const SpacedSubtitle = s(Subtitle)`
   margin-left: 4rem;
 `
-const SpacedSubtitle = LeftMargin(Subtitle)
 
 const InlineBlock = s.div`
   text-align: left;
@@ -20,9 +25,22 @@ const InlineBlock = s.div`
 const HeroLayout = ({ className, scrollTo }) => (
   <div className={`container has-text-centered ${className}`}>
     <InlineBlock>
-      <SpacedSubtitle>APRIL 3rd - 17th</SpacedSubtitle>
+      <SpacedSubtitle css={` 
+        ${mediaMaxWidth("768px")}{
+          float: right;
+          margin-right: 2rem;
+        }
+      `}>
+        APRIL 3rd - 17th
+      </SpacedSubtitle>
       <HeroTitle>Penn Climate Ventures Prize</HeroTitle>
-      <SpacedSubtitle>catalyzing climate action</SpacedSubtitle>
+      <SpacedSubtitle css={`
+        ${mediaMaxWidth("768px")}{
+          display: none;
+        }
+      `}>
+        catalyzing climate action
+      </SpacedSubtitle>
     </InlineBlock>
     <br />
     <a>
