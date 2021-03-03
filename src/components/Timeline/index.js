@@ -2,7 +2,6 @@ import React from "react"
 import s from "styled-components"
 import Seth from '../../images/seth.jpg'
 import Lidiya from '../../images/lidiya.jpg'
-import Head from '../../images/head.png'
 
 import { Title, Text, Subtitle, SubText } from "../shared/Typography"
 import Button from "../shared/Button"
@@ -29,11 +28,11 @@ const TimelineCenteredText = s(SubText).attrs(() => ({
 
 const Event = ({ right, date, children }) => {
     const Date = () => <div className={`column is-3 has-text-left`}>
-        <Subtitle fontSize="3.5rem" roboto css={`white-space: pre-line; padding: 0;`}>{date}</Subtitle>
+        <Subtitle fontSize="1.5rem" roboto css={`white-space: pre-line; padding: 0;`}>{date}</Subtitle>
     </div>
-    return <div className="columns">
+    return <div className="columns is-mobile">
         {right && <Date />}
-        <div className={`column ${right ? 'is-9 has-text-left': 'p-0 is-10 has-text-right'}`}>
+        <div className={`column ${right ? 'is-9 has-text-left': 'p-0 is-9 has-text-right'}`}>
             {children}
         </div>
         {!right && <Date />}
@@ -221,18 +220,17 @@ const TimelineLayout = ({ className }) => (
         <Spacer height="4vw" />
         <div className="has-text-centered" css={`width: 100%; display: block;`}>
             <Button
+                fontSize="1.5rem"
                 css={
                 `
-                    font-size: 4rem;
                     margin-left: auto;
                     margin-right: auto;
                     margin-top: 1vw;
                     margin-bottom: 2rem;
                     padding-top: 2rem;
                     padding-bottom: 2rem;
-                    display: block;
+                    display: inline-block;
                     float: none;
-                    width: 60%;
                 `
                 }
                     target="_blank"
@@ -241,16 +239,16 @@ const TimelineLayout = ({ className }) => (
                 >
                     Submit your decks here!
                 </Button>
-            <Title fontSize="8rem">4/17 11:59PM EST</Title>
+            <Title fontSize="2rem">4/17 11:59PM EST</Title>
         </div>
         </TimelineTitle>
         <Spacer height="5vw"/>
-        <Title fontSize="7.5rem" className="has-text-left" css={`margin-top: 3vw`}>
+        <Title fontSize="3.5rem" className="has-text-left" css={`margin-top: 3vw`}>
             Live Finals,
             4/24 at 12 PM EST.
         </Title>
         <Subtitle
-                fontSize="5rem"
+                fontSize="3rem"
                 className="has-text-left"
                 css={`
                     font-weight: bold;
@@ -287,4 +285,5 @@ const TimelineLayout = ({ className }) => (
 
 export const Timeline = s(TimelineLayout)`
     margin-top: 5vw;
+    padding: 2vw;
 `
