@@ -53,11 +53,11 @@ export const Navbar = () => {
             </a>
             }
         </div>
-        <NavButton visible={visible}>About</NavButton>
-        <NavButton visible={visible}>Rules</NavButton>
-        <NavButton visible={visible}>FAQs</NavButton>
-        <NavButton visible={visible}>About</NavButton>
-        <NavButton visible={visible}>Collab</NavButton>
-        <NavButton visible={visible}>Contact</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/tracks'>About</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/rules'>Rules</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/about'>About</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/collaborate'>Collab</NavButton>
+        <NavButton visible={visible} href='mailto: pennclimateventures@gmail.com'>Contact</NavButton>
     </nav>
 }

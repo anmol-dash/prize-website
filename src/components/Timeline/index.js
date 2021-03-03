@@ -71,23 +71,23 @@ const TimelineLayout = ({ className }) => (
                     <Event date={"3/29\n\n\n"} right>
                         <Text>Energy and Transportation</Text>
                         <SubText>
-                            <b>Dr. Arthur Van Benthem</b> @ <a href="https://www.arthurvanbenthem.com/">Wharton</a><br></br>
-                            <b>Dr. Lauren Hartle</b> @ <a href="https://www.primeimpactfund.com/">Prime Impact Fund</a>
+                            <b>Dr. Arthur Van Benthem</b> @ <a target="_blank" rel="noreferrer noopener" href="https://www.arthurvanbenthem.com/">Wharton</a><br></br>
+                            <b>Ally Warson</b> @ <a target="_blank" rel="noreferrer noopener" href="https://www.up.partners/">UP.Partners</a>
                         </SubText>
                     </Event>
                     <Spacer height="2vw" />
                     <Event date={"3/30\n\n\n"} right>
                         <Text>Waste and Circularity</Text>
                         <SubText>
-                            <b>Dr. Jim Hagan</b> @ <a href="https://www.lps.upenn.edu/degree-programs/mes/faculty/james-hagan">Penn CAS</a><br></br>
-                            <b>Shuo Yang</b> @ <a href="https://fiftyyears.com/">Fifty Years</a>
+                            <b>Dr. Jim Hagan</b> @ <a target="_blank" rel="noreferrer noopener" href="https://www.lps.upenn.edu/degree-programs/mes/faculty/james-hagan">Penn CAS</a><br></br>
+                            <b>Shuo Yang</b> @ <a target="_blank" rel="noreferrer noopener" href="https://fiftyyears.com/">Fifty Years</a>
                         </SubText>
                     </Event>
                     <Spacer height="2vw" />
                     <Event date={"4/2\n\n\n"} right>
                         <Text>Food and Agriculture</Text>
                         <SubText>
-                            <b>Dr. Zhangxia Dou</b> @ <a href="https://www.vet.upenn.edu/people/faculty-clinician-search/zhengxiadou">Penn Vet</a>
+                            <b>Dr. Zhangxia Dou</b> @ <a target="_blank" rel="noreferrer noopener" href="https://www.vet.upenn.edu/people/faculty-clinician-search/zhengxiadou">Penn Vet</a>
                         </SubText>
                     </Event>
 
@@ -158,11 +158,11 @@ const TimelineLayout = ({ className }) => (
                     
                     <Event date={"4/3\n1 PM\n EST\n"} left>
                         <TimelineCenteredText>
-                            Founding Director @ <a href="https://arpa-e.energy.gov/"> ARPA-E </a>
+                            Founding Director @ <a target="_blank" rel="noreferrer noopener" href="https://arpa-e.energy.gov/"> ARPA-E </a>
                             <br />
-                            Former VP, Energy @ <a href="https://google.com/"> Google </a>
+                            Former VP, Energy @ <a target="_blank" rel="noreferrer noopener" href="https://google.com/"> Google </a>
                             <br />
-                            Co-Director, Precourt Institute for Energy @ <a href="https://energy.stanford.edu/"> Stanford </a>
+                            Co-Director, Precourt Institute for Energy @ <a target="_blank" rel="noreferrer noopener" href="https://energy.stanford.edu/"> Stanford </a>
                         </TimelineCenteredText>
                     </Event>
 
