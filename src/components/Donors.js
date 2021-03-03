@@ -9,7 +9,6 @@ const LevelItem = s.div.attrs(() => ({
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 18%;
 `
 
 const Level = s.div`
@@ -17,7 +16,7 @@ const Level = s.div`
 `
 
 const DonorsLayout = ({ className }) => (
-  <div className={`container is-fluid has-text-centered ${className}`}>
+  <div className={`container has-text-centered ${className}`}>
     <b><Text>This event could not have been possible without the support of:</Text></b>
     <Level className="level">
       <LevelItem>

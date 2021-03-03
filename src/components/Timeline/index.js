@@ -41,8 +41,8 @@ const Event = ({ right, date, children }) => {
 }
 
 const TimelineLayout = ({ className }) => (
-    <div className={`container is-fluid has-text-centered ${className}`}>
-        <TimelineTitle fontSize={"3rem"}>Open to students globally.</TimelineTitle>
+    <div className={`container has-text-centered ${className}`}>
+        <TimelineTitle fontSize="1.5rem">Open to students globally.</TimelineTitle>
         <div css={`
             position: relative;
         `}>

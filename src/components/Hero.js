@@ -18,7 +18,7 @@ const InlineBlock = s.div`
 `
 
 const HeroLayout = ({ className, scrollTo }) => (
-  <div className={`container is-fluid has-text-centered ${className}`}>
+  <div className={`container has-text-centered ${className}`}>
     <InlineBlock>
       <SpacedSubtitle>APRIL 3rd - 17th</SpacedSubtitle>
       <HeroTitle>Penn Climate Ventures Prize</HeroTitle>
