@@ -14,12 +14,6 @@ export const Subtitle = s.h2`
   font-weight: bold;
 `
 
-export const Heading3 = s.h3`
-  font-size: calc(${({ fontSize }) => fontSize || '0.6rem'} + 1vw);
-  font-family: ${({avenir}) => avenir ? `Avenir` : `Roboto`};
-  font-weight: bold;
-`
-
 export const Text = s.p`
   font-size: calc(${({ fontSize }) => fontSize || '0.3rem'} + 1vw);
   font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
