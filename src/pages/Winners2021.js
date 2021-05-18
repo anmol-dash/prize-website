@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { Title, Subtitle, Text, Heading3, Link } from "../components/shared/Typography"
+import { Title, Subtitle, Text, Link } from "../components/shared/Typography"
 import { STEEL_BLUE, GREEN } from "../utils/constants"
 import Renecycle from '../images/Renecycle.jpg'
 import Hunter from '../images/Hunter Lee _ CEO.jpg'
@@ -99,7 +99,7 @@ const FirstPlace = () => {
 
             <Columns>
                 <ColumnText css={`padding-right: 2vw`}>
-                    <b><Heading3>What was competing in the PCV Prize like?</Heading3></b>
+                    <b><Subtitle fontSize="0.6rem">What was competing in the PCV Prize like?</Subtitle></b>
                     <Text>"Competing in the PCV competition was one of the most memorable 
                         experiences in my start-up journey so far. The competition was 
                         extremely professional without sacrificing the inspirational and 
@@ -118,7 +118,7 @@ const FirstPlace = () => {
                         us such valuable insights." -- Henry</Text>
                 </ColumnText>
                 <ColumnText css={`padding-left: 2vw`}>
-                    <b><Heading3>Future Plans?</Heading3></b>
+                    <b><Subtitle fontSize="0.6rem">Future Plans?</Subtitle></b>
                     <Text>"ReneCycle is looking forward to using the funding from PCV to 
                         invest further into the product development of our smart bike lock! 
                         We are looking into partnering with new corporate campuses and 
@@ -186,7 +186,7 @@ const SecondPlace = () => {
 
             <Columns>
                 <ColumnText css={`padding-right: 2vw`}>
-                    <b><Heading3>What was competing in the PCV Prize like?</Heading3></b>
+                    <b><Subtitle fontSize="0.6rem">What was competing in the PCV Prize like?</Subtitle></b>
                     <Text>"As a team, we're really glad to participate in the movement 
                         to bring more environmental innovation to campus. Speaking to other 
                         innovators and funders in the sustainability space was a rewarding 
@@ -194,7 +194,7 @@ const SecondPlace = () => {
                         environmental entrepreneurship."</Text>
                 </ColumnText>
                 <ColumnText css={`padding-left: 2vw`}>
-                    <b><Heading3>Future Plans?</Heading3></b>
+                    <b><Subtitle fontSize="0.6rem">Future Plans?</Subtitle></b>
                     <Text>"Over the summer, Folia is looking for web developers and other 
                         help to build out our online platform and get a pilot program running 
                         by the fall. We'd encourage all like-minded, passionate students to 
@@ -232,7 +232,7 @@ const ThirdPlace = () => {
 
             <Columns>
                 <ColumnText css={`padding-right: 2vw`}>
-                    <b><Heading3>What was competing in the PCV Prize like?</Heading3></b>
+                    <b><Subtitle fontSize="0.6rem">What was competing in the PCV Prize like?</Subtitle></b>
                     <Text>"Competing in the Penn Climate Venture Prize was an eye-opening 
                         experience! Meeting the collegiate and high school teams with their 
                         startups was inspirational. As high school students, the competition 
@@ -244,7 +244,7 @@ const ThirdPlace = () => {
                         </Text>
                 </ColumnText>
                 <ColumnText css={`padding-left: 2vw`}>
-                    <b><Heading3>Future Plans?</Heading3></b>
+                    <b><Subtitle fontSize="0.6rem">Future Plans?</Subtitle></b>
                     <Text>"In the near future, Team Chaeto plans to continue research and 
                         development with their chaeto biofilters as an economically viable 
                         solution to ocean acidification. Furthermore, the company seeks 
@@ -253,7 +253,7 @@ const ThirdPlace = () => {
                         environmental agencies to market their solution globally."<br/>
                     </Text>
                 </ColumnText>
-            </Columns>       
+            </Columns>   
         </div>
     )
 }
@@ -355,7 +355,7 @@ const Summary = () => {
 
 const Winners2021 = () => {
     return (
-        <div  css={ `padding: 16vw;`}>
+        <div css={ `padding: 16vw;`}>
             <Title>2021 Winning Pitches</Title>
             <FirstPlace />
             <SecondPlace />
