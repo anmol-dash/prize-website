@@ -54,6 +54,7 @@ export const Navbar = () => {
             }
         </div>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/tracks'>About</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/Winners2021'>2021 Winning Pitches</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/rules'>Rules</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/about'>About</NavButton>
