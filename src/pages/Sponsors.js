@@ -25,11 +25,14 @@ import { Navbar } from "../components/Navbar"
     </Subtitle>
 
     <img src={SP2} />
-    <img src={Kleinman} />
-    <img src={WGY} />
-    <img src={MT} />
-
     <br/>
+    <img src={Kleinman} />
+    <br/>
+    <img src={WGY} />
+    <br/>
+    <img src={MT} />
+    <br/>
+    
     <Text>
         If you would like to become a sponsor of our 2022 Prize, please shoot us an email at pennclimateventures@gmail.com!
     </Text>
