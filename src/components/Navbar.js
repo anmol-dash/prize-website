@@ -56,6 +56,7 @@ export const Navbar = () => {
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/tracks'>Tracks</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/Winners2021'>2021 Winning Pitches</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/rules'>Official Rules</NavButton>
+        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/Schedule'>Schedule</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/about'>About PCV</NavButton>
         <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/sponsors'>Sponsors</NavButton>
