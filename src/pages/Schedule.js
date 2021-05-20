@@ -3,7 +3,7 @@ import s from "styled-components"
 import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
 import Button from '../components/shared/Button'
 import {GREEN} from "../utils/constants.js"
-import Dennis from '../images/dennis woodside.png'
+import Dennis from '../images/dennis woodside.jpg'
 import Lidiya from '../images/lidiya-dervisheva.jpeg'
 import Seth from '../images/seth.jpg'
 import Marissa from '../images/marisa sweeney.jpg'
@@ -288,7 +288,7 @@ const Finals = () => {
 
 const Schedule = () => {
     return (
-        <div css={ `padding: 8vw 16vw;`}>
+        <div css={`padding: 8vw 16vw;`}>
             <Title>PCV Prize Schedule</Title>
             <Timeline />
             <Finals />
