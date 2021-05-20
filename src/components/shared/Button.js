@@ -1,5 +1,5 @@
 import s from 'styled-components'
-import { MIDNIGHT_BLUE, mediaMaxWidth } from "../../utils/constants"
+import { mediaMaxWidth } from "../../utils/constants"
 
 const Button = s.a`
     background-color: transparent;
