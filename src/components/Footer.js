@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "styled-components"
 import { Text } from './shared/Typography'
-import Button from './shared/Button'
+import  MenuButton from './shared/MenuButton'
 import { MIDNIGHT_BLUE, mediaMaxWidth } from '../utils/constants'
 
 const FooterLink = s.a`
@@ -9,8 +9,8 @@ const FooterLink = s.a`
     color: ${MIDNIGHT_BLUE};
 `
 
-const FooterButton = s(Button).attrs(() => ({
-    fontSize: `1rem`
+const FooterButton = s(MenuButton).attrs(() => ({
+    fontSize: `.5rem`
 }))`
     margin: 1vw;
     flex: 1;
@@ -31,9 +31,6 @@ const FooterLevel = s.div`
 `
 
 const FooterLayout = ({ className }) => <footer className={`footer has-text-centered ${className}`}>
-    <Text css="word-break: break-all;">
-        Reach out to <FooterLink href="mailto:pennclimateventures@gmail.com">pennclimateventures@gmail.com</FooterLink>
-    </Text>
     <FooterLevel>
         <FooterButton href="/about">About</FooterButton>
         <FooterButton href="/rules">Rules</FooterButton>
@@ -41,12 +38,6 @@ const FooterLayout = ({ className }) => <footer className={`footer has-text-cent
         <FooterButton href="/schedule">Schedule</FooterButton>
         <FooterButton href="/sponsors">Sponsors</FooterButton>
     </FooterLevel>
-    <br />
-    <br />
-    <br />
-    <Text fontSize="1rem">
-        Special thanks to <a href="https://github.com/sigmachirality" target="_blank">Daniel Tao</a> for web dev ❤️
-    </Text>
 </footer>
 
 export const Footer = s(FooterLayout)`
