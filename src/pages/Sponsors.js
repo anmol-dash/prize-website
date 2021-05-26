@@ -4,14 +4,20 @@ import MT from '../images/M&T_Logo_Tagline.png'
 import SP2 from '../images/sp2logo.png'
 import WGY from '../images/Whartonglobalyouthprogram.png'
 
-
 import { Title, Text, Subtitle } from "../components/shared/Typography"
-import { Navbar } from "../components/Navbar"
+import { Navbar, Footer } from "../components"
+import Helmet from "react-helmet"
 
 const Sponsors = () => {
     return (
         <div>
-        <Navbar/>
+        <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
+                <title defer={false}>Sponsors</title>
+                <meta charSet="utf-8" />
+                <link rel="canonical" href="https://www.prize.pennclimateventures.org/sponsors" />
+                <meta name="description" content="Sponsor the Penn Climate Ventures Prize."/>
+        </Helmet>
+        <Navbar />
             <Title>
                 Sponsors
             </Title>
@@ -36,6 +42,9 @@ const Sponsors = () => {
             <Text>
                 If you would like to become a sponsor of our 2022 Prize, please shoot us an email at pennclimateventures@gmail.com!
             </Text>
+        <Footer />
         </div>        
     )
 }
+
+export default Sponsors

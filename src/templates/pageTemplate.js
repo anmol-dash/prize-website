@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import "../pages/styles.scss"
 import "./template.scss"
 
-import { Navbar } from "../components/Navbar"
+import { Navbar, Footer } from "../components"
 
 const Template = ({ data: {
     markdownRemark: {
@@ -26,6 +26,7 @@ const Template = ({ data: {
                 dangerouslySetInnerHTML={{ __html: html }}
             />
         </div>
+      <Footer />
     </>
  )
 

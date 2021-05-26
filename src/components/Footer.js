@@ -35,11 +35,11 @@ const FooterLayout = ({ className }) => <footer className={`footer has-text-cent
         Reach out to <FooterLink href="mailto:pennclimateventures@gmail.com">pennclimateventures@gmail.com</FooterLink>
     </Text>
     <FooterLevel>
-        <FooterButton href="/">About</FooterButton>
-        <FooterButton>Rules</FooterButton>
-        <FooterButton>FAQs</FooterButton>
-        <FooterButton>PCV</FooterButton>
-        <FooterButton>Collab</FooterButton>
+        <FooterButton href="/about">About</FooterButton>
+        <FooterButton href="/rules">Rules</FooterButton>
+        <FooterButton href="/faq">FAQs</FooterButton>
+        <FooterButton href="/schedule">Schedule</FooterButton>
+        <FooterButton href="/sponsors">Sponsors</FooterButton>
     </FooterLevel>
     <br />
     <br />

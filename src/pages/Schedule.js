@@ -1,5 +1,9 @@
 import React from "react"
 import Helmet from "react-helmet"
+import {
+    Navbar, 
+    Footer
+} from "../components"
 import s from "styled-components"
 import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
 import Button from '../components/shared/Button'
@@ -289,17 +293,21 @@ const Finals = () => {
 
 const Schedule = () => {
     return (
-        <div css={`padding: 8vw 16vw;`}>
+        <>
             <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
-                <title defer={false}>Schedule</title>
-                <meta charSet="utf-8" />
-                <link rel="canonical" href="https://www.prize.pennclimateventures.org/Schedule" />
-                <meta name="description" content="Penn Climate Ventures official schedule."/>
+                    <title defer={false}>Schedule</title>
+                    <meta charSet="utf-8" />
+                    <link rel="canonical" href="https://www.prize.pennclimateventures.org/schedule" />
+                    <meta name="description" content="Penn Climate Ventures official schedule."/>
             </Helmet>
-            <Title>PCV Prize Schedule</Title>
-            <Timeline />
-            <Finals />
-        </div>
+            <Navbar />
+            <div css={`padding: 8vw 16vw;`}>
+                <Title>PCV Prize Schedule</Title>
+                <Timeline />
+                <Finals />
+            </div>
+            <Footer />
+        </>
     )
 }
 
