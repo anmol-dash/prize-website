@@ -1,6 +1,7 @@
 ---
 slug: "/tracks"
 title: "Tracks"
+description: "Competition tracks for the Penn Climate Ventures Prize."
 ---
 
 # Tracks

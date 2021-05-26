@@ -13,7 +13,12 @@ const Template = ({ data: {
     }
 } }) => (
     <>  
-        <Helmet title={frontmatter.title} defer={false} />
+        <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize" defer={false}>
+          <title>{frontmatter.title}</title>
+          <meta charSet="utf-8" />
+          <link rel="canonical" href={"https://www.prize.pennclimateventures.org/"+frontmatter.slug} />
+          <meta name="description" content={frontmatter.description}/>
+      </Helmet>
         <Navbar />
         <div className="container">
             <div

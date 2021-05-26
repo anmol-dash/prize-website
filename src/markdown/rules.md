@@ -1,6 +1,7 @@
 ---
 slug: "/rules"
-title: "Official Rules"
+title: "Rules"
+description: "The official rules for the Penn Climate Ventures Prize."
 ---
 
 # Official Rules

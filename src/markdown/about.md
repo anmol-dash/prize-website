@@ -1,6 +1,7 @@
 ---
 slug: "/about"
-title: "About PCV"
+title: "About"
+description: "Penn Climate Ventures is building out Penn's climate tech scene."
 ---
 
 # About Us
