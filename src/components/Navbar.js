@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import s from "styled-components"
 import MenuButton from '../components/shared/MenuButton'
 import PrizeLogo from '../images/PCVPrizeSparkTeen.png'
+import "../pages/styles.scss"
 
 const NavButton = s(MenuButton).attrs(() => ({
     className: `level-item has-text-centered`,
@@ -10,7 +11,7 @@ const NavButton = s(MenuButton).attrs(() => ({
     margin: 1vw;
     flex: 1;
     padding: .5rem;
-    cursor: pointer;
+    cursor: pointer; 
 `
 
 export const Navbar = () => {
@@ -36,14 +37,33 @@ export const Navbar = () => {
                     src={PrizeLogo} 
                 />
             </a>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Tracks</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/Winners2021'>Winners</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Rules</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/Schedule'>Schedule</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/about'>About PCV</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/Sponsors'>Sponsors</NavButton>
-            <NavButton href='mailto: pennclimateventures@gmail.com'>Contact</NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>
+                Tracks
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/Winners2021'>
+                Winners
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>
+                Rules
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/Schedule'>
+                Schedule
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>
+                FAQs
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/about'>
+                About PCV
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/Sponsors'>
+                Sponsors
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/People'>
+                People
+                </NavButton>
+            <NavButton href='mailto: pennclimateventures@gmail.com'>
+                Contact
+                </NavButton>
         
     </nav>
 }

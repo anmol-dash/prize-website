@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var a = 1;","map":{"version":3,"sources":["/Users/aliristang/Desktop/prize-website/.cache/dummy.js"],"names":["a"],"mappings":"AACA,OAAO,IAAMA,CAAC,GAAG,CAAV","sourcesContent":["// Dummy file to work around a webpack hot reloading bug.\nexport const a = 1\n"]},"metadata":{},"sourceType":"module"}
