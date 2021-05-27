@@ -42,7 +42,7 @@ export const Navbar = () => {
             <NavButton target="_blank" rel="noreferrer noopener" href='/Schedule'>Schedule</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/about'>About PCV</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/sponsors'>Sponsors</NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/Sponsors'>Sponsors</NavButton>
             <NavButton href='mailto: pennclimateventures@gmail.com'>Contact</NavButton>
         
     </nav>
