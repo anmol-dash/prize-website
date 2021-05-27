@@ -39,7 +39,7 @@ export const Navbar = () => {
             <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>Tracks</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/Winners2021'>Winners</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>Rules</NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/schedule'>Schedule</NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/Schedule'>Schedule</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/about'>About PCV</NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/sponsors'>Sponsors</NavButton>
