@@ -1,208 +1,347 @@
 import React from "react"
-//import { StyleSheet, View } from "react-native";
 import Helmet from "react-helmet"
-import "../pages/styles.scss"
 import s from "styled-components"
-import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
-import ArunMajumdar from '../images/arun_majumdar.jpeg'
-import DennisWoodside from '../images/dennis woodside.jpg'
-
-
+import { Grid, Cell } from "styled-css-grid";
+import "../pages/styles.scss"
+import { Title, Text, Subtitle} from "../components/shared/Typography"
 import { Navbar, Footer } from "../components"
 
+import ArunMajumdar from '../images/arun_majumdar.jpeg'
+import DennisWoodside from '../images/dennis woodside.jpg'
+import ZhengxiaDou from '../images/zhengxia_dou.jpeg'
+import DavdGalligan from '../images/david_galligan.jpeg'
+import JamesHagan from '../images/james_hagan.jpeg'
+import PeterPsarras from '../images/peter_psarras.jpeg'
+import ArthurBenthem from '../images/arthur_benthem.jpeg'
+import ESwann from '../images/e_swann.jpg'
+import AlexBehar from '../images/alex_behar.jpeg'
+import ShuoYang from '../images/shuo_yang.jpeg'
+import AllyWarson from '../images/ally_warson.jpeg'
+import KimberlyZou from '../images/kimberly_zou.jpeg'
+import RyFisher from '../images/ry_fisher.jpeg'
+import FranzHochstrasser from '../images/franz_hochstrasser.jpeg'
+import CaitlynMcCloskey from '../images/caitlyn_mcCloskey.jpeg'
+import BenMay from '../images/ben_may.jpeg'
+import AkaashPadmanabha from '../images/akaash_padmanabha.jpeg'
+import PEGLogo from '../images/peg.jpeg'
+import SSAPLogo from '../images/ssap.png'
+import PUCPLogo from '../images/pucp.jpeg'
+
 const Headshot = s.img`
-    width: 13vw;
-    height: 13vw;
+    width: 17vw;
+    height: 17vw;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1vw;
-    margin-left: 4vw;
+    margin-top: 3vw;
 `
-//    
-
-const Caption = s.figcaption`
+const Caption = s.p`
     font-family: Roboto;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    
 `
-//margin-bottom: 0vw;
-// margin-left: 4vw;
-// margin-right: 5vw;
-const Columns = s.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vw;
-`
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     flexDirection: 'row',
-//     flexWrap: 'wrap',
-//     alignItems: 'flex-start' // if you want to fill rows left to right
-//   },
-//   item: {
-//     width: '50%' // is 50% of container width
-//   }
-// })
 
 //keynote
 const Keynote = () => {
   return (
     <div>
       <Subtitle>Keynote Speakers</Subtitle>
-
-      {/* <View style={styles.container}>
-        <View style={styles.item}><Text>{'item1'}</Text></View>
-        <View style={styles.item}><Text>{'item2'}</Text></View>
-        <View style={styles.item}><Text>{'item4'}</Text></View>
-
-      </View> */}
-
-      <div css={`display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      padding: 5vw;`}> 
-        <Columns>
-        <figure>
+      <Grid columns={2} justifyContent="center">
+        <Cell center>
           <Headshot src={ArunMajumdar} alt="Arun Majumdar" />
+        </Cell>
+        <Cell center>
+          <Headshot src={DennisWoodside} alt="Dennis Woodside" />
+        </Cell>
+
+        <Cell center>
           <Caption>
             <b>Dr. Arun Majumdar</b>
             <br />
-            <Text css={`text-align:center`}>Founder and Director of ARPA-E, <br />
-              Former Head of Google Sustainability, <br />
-              Stanford Professor</Text>
+            <Text css={`text-align:center`}>Founder and Director of ARPA-E, 
+              Former Head of Google Sustainability, Stanford Professor</Text>
           </Caption>
-        </figure>
+        </Cell>
 
-        <figure>
-          <Headshot src={DennisWoodside} alt="Dennis Woodside" />
+        <Cell center>
           <Caption>
-            <b>Dennis Woodside</b>
-            <br />
-            <Text css={`text-align:center`}>President of Impossible Foods</Text>
-          </Caption>
-        </figure>
-        </Columns>
-      </div>
-
-
+              <b>Dennis Woodside</b>
+              <br />
+              <Text css={`text-align:center`}>President of Impossible Foods</Text>
+            </Caption>
+        </Cell>
+      </Grid>
+    </div>
+  )
+}
+//panelists
+const Panelists = () => {
+  return (
+    <div>
       <Subtitle>Panelists</Subtitle>
-      <Columns>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Dr. Zhengxia Dou" />
+      <Grid columns={3} gap= "5px" justifyContent="center">
+        <Cell center>
+          <Headshot src={ZhengxiaDou} alt="Dr. Zhengxia Dou" />
+        </Cell>
+        <Cell center>
+          <Headshot src={DavdGalligan} alt="Dr. David T Galligan" />
+        </Cell>
+        <Cell center>
+          <Headshot src={JamesHagan} alt="Dr. James R Hagan" />
+        </Cell>
+        <Cell center>
           <Caption>
             <b>Dr. Zhengxia Dou</b>
             <br />
-            <Text>Professor, Agricultural Systems, <br />
-              University of Pennsylvania <br />
-              School of Veterinary Medicine, <br />
-              Department of Clinical Studies, <br />
+            <Text>Professor, Agricultural Systems, 
+              University of Pennsylvania
+              School of Veterinary Medicine, 
+              Department of Clinical Studies,
               New Bolton Center</Text>
           </Caption>
-        </figure>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Dr. David T Galligan" />
+        </Cell>
+
+        <Cell center>
           <Caption>
             <b>Dr. David T Galligan</b>
             <br />
-            <Text>Professor of Animal Health <br />
-              Economics, University of <br /> 
-              Pennsylvania, School of <br />
+            <Text>Professor of Animal Health
+              Economics, University of 
+              Pennsylvania, School of
               Veterinary Medicine</Text>
           </Caption>
-        </figure>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Dr. James R Hagan" />
+        </Cell>
+
+        <Cell>
           <Caption>
             <b>Dr. James R Hagan</b>
             <br />
-            <Text>Graduate Student Advisor in the <br />
-              Sustainability and Environmental <br />
-              Policy concentrations, Former Vice <br />
-              President of Sustainability and <br />
-              Environment at GlaxoSmithKline</Text>
+            <Text>Graduate Student Advisor in the 
+              Sustainability and Environmental 
+              Policy concentrations, Former 
+              Vice President of Sustainability and Environment
+               at GlaxoSmithKline</Text>
           </Caption>
-        </figure>
-      </Columns>
+        </Cell>
 
+        <Cell center>
+          <Headshot src={PeterPsarras} alt="Dr. Peter Psarras" />
+        </Cell>
+        <Cell center>
+          <Headshot src={ArthurBenthem} alt="Dr. Arthur van Benthem" />
+        </Cell>
+        <Cell center>
+          <Headshot src={ESwann} alt="E. Mitchell Swann" />
+        </Cell>
+        <Cell center>
+          <Caption>
+            <b>Dr. Peter Psarras</b>
+            <br />
+            <Text>Research Assistant Professor, 
+              Chemical and Biomolecular 
+              Engineering</Text>
+          </Caption>
+        </Cell>
+
+        <Cell center>
+          <Caption>
+            <b>Dr. Arthur van Benthem</b>
+            <br />
+            <Text>Associate Professor of Business
+              Economics and Public Policy</Text>
+          </Caption>
+        </Cell>
+
+        <Cell>
+          <Caption>
+            <b>E. Mitchell Swann</b>
+            <br />
+            <Text>Managing Director at 
+              Resolution Management Consultants, 
+              Philadelphia Energy Authority Board</Text>
+          </Caption>
+        </Cell>
+
+        <Cell center>
+          <Headshot src={AlexBehar} alt="Alex Behar" />
+        </Cell>
+        <Cell center>
+          <Headshot src={ShuoYang} alt="Shuo Yang" />
+        </Cell>
+        <Cell center>
+          <Headshot src={AllyWarson} alt="Ally Warson" />
+        </Cell>
+        <Cell center>
+          <Caption>
+            <b>Alex Behar</b>
+            <br />
+            <Text>Vice President at Cultivian Sandbox</Text>
+          </Caption>
+        </Cell>
+
+        <Cell center>
+          <Caption>
+            <b>Shuo Yang</b>
+            <br />
+            <Text>Principal at Fifty Years</Text>
+          </Caption>
+        </Cell>
+
+        <Cell>
+          <Caption>
+            <b>Ally Warson</b>
+            <br />
+            <Text>Senior Associate at UP Partners</Text>
+          </Caption>
+        </Cell>
+
+        <Cell center>
+          <Headshot src={KimberlyZou} alt="Kimberly Zou" />
+        </Cell>
+        <Cell center>
+          <Headshot src={RyFisher} alt="Ry Storey-Fisher" />
+        </Cell>
+        <Cell center>
+          <Headshot src={FranzHochstrasser} alt="Franz Hochstrasser" />
+        </Cell>
+        <Cell center>
+          <Caption>
+            <b>Kimberly Zou</b>
+            <br />
+            <Text>Founder of Climate Tech VC and Analyst at Energy Impact Partners</Text>
+          </Caption>
+        </Cell>
+
+        <Cell center>
+          <Caption>
+            <b>Ry Storey-Fisher</b>
+            <br />
+            <Text>Senior Partnership Associate at Powerhouse</Text>
+          </Caption>
+        </Cell>
+
+        <Cell>
+          <Caption>
+            <b>Franz Hochstrasser</b>
+            <br />
+            <Text>CEO and Co-founder of Raise Green and 
+              New Haven Community Solar, Former Senior 
+              Advisor to the Special Envoy for Climate 
+              Change @ the US State Dept</Text>
+          </Caption>
+        </Cell>
+
+      </Grid>
+    </div>
+  )
+}
+
+//moderators
+const Moderators = () => {
+  return (
+    <div>
       <Subtitle>Moderators</Subtitle>
-      <Columns>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Caitlyn McCloskey" />
+      <Grid columns={3} gap="20px" justifyContent="center">
+        <Cell center>
+          <Headshot src={CaitlynMcCloskey} alt="Caitlyn McCloskey" />
+        </Cell>
+        <Cell center>
+          <Headshot src={BenMay} alt="Ben May" />
+        </Cell>
+        <Cell center>
+          <Headshot src={AkaashPadmanabha} alt="Akaash Padmanabha" />
+        </Cell>
+        <Cell center>
           <Caption>
             <b>Caitlyn McCloskey</b>
             <br />
-            <Text>Executive member of the <br />
-              Penn Environmental Group</Text>
+            <Text>Executive member of Penn Environmental Group</Text>
           </Caption>
-        </figure>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Ben May" />
+        </Cell>
+
+        <Cell center>
           <Caption>
             <b>Ben May</b>
             <br />
-            <Text>Founder of ThinkOcean, <br />
-              Former Co-Chair of SSAP, <br />
-              Former UA Director of <br />
-              Sustainability and Community <br />
+            <Text>Founder of ThinkOcean,
+              Former Co-Chair of SSAP,
+              Former UA Director of
+              Sustainability and Community
               Impact</Text>
           </Caption>
-        </figure>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Akaash Padmanabha" />
+        </Cell>
+
+        <Cell>
           <Caption>
             <b>Akaash Padmanabha</b>
             <br />
-            <Text>Chair of Penn Dining Advisory <br />
-              Board</Text>
+            <Text>Chair of Penn Dining Advisory Board</Text>
           </Caption>
-        </figure>
-      </Columns>
+        </Cell>
+      </Grid>
+    </div>
+  )
+}
 
+//event co-sponsors
+const CoSponsors = () => {
+  return (
+    <div>
       <Subtitle>Event Co-Sponsors</Subtitle>
-      <Columns>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Penn Environmental Group" />
-          <Caption>
+      <Grid columns={3} justifyContent="center">
+        <Cell center>
+          <Headshot src={PEGLogo} alt="Penn Environmental Group" />
+        </Cell>
+        <Cell center>
+          <Headshot src={SSAPLogo} alt="Student Sustainability Association at Penn (SSAP)" />
+        </Cell>
+        <Cell center>
+          <Headshot src={PUCPLogo} alt="Penn Undergraduate Capital Partners" />
+        </Cell>
+        <Cell center>
+        <Caption>
             <b>Penn Environmental Group</b>
             <br />
-            <Text>Penn's oldest and largest <br />
-              environmental group, addressing <br />
-              environmental issues and increasing <br />
-              environmental awareness both at a <br />
+            <Text>Penn's oldest and largest 
+              environmental group, addressing
+              environmental issues and increasing
+              environmental awareness both at a
               community and global level
 			      </Text>
           </Caption>
-        </figure>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Student Sustainability Association at Penn (SSAP)" />
-          <Caption>
-            <b>Student Sustainability <br /> Association at Penn (SSAP)</b>
+        </Cell>
+
+        <Cell center>
+         <Caption>
+            <b>Student Sustainability Association at Penn (SSAP)</b>
             <br />
-            <Text>The official umbrella group of <br />
-              environmental sustainability student <br />
+            <Text>The official umbrella group of
+              environmental sustainability student
               groups on Penn's campus
 			      </Text>
           </Caption>
-        </figure>
-        <figure>
-          <Headshot src={ArunMajumdar} alt="Penn Undergraduate Capital Partners" />
-          <Caption>
+        </Cell>
+
+        <Cell>
+        <Caption>
             <b>Penn Undergraduate Capital Partners</b>
             <br />
-            <Text>Student-led organization that is <br />
-              changing the way venture capital <br />
-              interacts with universities in <br />
+            <Text>Student-led organization that is
+              changing the way venture capital 
+              interacts with universities in 
               Philadelphia and beyond.</Text>
           </Caption>
-        </figure>
-      </Columns>
+        </Cell>
+      </Grid>
+    </div>
+  )
+}
 
-      <br />
+//PCV team, advisors, and other core members
+const PCVTeam = () => {
+  return (
+    <div>
       <Subtitle>PCV Team</Subtitle>
       <Text>
         Andrew Yu - Management <br />
@@ -234,20 +373,9 @@ const Keynote = () => {
         Kevin Wang<br />
         Rayan Garg <br />
       </Text>
-
-
-
     </div>
   )
 }
-//panelists
-
-//moderators
-
-//event co-sponsors
-
-//PCV Team, Advisors, and other Core Members
-
 
 const People = () => {
   return (
@@ -262,6 +390,14 @@ const People = () => {
       <div css={`padding: 8vw 16vw;`}>
         <Title>People</Title>
         <Keynote/>
+        <br />
+        <Panelists/>
+        <br />
+        <Moderators/>
+        <br />
+        <CoSponsors/>
+        <br />
+        <PCVTeam/>
       </div>
       <Footer />
     </>
