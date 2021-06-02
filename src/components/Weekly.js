@@ -110,5 +110,5 @@ const WeekLayout = React.forwardRef(({ className }, ref) => (
 ))
 
 export const Weekly = s(WeekLayout)`
-  margin: 10vw 0 5vw;
+  margin: 10vw auto;
 `
