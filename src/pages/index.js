@@ -27,6 +27,7 @@ const IndexPage = () => {
       <Hero scrollTo={scrollTo} />
       <Weekly ref={sectionRef} />
       <Judging />
+      <Donors />
       <Footer />
     </>
   )
