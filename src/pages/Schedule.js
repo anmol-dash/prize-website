@@ -1,26 +1,17 @@
 import React from "react"
 import Helmet from "react-helmet"
-import {
-    Navbar, 
-    Footer
-} from "../components"
+import { Navbar, Footer} from "../components"
 import s from "styled-components"
 import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
-import Button from '../components/shared/Button'
+import Button from "../components/shared/Button"
+import Headshot from "../components/shared/Headshot"
 import {GREEN} from "../utils/constants.js"
+
 import Dennis from '../images/dennis woodside.jpg'
 import Lidiya from '../images/lidiya-dervisheva.jpeg'
 import Seth from '../images/seth.jpg'
-import Marissa from '../images/marisa sweeney.jpg'
+import Marisa from '../images/marisa sweeney.jpg'
 import Sam from '../images/sam bursten.jpeg'
-
-const Headshot = s.img`
-    width: 13vw;
-    height: 13vw;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 1vw;
-`
 
 const Columns = s.div`
     display: flex;
@@ -28,74 +19,62 @@ const Columns = s.div`
     align-items: flex-start;
     margin-top: 2vw;
 `
-const Caption = s.figcaption`
-    font-family: roboto;
-    font-weight: bold;
-    font-size: 20px;
+
+const EventTitle = s(Subtitle)`
+    color: ${GREEN};
+`
+
+const EventSubtitle = s(Subtitle)`
+    font-size: calc(0.6rem + 1vw);
+`
+
+const NumList = s.ol`
+    font-size: calc(0.3rem + 1vw);
+    font-family: Avenir;
+    margin-left: 1.5vw;
 `
 
 const EventGroup = s.div`
     margin: 2vw 0;
 `
 
-const EventNoDate = s.div`
-    border-left: 0.3rem solid ${GREEN};
-    padding: 0vw 1vw 0vw;
-    margin: 1vw 2vw;
+const RoundedRectangle = s.div`
+    text-align: center;
+    border-style: solid;
+    border-radius: 40px;
+    width: 70vw;
+    padding: 3vw;
+    display: block;
+    margin: 4vw auto;
 `
 
-const EventWithDate = s.div`
-    margin: 1vw 0;
-`
+const EventDetails = ({date, description, buttonText, buttonLink}) => {
+    const dayRegex = /\s\d{1,2}\s/;
+    const monthRegex = /^\w{3}/;
+    const timeRegex = /(\d{1,2}:\d{1,2}|\d{1,2})\s(A|P)M/;
 
-const EventWithDateInfo = ({date, description, btext, blink}) => {
-    // var day = /^\d{1,2}\/\d{1,2}/;
-    var day = /\s\d{1,2}\s/;
-    var month = /^\w{3}/;
-    var time = /(\d{1,2}:\d{1,2}|\d{1,2})\sPM/;
+    const month = date ? date.match(monthRegex) : "";
+    const day = date ? date.match(dayRegex) : "";
+    const time = date ? date.match(timeRegex)[0] : "";
 
     return (
-        <div>
-            <table css={`margin: 0.5vw 2vw;`}>
-                <tbody>
-                <tr css={`border-left: 0.3rem solid ${GREEN}`}>
-                    <td css={`width: 7vw; padding-left: 1vw`}>
-                        <div css={`text-align: center`}>
-                            <Text fontSize="0.3rem" roboto bold>{date.match(month)}</Text>
-                            <Text fontSize="1.5rem" roboto bold css={`line-height: 1`}>{date.match(day)}</Text>
-                            <Text fontSize="0.3rem" roboto bold >{date.match(time)[0]}</Text>
-                            <Text roboto bold css={`line-height: 0.8`}>EST</Text>
-                        </div>
-                    </td>
-                    <td css={`padding-left: 1vw`}>
-                        <EventDescription description={description}/>
-                        {btext && <div><br/><Button href={blink}>{btext}</Button></div>}
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+        <div
+            css={`display: flex;
+                  border-left: 0.3rem solid ${GREEN};
+                  flex-wrap: wrap;
+                  margin: 1vw 2vw;
+                  `}>
+            {date && <div css={`flex-basis: 7vw; padding-left: 1vw; text-align: center`}>
+                    <Text fontSize="0.3rem" roboto bold>{month}</Text>
+                    <Text fontSize="1.5rem" roboto bold css={`line-height: 1`}>{day}</Text>
+                    <Text fontSize="0.3rem" roboto bold >{time}</Text>
+                    <Text roboto bold css={`line-height: 0.8`}>EST</Text>
+            </div>}
+            <div css={`flex-basis: 55vw; padding-left: 1vw`}>
+                <Text>{description}</Text>
+                {buttonText && <Button href={buttonLink}>{buttonText}</Button>}
+            </div>
         </div>
-    )
-}
-
-const EventDescription = (props) => {
-    var linkRegex = /https?:\/\/.*$/;
-
-    return(
-        <Text css={`white-space:pre-line`}>
-            {(props.description).map((str, i) => {
-                const isLink = linkRegex.test(str);
-
-                if (isLink) {
-                    const link = str.match(linkRegex);
-                    const linkIdx = str.indexOf(link);
-                    const linkName = str.substring(0, (linkIdx));                    
-                    return (<Link key={i} href={link}>&nbsp;{linkName}</Link>)                         
-                } else {
-                    return (<span key={i}>{str}</span>)                   
-                }
-            })}
-        </Text>
     )
 }
 
@@ -103,193 +82,185 @@ const Timeline = () => {
     return (
         <div>
             <EventGroup>
-                <Subtitle fontColor={GREEN}>Registration</Subtitle>
-                <Subtitle fontSize="0.6rem">Check Your Eligibility</Subtitle>
-                <EventNoDate>
-                    <Text>All students enrolled at any institution around the world are invited to 
-                        compete in the PCV Prize.<br/>
-                        Teams of up to 5 will pitch their early stage climate startup concepts to 
-                        industry leaders and venture capitalists.<br/>
-    ​                    Team eligibility varies by competition track. <br/>
-                    ​</Text>
-                    <Button>Official Rules</Button><br/>
-                </EventNoDate>
-                <Subtitle fontSize="0.6rem">Pick a Track</Subtitle>
-                <EventNoDate>
-                    <Text><b>Collegiate Tracks</b><br/>
-                            1. Waste & Circularity <br/>
-                            2. Energy & Transportation​ <br/>
-                            3. Food & Agriculture <br/>
-                            4. Wildcard <br/>
-                            ​<br/> 
-                            <b>High School Tracks</b><br/>
-                            1. Spark Teen High School Track <br/></Text><br/>
-                    <Button>Find Your Track</Button><br/>
-                </EventNoDate>
-                <EventWithDate>
-                <Subtitle fontSize="0.6rem">Individual Registration</Subtitle>
-                <EventWithDateInfo date="MAR 29 11:59 PM EST"
-                                description={['Register individually and start building your team through our online PCV Prize Discord community and stay up to date with our latest news.']}
-                                btext="Register Now!"
-                                blink="https://tinyurl.com/PCVPrizeS21"/> 
-                </EventWithDate>
-                <EventWithDate>
-                <Subtitle fontSize="0.6rem">Team Registration</Subtitle>
-                    <EventWithDateInfo date="APR 5 11:59 PM EST"
-                                        description={['Teams will need to fully register by the deadline to qualify for the competition. Teams will need to choose a track in which to complete. Full rules can be found', 
-                                                        'here https://www.prize.pennclimateventures.org/official-rules', '.']}
-                                        btext="Team Registration"
-                                        blink="https://tinyurl.com/PCVPrizeTeamRegistration"/>
-                </EventWithDate>
+                <EventTitle>Registration</EventTitle>
+                <EventSubtitle>Check Your Eligibility</EventSubtitle>
+                <EventDetails
+                    description={<>All students enrolled at any institution around the world are invited to compete in the PCV Prize.
+                        <br/>
+                        Teams of up to 5 will pitch their early stage climate startup concepts to industry leaders and venture capitalists.
+                        <br/>
+                        Team eligibility varies by competition track.</>}
+                    buttonText="Official Rules"
+                    buttonLink="/rules"/>
+                
+
+                <EventSubtitle>Pick a Track</EventSubtitle>
+                <EventDetails
+                    description={<><b>Collegiate Tracks</b>
+                        <NumList>
+                        <li>Waste & Circularity</li>
+                        <li>Energy & Transportation​</li>
+                        <li>Food & Agriculture</li>
+                        <li>Wildcard</li>
+                        </NumList>
+                        ​<br/> 
+                        <b>High School Tracks</b>
+                        <br/>
+                        <NumList>
+                        <li>Spark Teen High School Track</li>
+                        </NumList></>}
+                    buttonText="Find Your Track"
+                    buttonLink="/tracks"/>
+
+                <EventSubtitle>Individual Registration</EventSubtitle>
+                <EventDetails
+                    date="MAR 29 11:59 PM EST"
+                    description="Register individually and start building your team through our online PCV Prize Discord community and stay up to date with our latest news."
+                    buttonText="Register Now!"
+                    buttonLink="https://tinyurl.com/PCVPrizeS21"/>
+
+                <EventSubtitle>Team Registration</EventSubtitle>
+                <EventDetails
+                    date="APR 5 11:59 PM EST"
+                    description={<>Teams will need to fully register by the deadline to qualify for the competition. Teams will need to choose a track in which to complete. Full rules can be found <Link href="/rules">here</Link>.</>}
+                    buttonText="Team Registration"
+                    buttonLink="https://tinyurl.com/PCVPrizeTeamRegistration"/>
             </EventGroup>
             <EventGroup>
-                <Subtitle fontColor={GREEN}>Attend a State-of-the-Field Panel</Subtitle>
+                <EventTitle>Attend a State-of-the-Field Panel</EventTitle>
                 <Text>Discussions about current research, innovations, and challenges with leading experts in the fields.</Text>
-                <EventWithDate> 
-                    <Subtitle fontSize="0.6rem">Waste & Circularity</Subtitle>
-                    <Text fontSize="0.2rem">Co-sponsored by 
-                    <Link href="https://www.sustainability.upenn.edu/partners/student-groups"> Penn SSAP</Link></Text>                
-                    <EventWithDateInfo date="MAR 30 8 PM EST"
-                                    description={['Dr. Jim Hagan @' ,'Penn LPS https://earth.sas.upenn.edu/people/james-hagan', 
-                                                    '\n Shuo Yang @', 'Fifty Years https://fiftyyears.com/team/shuo-yang', 
-                                                    '\n with Caitlyn McCloskey from PEG as moderator']}/>
-                </EventWithDate>
+                
+                <EventSubtitle fontSize="0.6rem">Waste & Circularity</EventSubtitle>
+                <Text>Co-sponsored by 
+                    <Link href="https://www.sustainability.upenn.edu/partners/student-groups"> Penn SSAP</Link>
+                </Text>
+                <EventDetails
+                    date="MAR 30 8 PM EST"
+                    description={<>Dr. Jim Hagan @ <Link href="https://earth.sas.upenn.edu/people/james-hagan">Penn LPS</Link>
+                        <br/>
+                        Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang">Fifty Years</Link>
+                        <br/>
+                        with Caitlyn McCloskey from <Link href="http://pennenvironmentalgroup.weebly.com/">PEG</Link> as moderator</>}/>
 
-                <EventWithDate>
-                    <Subtitle fontSize="0.6rem">Energy & Transportation</Subtitle>
-                    <Text fontSize="0.2rem">Co-sponsored by the
-                    <Link href="http://pennenvironmentalgroup.weebly.com/"> Penn Environmental Group</Link></Text>                
-                    <EventWithDateInfo date="APR 1 5 PM EST"
-                                    description={['Dr. Arthur van Benthem @' ,'Wharton http://www.arthurvanbenthem.com/', 
-                                                    '\n Dr. Peter Psarras @', 'Penn Carbon Capture https://kleinmanenergy.upenn.edu/news-insights/penn-carbon-capture-expert-joins-biden-administration/', 
-                                                    '\n Ally Warson @', 'UP Partners https://www.up.partners/ally-warson', 
-                                                    '\n E. Mitchell Swaan @', 'PEA https://philaenergy.org/about-pea/board-and-staff/e-mitchell-swann-secretary/',
-                                                    '\n with Ben May from', 'ThinkOcean https://thinkoceanglobal.org/ben-may' ,'as moderator']}/>
-                </EventWithDate>
+                <EventSubtitle>Energy & Transportation</EventSubtitle>
+                <Text>Co-sponsored by the
+                    <Link href="http://pennenvironmentalgroup.weebly.com/"> Penn Environmental Group</Link>
+                </Text>      
+                <EventDetails
+                    date="APR 1 5 PM EST"
+                    description={<>Dr. Arthur van Benthem @ <Link href="http://www.arthurvanbenthem.com/">Wharton</Link>
+                        <br/>
+                        Dr. Peter Psarras @ <Link href="https://kleinmanenergy.upenn.edu/news-insights/penn-carbon-capture-expert-joins-biden-administration/">Penn Carbon Capture</Link>
+                        <br/>
+                        Ally Warson @ <Link href="https://www.up.partners/ally-warson">UP Partners</Link>
+                        <br/>
+                        E. Mitchell Swaan @ <Link href="https://philaenergy.org/about-pea/board-and-staff/e-mitchell-swann-secretary/">PEA</Link>
+                        <br/>
+                        with Ben May from <Link href="https://thinkoceanglobal.org/ben-may">ThinkOcean</Link> as moderator</>}/>          
 
-                <EventWithDate>
-                    <Subtitle fontSize="0.6rem">Food & Agriculture</Subtitle>
-                    <Text fontSize="0.2rem">Co-sponsored by the
-                    <Link href="https://www.agribusiness-club.com/"> Wharton AgriBusiness Club</Link></Text>                
-                    <EventWithDateInfo date="APR 2 4 PM EST"
-                                    description={['Dr. Zhengxia Dou @' ,'Penn Vet https://www.vet.upenn.edu/research/centers-laboratories/research-laboratory/research-laboratory/dou-laboratory', 
-                                                    '\n Dr. David Galligan @', 'Penn Vet https://www.vet.upenn.edu/people/faculty-clinician-search/davidgalligan', 
-                                                    '\n Alex Behar @', 'Cultivian Sandbox https://cultiviansbx.com/news-and-events/about/meet-the-team/alex-behar/', 
-                                                    '\n with Akaash Padmanabha from Penn Dining Advisory as moderator']}/>
-                </EventWithDate>
-                <br/>
+                <EventSubtitle>Food & Agriculture</EventSubtitle>
+                <Text>Co-sponsored by the
+                    <Link href="https://www.agribusiness-club.com/"> Wharton AgriBusiness Club</Link>
+                </Text>          
+                <EventDetails
+                    date="APR 2 4 PM EST"
+                    description={<>Dr. Zhengxia Dou @ <Link href="https://www.vet.upenn.edu/research/centers-laboratories/research-laboratory/research-laboratory/dou-laboratory">Penn Vet</Link>
+                        <br/>
+                        Dr. David Galligan @ <Link href="https://www.vet.upenn.edu/people/faculty-clinician-search/davidgalligan">Penn Vet</Link>
+                        <br/>
+                        Alex Behar @ <Link href="https://cultiviansbx.com/news-and-events/about/meet-the-team/alex-behar/">Cultivian Sandbox</Link>
+                        <br/>
+                        with Akaash Padmanabha from Penn Dining Advisory as moderator</>}/>      
                 <Button href="https://tinyurl.com/PCVPrizeS21">Get the Link</Button>
             </EventGroup>
 
             <EventGroup>
-                <Subtitle fontColor={GREEN}>PCV Prize Launch Event</Subtitle>
+                <EventTitle>PCV Prize Launch Event</EventTitle>
                 <Text>You will be briefed on prize details, hear from Dr. Majumdar, and get a chance to network with peers.</Text>
-                <EventWithDate>
-                    <Subtitle fontSize="0.6rem">Opening Keynote with Dr. Arun Majumdar</Subtitle>
-                    <EventWithDateInfo date="APR 3 1 PM EST"
-                                        description={['Founding Director @', 'ARPA-E https://arpa-e.energy.gov/',
-                                                    '\n Former VP, Energy @', 'Google https://google.com/',
-                                                    '\n Co-Director, Precourt Institute for Energy @', 'Stanford https://energy.stanford.edu/']}/>
-                </EventWithDate>
-                <EventWithDate>
-                    <Subtitle fontSize="0.6rem">Find a Team</Subtitle>
-                    <EventWithDateInfo date="APR 3 2 PM EST"
-                                        description={['Speed-dating, but for climate co-founders.']}/>
-                </EventWithDate>
+                    <EventSubtitle>Opening Keynote with Dr. Arun Majumdar</EventSubtitle>
+                    <EventDetails
+                        date="APR 3 1 PM EST"
+                        description={<>Founding Director @ <Link href="https://arpa-e.energy.gov/">ARPA-E</Link>
+                            <br/>
+                            Former VP, Energy @ <Link href="https://google.com/">Google</Link>
+                            <br/>
+                            Co-Director, Precourt Institute for Energy @ <Link href="https://energy.stanford.edu/">Stanford</Link></>}/>
+                  
+                <EventSubtitle>Find a Team</EventSubtitle>
+                <EventDetails 
+                    date="APR 3 2 PM EST"
+                    description="Speed-dating, but for climate co-founders."/>
             </EventGroup>
 
             <EventGroup>
-                <Subtitle fontColor={GREEN}>Workshop Your Proposal</Subtitle>
-                <EventWithDate>
-                    <Subtitle fontSize="0.6rem">VC Panel: Investing, Due Diligence, and Strategic Partnerships</Subtitle>
-                    <Text>Co-sponsored by <Link href="https://collegiate.vc/penn">Penn Undergraduate Capital Partners</Link></Text>
-                    <EventWithDateInfo date="APR 13 5 PM EST"
-                                        description={['Kimberly Zou @', 'Energy Impact Partners https://www.linkedin.com/in/kimberly-zou/',
-                                                        '\n Ry Storey-Fisher @', 'Powerhouse Fund https://www.linkedin.com/in/ry-storey-fisher/',
-                                                        '\n Franz Hochstrasser @', 'Raise Green https://www.raisegreen.com/']}/>
-                </EventWithDate>
-                <Subtitle fontSize="0.6rem">Pitch Office Hours</Subtitle>
-                <EventNoDate>
-                    <Text>Sign up for mentor office hours.</Text><br/>
-                    <Button>Sign Up Here</Button>
-                </EventNoDate>
+                <EventTitle>Workshop Your Proposal</EventTitle>
+                <EventSubtitle>VC Panel: Investing, Due Diligence, and Strategic Partnerships</EventSubtitle>
+                <Text>Co-sponsored by <Link href="https://collegiate.vc/penn"> Penn Undergraduate Capital Partners</Link></Text>
+                <EventDetails
+                    date="APR 13 5 PM EST"
+                    description={<>Kimberly Zou @ <Link href="https://www.linkedin.com/in/kimberly-zou/">Energy Impact Partners</Link>
+                        <br/>
+                        Ry Storey-Fisher @ <Link href="https://www.linkedin.com/in/ry-storey-fisher/">Powerhouse Fund</Link>
+                        <br/>
+                        Franz Hochstrasser @ <Link href="https://www.raisegreen.com/">Raise Green</Link></>}/>
+            
+                <EventSubtitle>Pitch Office Hours</EventSubtitle>
+                <EventDetails
+                    description="Sign up for mentor office hours."
+                    buttonText="Sign Up Here"/>
             </EventGroup>
 
-            <div css={`text-align: center;
-                        border-style: solid;
-                        border-radius: 40px;
-                        width: 70vw;
-                        padding: 3vw;
-                        display: block;
-                        margin: 4vw auto 0`}>
+            <RoundedRectangle>
                 <Text fontSize="2rem" roboto bold>First Round Judging <br/> Due 4/16 at 11:59 PM EST</Text><br/>
                 <Button href="https://tinyurl.com/PCVPrizeSubmission">Submit Your Decks!</Button>
-            </div>
+            </RoundedRectangle>
         </div>
     )
 }
 
-const Finals = () => {
-    return (
-        <div css={`text-align: center;
-                   border-style: solid;
-                   border-radius: 40px;
-                   width: 70vw;
-                   padding: 3vw;
-                   display: block;
-                   margin: 4vw auto`}>
-            <Text fontSize="2rem" roboto bold>Live Finals <br/> 4/24 at 12 PM EST <br/> with keynote from</Text>
-            <div css={`display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 2vw;`}>
-                <Headshot src={Dennis} alt="Dennis Woodside"/>
-                <Caption css={`text-align: left`}>
-                    <b>Dennis Woodside</b>
-                    <br/>
-                    <Text>President of Impossible Foods</Text>
-                </Caption>
-            </div>
-
-            <Text fontSize="2rem" roboto bold>and judging by</Text>
-
-            <Columns>
-                <figure>
-                    <Headshot src={Lidiya} alt="Lidiya Dervisheva"/>
-                    <Caption>
-                        <b>Lidiya Dervisheva</b>
-                        <br/>
-                        <Text>Partner <br/> @ Next47</Text>
-                    </Caption>
-                </figure>
-                <figure>
-                    <Headshot src={Seth} alt="Seth Bannon"/>
-                    <Caption>
-                        <b>Seth Bannon</b>
-                        <br/>
-                        <Text>Founding Partner <br/>@ Fifty Years</Text>
-                    </Caption>
-                </figure>
-                <figure>
-                    <Headshot src={Marissa} alt="Marisa Sweeney"/>
-                    <Caption>
-                        <b>Marisa Sweeney</b>
-                        <br/>
-                        <Text>Director <br/>@ Generate Capital</Text>
-                    </Caption>
-                </figure>
-                <figure>
-                    <Headshot src={Sam} alt="Sam Bursten"/>
-                    <Caption>
-                        <b>Sam Bursten</b>
-                        <br/>
-                        <Text>Vice President <br/>@ Energy Impact Partners</Text>
-                    </Caption>
-                </figure>
-            </Columns>
+const Finals = () => (
+    <RoundedRectangle>
+        <Text fontSize="2rem" roboto bold>Live Finals, 4/24 at 12 PM EST, <br/> with keynote from</Text>
+        <div css={`display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2vw;`}>
+            <Headshot 
+                imageSrc={Dennis} 
+                imageAlt={"Dennis"} 
+                name={"Dennis Woodside"} 
+                description={"President of Impossible Foods"}/>
         </div>
-    )
-}
+
+        <Text fontSize="2rem" roboto bold>and judging by</Text>
+
+        <Columns>
+            <Headshot 
+                    imageSrc={Lidiya} 
+                    imageAlt={"Lidiya Dervisheva"} 
+                    name={"Lidiya Dervisheva"} 
+                    description={<>Partner <br/> @ Next47</>}/>
+            <Headshot 
+                imageSrc={Seth} 
+                imageAlt={"Seth Bannon"} 
+                name={"Seth Bannon"} 
+                description={<>Founding Partner <br/> @ Fifty Years</>}/>
+            
+            <Headshot 
+                imageSrc={Marisa} 
+                imageAlt={"Marisa Sweeney"} 
+                name={"Marisa Sweeney"} 
+                description={<>Director <br/> @ Generate Capital</>}/>
+
+            <Headshot 
+                imageSrc={Sam} 
+                imageAlt={"Sam Bursten"} 
+                name={"Sam Bursten"} 
+                description={<>Vice President <br/>@ Energy Impact Partners</>}/>
+        </Columns>
+    </RoundedRectangle>
+)
+
 
 const Schedule = () => {
     return (

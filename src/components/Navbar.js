@@ -40,13 +40,13 @@ export const Navbar = () => {
             <NavButton target="_blank" rel="noreferrer noopener" href='/tracks'>
                 Tracks
                 </NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/Winners2021'>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/2021/winners'>
                 Winners
                 </NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>
                 Rules
                 </NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/Schedule'>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/schedule'>
                 Schedule
                 </NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>

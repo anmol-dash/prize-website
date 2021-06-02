@@ -6,7 +6,9 @@ const Button = s.a`
     border: .2rem solid #363635;
     outline: none;
     //float: ${({ right }) => right ? "right" : "left"};
-    padding: 0.6rem 2.8rem 0.6rem 2.8rem;
+    display: inline-block;
+    margin-top: 1vw;
+    padding: 0.3rem 2.8rem;
     color: #363635;
     cursor: pointer;
     border-radius: 999px;
