@@ -1,5 +1,5 @@
 import s from "styled-components"
-import {STEEL_BLUE, GREEN, FOREST_GREEN} from "../../utils/constants"
+import {STEEL_BLUE, GREEN, FOCUS_GREEN} from "../../utils/constants"
 
 export const Title = s.h1`
   font-size: calc(${({ fontSize }) => fontSize || '2.5rem'} + 2vw);
@@ -18,7 +18,7 @@ export const Subtitle = s.h2`
 export const Text = s.p`
   font-size: calc(${({ fontSize }) => fontSize || '0.3rem'} + 1vw);
   font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
-  color: ${({fontColor}) => fontColor || '#000000'};
+  color: ${({fontColor}) => fontColor || `black`};
   ${({bold}) => bold && `font-weight: bold`};
 `
 
@@ -31,7 +31,8 @@ export const Link = s.a`
     font-size: calc(${({ fontSize }) => fontSize || '0.3rem'} + 1vw);
     font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
     color: ${GREEN};
+
     &:hover {
-      color: #688a33;
+      color: ${FOCUS_GREEN};
     }
 `
