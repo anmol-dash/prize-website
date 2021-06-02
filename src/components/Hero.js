@@ -1,20 +1,15 @@
 import React from "react"
 import s from "styled-components"
 import { Title, Subtitle } from "./shared/Typography"
+import Button from "./shared/Button"
 import Chevron from "../images/svg/chevron.svg"
 
 import { mediaMaxWidth } from "../utils/constants"
 
 const HeroTitle = s(Title)`
-  margin-top: -2rem;
-
   ${mediaMaxWidth("768px")}{
     margin: 2rem;
   }
-`
-
-const SpacedSubtitle = s(Subtitle)`
-  margin-left: 4rem;
 `
 
 const InlineBlock = s.div`
@@ -25,28 +20,40 @@ const InlineBlock = s.div`
 const HeroLayout = ({ className, scrollTo }) => (
   <div className={`container has-text-centered ${className}`}>
     <InlineBlock>
-      <SpacedSubtitle css={` 
+      <Subtitle css={` 
         ${mediaMaxWidth("768px")}{
           float: right;
           margin-right: 2rem;
         }
       `}>
-        APRIL 3rd - 17th
-      </SpacedSubtitle>
+        March 30th - April 24th | Open to students globally.
+      </Subtitle>
       <HeroTitle>Penn Climate Ventures Prize</HeroTitle>
-      <SpacedSubtitle css={`
+      <Subtitle css={`
         ${mediaMaxWidth("768px")}{
           display: none;
         }
       `}>
         catalyzing climate action
-      </SpacedSubtitle>
+      </Subtitle>
     </InlineBlock>
     <br />
+    <Button 
+      css={`display: block; 
+            width: 25vw; 
+            margin: 3vw auto;
+            background-color: #86b3d1;
+
+            :hover {
+              background-color: #86b3d1;
+            }`}>
+      Registration Closed for 2021
+    </Button>
+
     <a>
       <Chevron onClick={scrollTo} css={`
-        width: 4rem;
-        margin-top: 10vw;
+        width: 3rem;
+        margin-top: 3vw;
       `} />
     </a>
   </div>

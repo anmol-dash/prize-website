@@ -12,13 +12,14 @@ export const Subtitle = s.h2`
   font-size: calc(${({ fontSize }) => fontSize || '1rem'} + 1vw);
   font-family: ${({avenir}) => avenir ? `Avenir` : `Roboto`};
   font-weight: bold;
+  ${({center}) => center && `text-align: center`}
 `
 
 export const Text = s.p`
   font-size: calc(${({ fontSize }) => fontSize || '0.3rem'} + 1vw);
   font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
   color: ${({fontColor}) => fontColor || '#000000'};
-  font-weight: ${({bold}) => bold ? `bold` : `normal`};
+  ${({bold}) => bold && `font-weight: bold`};
 `
 
 export const SubText = s.p`
@@ -27,6 +28,8 @@ export const SubText = s.p`
 `
 
 export const Link = s.a`
+    font-size: calc(${({ fontSize }) => fontSize || '0.3rem'} + 1vw);
+    font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
     color: ${GREEN};
     &:hover {
       color: #688a33;
