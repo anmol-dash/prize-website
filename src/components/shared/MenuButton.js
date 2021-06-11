@@ -9,7 +9,6 @@ const MenuButton = s.a`
     flex: 0 1 content;
     outline: none;
     padding: 0 1rem;
-
     color: ${GREY};
     cursor: pointer;
     z-index: -1;

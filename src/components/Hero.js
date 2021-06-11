@@ -40,9 +40,10 @@ const HeroLayout = ({ className, scrollTo }) => (
     <br />
     <Button 
       css={`display: block; 
-            width: 25vw; 
+            width: 29vw; 
             margin: 3vw auto;
             background-color: #86b3d1;
+            font-weight: bold;
 
             :hover {
               background-color: #86b3d1;
