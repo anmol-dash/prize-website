@@ -1,13 +1,13 @@
 import React from 'react'
 import s from "styled-components"
 import MenuButton from '../components/shared/MenuButton'
-import { mediaMaxWidth } from '../utils/constants'
 import "../pages/styles.scss"
 
 import PrizeLogo from "../images/PCVPrizeSparkTeen.png"
-import Facebook from "../images/footer/facebook.png"
-import Instagram from "../images/footer/instagram.png"
-import LinkedIn from "../images/footer/linkedin.png"
+import Facebook from "../images/menu/facebook.png"
+import Instagram from "../images/menu/instagram.png"
+import LinkedIn from "../images/menu/linkedin.png"
+import Email from "../images/menu/email.png"
 
 const NavButton = s(MenuButton).attrs(() => ({
     className: `level-item has-text-centered`,
@@ -65,15 +65,11 @@ export const Navbar = () => {
             <NavButton target="_blank" rel="noreferrer noopener" href='/Sponsors'>
                 Sponsors
                 </NavButton>
-
             <NavButton target="_blank" rel="noreferrer noopener" href='/about'>
                 About PCV
                 </NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>
                 FAQs
-                </NavButton>
-            <NavButton href='mailto: pennclimateventures@gmail.com'>
-                Contact
                 </NavButton>
 
             <a href="https://www.facebook.com/pennclimateventures">
@@ -85,5 +81,8 @@ export const Navbar = () => {
             <a href="https://www.linkedin.com/company/penn-climate-ventures">
                 <SocialMedia src={LinkedIn} alt="LinkedIn"/>
                 </a>
+            <a href="mailto: pennclimateventures@gmail.com">
+                <SocialMedia src={Email} alt="Email"/>
+            </a>
     </nav>
 }

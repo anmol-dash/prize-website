@@ -3,9 +3,10 @@ import s from "styled-components"
 import  MenuButton from './shared/MenuButton'
 import { mediaMaxWidth, GREY } from '../utils/constants'
 
-import Facebook from "../images/footer/facebook.png"
-import Instagram from "../images/footer/instagram.png"
-import LinkedIn from "../images/footer/linkedin.png"
+import Facebook from "../images/menu/facebook.png"
+import Instagram from "../images/menu/instagram.png"
+import LinkedIn from "../images/menu/linkedin.png"
+import Email from "../images/menu/email.png"
 
 const FooterButton = s(MenuButton).attrs(() => ({
     fontSize: `.2rem`
@@ -17,7 +18,7 @@ const FooterButton = s(MenuButton).attrs(() => ({
 
 const FooterLevel = s.div`
     display: flex;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
 
     ${mediaMaxWidth("768px")} {
@@ -43,6 +44,7 @@ const FooterLayout = ({ className }) => <footer className={`footer has-text-cent
         <a href="https://www.facebook.com/pennclimateventures"><SocialMedia src={Facebook} alt="Facebook"/></a>
         <a href="https://www.instagram.com/pennclimateventures/?hl=en"><SocialMedia src={Instagram} alt="Instagram"/></a>
         <a href="https://www.linkedin.com/company/penn-climate-ventures"><SocialMedia src={LinkedIn} alt="LinkedIn"/></a>
+        <a href="mailto: pennclimateventures@gmail.com"><SocialMedia src={Email} alt="Email"/></a>
     </FooterLevel>
 </footer>
 
