@@ -61,6 +61,7 @@ const LevelItem = s.div.attrs(() => ({
 
 const PrizeTitle = s(Text)`
     font-family: roboto;
+    font-weight: bold;
     color: ${STEEL_BLUE};
     text-align: center;
     font-size: calc(0.8rem + 1vw);
@@ -68,6 +69,7 @@ const PrizeTitle = s(Text)`
 
 const PrizeSubtitle = s(Text)`
     font-family: roboto;
+    font-weight: bold;
     color: ${STEEL_BLUE};
     text-align: center;
     font-size: calc(2.8rem + 1vw);

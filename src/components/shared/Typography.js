@@ -31,6 +31,7 @@ export const Link = s.a`
     font-size: calc(${({ fontSize }) => fontSize || '0.3rem'} + 1vw);
     font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
     color: ${GREEN};
+    ${({bold}) => bold && `font-weight: bold`};
 
     &:hover {
       color: ${FOCUS_GREEN};
