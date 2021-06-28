@@ -1,13 +1,13 @@
 import React from "react"
-import { Subtitle, Text, Link } from "../../components/shared/Typography"
+import { Subtitle, Text, Link } from "../shared/Typography"
 import { Logo, Columns, ColumnText, Figure, TeamSubtitle } from "./Layout"
 
-import FoliaLogo from '../../images/winners2021/Folia.jpg'
-import Rosanna from '../../images/winners2021/RosannaJiang.jpg'
-import Caroline from '../../images/winners2021/CarolineLi.jpg'
-import Zachary from '../../images/winners2021/ZacharyHuang-Ogata.jpg'
-import Stephanie from '../../images/winners2021/StephanieBi.jpg'
-import Ryoma from '../../images/winners2021/RyomaHarris.jpg'
+import FoliaLogo from "../../images/winners2021/Folia.jpg"
+import Rosanna from "../../images/winners2021/RosannaJiang.jpg"
+import Caroline from "../../images/winners2021/CarolineLi.jpg"
+import Zachary from "../../images/winners2021/ZacharyHuang-Ogata.jpg"
+import Stephanie from "../../images/winners2021/StephanieBi.jpg"
+import Ryoma from "../../images/winners2021/RyomaHarris.jpg"
 
 const Folia = () => (
     <div>
@@ -52,9 +52,11 @@ const Folia = () => (
                     reach out!"
                     <br/>
                     <br/>
-                    <b>View their deck!</b><br/>
+                    <b>View their deck!</b>
+                    <br/>
                     <Link href="https://tinyurl.com/FoliaPitch2021">
-                    https://tinyurl.com/FoliaPitch2021</Link>
+                        https://tinyurl.com/FoliaPitch2021
+                    </Link>
                     <br/>
                 </Text>
             </ColumnText>

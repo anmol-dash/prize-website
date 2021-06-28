@@ -1,14 +1,14 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { Title } from "../../components/shared/Typography"
 import { STEEL_BLUE } from "../../utils/constants"
-import { Columns, ColumnText, TeamSummary } from "./Layout"
+import { Navbar, Footer } from "../../components"
 
-
-import Renecycle from "./Renecycle"
-import Folia from "./Folia"
-import TeamChaeto from "./TeamChaeto"
-import NASADYA from "./NASADYA"
-
+import { Columns, ColumnText, TeamSummary } from "../../components/2021/Layout"
+import Renecycle from "../../components/2021/Renecycle"
+import Folia from "../../components/2021/Folia"
+import TeamChaeto from "../../components/2021/TeamChaeto"
+import NASADYA from "../../components/2021/NASADYA"
 
 const Summary = () => (
     <div css={`text-align: center`}>
@@ -60,14 +60,24 @@ const Summary = () => (
 )
 
 const Winners2021 = () => (
-    <div css={ `padding: 16vw;`}>
-        <Title>2021 Winning Pitches</Title>
-        <Renecycle />
-        <Folia />
-        <TeamChaeto />
-        <NASADYA />
-        <Summary />
-    </div>
+    <>
+        <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize" defer={false}>
+            <Title>2021 Winning Pitches</Title>
+            <meta charSet="utf-8" />
+            <link rel="canonical" href={"https://www.prize.pennclimateventures.org/2021-winning-pitches"} />
+            <meta name="description" content="Penn Climate Ventures 2021 winning pitches." />
+        </Helmet>
+        <Navbar />
+        <div css={`padding: 8vw 16vw;`}>
+            <Title>2021 Winning Pitches</Title>
+            <Renecycle />
+            <Folia />
+            <TeamChaeto />
+            <NASADYA />
+            <Summary />
+        </div>
+        <Footer />
+    </>
 )
 
 export default Winners2021

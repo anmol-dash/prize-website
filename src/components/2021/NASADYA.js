@@ -1,15 +1,15 @@
 import React from "react"
-import { Subtitle, Text, Link } from "../../components/shared/Typography"
+import { Subtitle, Text, Link } from "../shared/Typography"
 import { Headshot, Name, Logo, Columns } from "./Layout"
 
-import NASADYALogo from '../../images/winners2021/NASADYA.jpg'
-import Chaitanya from '../../images/winners2021/ChaitanyaGulati.jpg'
-import Praneeth from '../../images/winners2021/PraneethNagarjuna.jpg'
-import Devansh from '../../images/winners2021/DevanshSethia.jpg'
-import Khadeeja from '../../images/winners2021/KhadeejaMalik.jpg'
-import Dan from '../../images/winners2021/DanDuffy.jpg'
-import Nate from '../../images/winners2021/NateKraemer.jpg'
-import Madhu from '../../images/winners2021/MadhuDevi.jpg'
+import NASADYALogo from "../../images/winners2021/NASADYA.jpg"
+import Chaitanya from "../../images/winners2021/ChaitanyaGulati.jpg"
+import Praneeth from "../../images/winners2021/PraneethNagarjuna.jpg"
+import Devansh from "../../images/winners2021/DevanshSethia.jpg"
+import Khadeeja from "../../images/winners2021/KhadeejaMalik.jpg"
+import Dan from "../../images/winners2021/DanDuffy.jpg"
+import Nate from "../../images/winners2021/NateKraemer.jpg"
+import Madhu from "../../images/winners2021/MadhuDevi.jpg"
 
 const NASADYA = () => (
     <div>

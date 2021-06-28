@@ -1,9 +1,9 @@
 import React from "react"
-import { Subtitle, Text, Link } from "../../components/shared/Typography"
-import { Headshot, Name, Columns, ColumnText, TeamSubtitle } from "./Layout"
+import { Subtitle, Text, Link } from "../shared/Typography"
+import { Name, Columns, ColumnText, TeamSubtitle } from "./Layout"
 
-import TeamChaetoLogo from '../../images/winners2021/TeamChaeto.jpg'
-import ChrisNick from '../../images/winners2021/ChrisAndNickKwok.jpg'
+import TeamChaetoLogo from "../../images/winners2021/TeamChaeto.jpg"
+import ChrisNick from "../../images/winners2021/ChrisAndNickKwok.jpg"
 
 const TeamChaeto = () => (
     <div>
@@ -49,6 +49,12 @@ const TeamChaeto = () => (
                     Team Chaeto will pursue government contracts and partnerships with 
                     environmental agencies to market their solution globally."
                     <br/>
+                    <br/>
+                    <b>View their deck!</b>
+                    <br/>
+                    <Link href="https://tinyurl.com/TeamChaetoPitch2021">
+                        https://tinyurl.com/TeamChaetoPitch2021
+                    </Link>
                 </Text>
             </ColumnText>
         </Columns>   

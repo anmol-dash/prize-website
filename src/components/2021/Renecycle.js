@@ -1,5 +1,5 @@
 import React from "react"
-import { Subtitle, Text, Link } from "../../components/shared/Typography"
+import { Subtitle, Text, Link } from "../shared/Typography"
 import { Logo, Columns, ColumnText, Figure, TeamSubtitle } from "./Layout"
 
 import RenecycleLogo from '../../images/winners2021/Renecycle.jpg'
