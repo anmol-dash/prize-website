@@ -1,6 +1,6 @@
 ---
 slug: "/faq"
-title: "FAQ"
+title: "FAQs"
 ---
 
 # Frequently Asked Questions
@@ -99,5 +99,5 @@ title: "FAQ"
 
 <details>
     <summary>When is the final round pitch?</summary>
-    Final pitches happen during our closing ceremony on (DUE DATE FOR 2022 TBA)). Come hang!
+    Final pitches happen during our closing ceremony on (DUE DATE FOR 2022 TBA). Come hang!
 </details>

@@ -1,41 +1,57 @@
 h1 {
     font-size: 6rem;
-    font-family: Roboto ;
+    font-family: Roboto;
 }
 
 #markdown {
-    font-size: 1.3rem;
+    font-size: calc(0.3rem + 1vw);
     font-family: Avenir;
+    padding: 6vw 12vw;
 
     h1 {
-        font-size: 4rem;
+        font-size: calc(2.5rem + 2vw);
         font-family: Roboto;
         font-weight: bold;
         color: #3083BC;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: calc(1rem + 1vw);
         font-family: Roboto;
         font-weight: bold;
+        padding-top: 2vw;
+        padding-bottom: 0.5vw;
     }
 
     h3, h4, h5, h6 {
-        font-size: 1.5rem;
+        font-size: calc(0.5rem + 1vw);
         font-family: Roboto;
         font-weight: bold;
+        padding-top: 1vw;
     }
 
     details {
-        font-size: 1.5rem;
+        font-size: calc(0.3rem + 1vw);
         margin-bottom: 1rem;
         summary {
             font-weight: bold;
+            font-family: Roboto;
+            margin-bottom: 0.5rem;
         }
     }
 
     ul {
-        list-style-type: circle;
+        list-style-type: disc;
+        margin-left: 2.5rem;
+    }
+
+    a {
+        color: #84B23B;
+        transition: 0.1s;
+
+        &:hover {
+          color: #688a33;
+        }
     }
 
 }
