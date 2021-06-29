@@ -32,6 +32,7 @@ export const Link = s.a`
     font-family: ${({roboto}) => roboto ? `Roboto` : `Avenir`};
     color: ${GREEN};
     ${({bold}) => bold && `font-weight: bold`};
+    transition: 0.1s;
 
     &:hover {
       color: ${FOCUS_GREEN};
