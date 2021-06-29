@@ -59,10 +59,10 @@ export const Navbar = () => {
             <NavButton target="_blank" rel="noreferrer noopener" href='/schedule'>
                 Schedule
                 </NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/People'>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/people'>
                 People
                 </NavButton>
-            <NavButton target="_blank" rel="noreferrer noopener" href='/Sponsors'>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/sponsors'>
                 Sponsors
                 </NavButton>
             <NavButton target="_blank" rel="noreferrer noopener" href='/about'>
