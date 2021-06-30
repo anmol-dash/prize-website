@@ -19,13 +19,13 @@ const Summary = () => (
 
         <div css={`margin: 0 10vw`}>
             <TeamSummary
-                fontSize="0.8rem" 
+                fontSize="1.6rem" 
                 fontColor={STEEL_BLUE}>
                 The 2021 PCV Prize drew 87 competing teams from Penn, Stanford, Columbia, UC Berkeley, U of Illinois, WashU, UTA, UChicago, UToronto, Cornell, UCSB, Princeton, Yale, Rice, and more.
             </TeamSummary> 
             <br/> 
             <br/>
-            <TeamSummary fontSize="0.6rem">
+            <TeamSummary fontSize="1.4rem">
             Winning pitches were chosen from 10 finalist teams at our virtual pitch event by 
             judges from Fifty Years, Next47, Energy Impact Partners, and Generate Capital:
             </TeamSummary> <br/>
@@ -68,7 +68,7 @@ const Winners2021 = () => (
             <meta name="description" content="Penn Climate Ventures 2021 winning pitches." />
         </Helmet>
         <Navbar />
-        <div css={`padding: 8vw 16vw;`}>
+        <div css={`padding: 6vw 12vw;`}>
             <Title>2021 Winning Pitches</Title>
             <Renecycle />
             <Folia />

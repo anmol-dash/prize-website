@@ -5,7 +5,7 @@ import MT from '../images/M&T_Logo_Tagline.png'
 import SP2 from '../images/sp2logo.png'
 import WGY from '../images/Whartonglobalyouthprogram.png'
 
-import { Title, Text, Subtitle } from "../components/shared/Typography"
+import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
 import { Navbar, Footer } from "../components"
 import Helmet from "react-helmet"
 
@@ -28,7 +28,7 @@ const Sponsors = () => (
                 Sponsors
             </Title>
 
-            <Text fontSize="0.5rem" roboto bold>
+            <Text fontSize="1.5rem" roboto bold>
                 Help push the next generation into climate with quick, catalytic capital.
             </Text>
 
@@ -48,7 +48,8 @@ const Sponsors = () => (
             <br/>
             
             <Text>
-                If you would like to become a sponsor of our 2022 Prize, please shoot us an email at pennclimateventures@gmail.com!
+                If you would like to become a sponsor of our 2022 Prize, please shoot us an email at 
+                <Link href="mailto:pennclimateventures@gmail.com"> pennclimateventures@gmail.com</Link>!
             </Text>
         </div>
         <Footer />

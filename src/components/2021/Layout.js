@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { Subtitle, Text, Link } from "../../components/shared/Typography"
+import { Subtitle, Text, mediaMaxWidth } from "../../components/shared/Typography"
 import { GREEN } from "../../utils/constants"
 
 
@@ -11,6 +11,7 @@ export const Logo = s.img`
     padding-top: 2vw;
     padding-bottom: 2vw;
 `
+
 export const Columns = s.div`
     display: flex;
     justify-content: center;
