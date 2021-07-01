@@ -30,7 +30,7 @@ const Level = s.div`
 
 const responsiveText = `
   ${mediaMaxWidth("768px")} {
-    font-size: calc(2rem + 1vw);
+    font-size: 2rem;
   }
 `
 
@@ -49,7 +49,7 @@ const WeekSubtitle = s(Subtitle)`
 
 const List = s.ul`
   font-family: avenir;
-  font-size: calc(0.3rem + 1vw);
+  font-size: 1.2rem;
   list-style-type: disc;
   text-align: left;
   margin-bottom: 1vw;

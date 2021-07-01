@@ -2,6 +2,8 @@ import React from 'react'
 import s from "styled-components"
 import MenuButton from '../components/shared/MenuButton'
 import "../pages/styles.scss"
+import { mediaMaxWidth } from '../utils/constants'
+
 
 import PrizeLogo from "../images/PCVPrizeSparkTeen.png"
 import Facebook from "../images/menu/facebook.png"
@@ -9,13 +11,18 @@ import Instagram from "../images/menu/instagram.png"
 import LinkedIn from "../images/menu/linkedin.png"
 import Email from "../images/menu/email.png"
 
+
+
 const NavButton = s(MenuButton).attrs(() => ({
     className: `level-item has-text-centered`,
     fontSize: `0.2rem`
 }))`
     margin: 3vw 0 0;
-    
     cursor: pointer; 
+
+    ${mediaMaxWidth("768px")} {
+        margin: 0;
+    }
 `
 
 const SocialMedia = s.img`
@@ -31,6 +38,10 @@ export const Navbar = () => {
             width: 90%;
             margin: 0 auto;
             overflow-x: auto;
+            
+            ${mediaMaxWidth("768px")} {
+                flex-direction: column;
+            }
         `}
         className="navbar"
         role="navigation"

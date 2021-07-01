@@ -44,7 +44,7 @@ export const TeamSummary = s(Text)`
 `
 
 export const TeamSubtitle = s(Subtitle)`
-    font-size: calc(0.6rem + 1vw);
+    font-size: 1.4rem;
 `
 
 export const Figure = ({name, source}) => (
