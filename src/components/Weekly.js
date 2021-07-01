@@ -57,8 +57,8 @@ const List = s.ul`
 
 const WeekLayout = React.forwardRef(({ className }, ref) => (
   <div ref={ref} className={`container has-text-centered ${className}`}>
-    <Subtitle fontSize="0.9rem" css="padding: 2vw 0 0;">Dive into the most pressing environmental issues of today.</Subtitle>
-    <Text fontSize="0.5rem" roboto bold>Kickstart a climate startup in three weeks, supported by a world-class network of mentors.</Text>
+    <Subtitle fontSize="1.8rem" css="padding: 2vw 0 0;">Dive into the most pressing environmental issues of today.</Subtitle>
+    <Text fontSize="1.3rem" roboto bold>Kickstart a climate startup in three weeks, supported by a world-class network of mentors.</Text>
     <Level className="level">
       <LevelItem>
         <WeekTitle>Week 1</WeekTitle>
@@ -75,7 +75,7 @@ const WeekLayout = React.forwardRef(({ className }, ref) => (
           <li>4/16: First Round Submissions</li>
           <li>4/24: Live Finals Pitches</li>
         </List>
-        <Link fontSize="0.5rem" roboto bold href="/schedule">Full Event Schedule</Link>
+        <Link fontSize="1.3rem" roboto bold href="/schedule">Full Event Schedule</Link>
       </LevelItem>
 
       <LevelItem>
@@ -89,7 +89,7 @@ const WeekLayout = React.forwardRef(({ className }, ref) => (
           <li>All students enrolled at a university or high school in the world are eligible to compete in the collegiate tracks or high school track, respectively.</li>
           <li>Teams may have 1-5 members.</li>
         </List>
-        <Link fontSize="0.5rem" roboto bold href="/rules">Official Rules</Link>
+        <Link fontSize="1.3rem" roboto bold href="/rules">Official Rules</Link>
       </LevelItem>
 
       <LevelItem>
@@ -103,7 +103,7 @@ const WeekLayout = React.forwardRef(({ className }, ref) => (
           <li>You may register as an individual or with a team, but every member of the team should fill out the individual registration form.</li>
           <li>You do not need any prior experience with tech or startups to attend. Anyone interested in entrepreneurship or climate action should apply.</li>
         </List>
-        <Link fontSize="0.5rem" roboto bold href="/faq">FAQs</Link>
+        <Link fontSize="1.3rem" roboto bold href="/faq">FAQs</Link>
       </LevelItem>
     </Level>
   </div>

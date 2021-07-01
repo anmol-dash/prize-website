@@ -65,9 +65,9 @@ const EventDetails = ({date, description, buttonText, buttonLink}) => {
                   margin: 1vw 2vw;
                   `}>
             {date && <div css={`flex-basis: 7vw; padding-left: 1vw; text-align: center`}>
-                    <Text fontSize="0.3rem" roboto bold>{month}</Text>
-                    <Text fontSize="1.5rem" roboto bold css={`line-height: 1`}>{day}</Text>
-                    <Text fontSize="0.3rem" roboto bold >{time}</Text>
+                    <Text fontSize="1.2rem" roboto bold>{month}</Text>
+                    <Text fontSize="2.2rem" roboto bold css={`line-height: 1`}>{day}</Text>
+                    <Text fontSize="1.2rem" roboto bold >{time}</Text>
                     <Text roboto bold css={`line-height: 0.8`}>EST</Text>
             </div>}
             <div css={`flex-basis: 55vw; padding-left: 1vw`}>

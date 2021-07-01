@@ -38,7 +38,8 @@ const PrizeSubtitle = s(Subtitle)`
 `
 
 const PrizeTitle = s(Title)`
-  ${responsiveText}
+  font-size: 3rem;
+  
 `
 
 const PrizesLayout = React.forwardRef(({ className }, ref) => (

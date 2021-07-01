@@ -18,10 +18,10 @@ const Level = s.div`
 
 const DonorsLayout = ({ className }) => (
   <div className={`container has-text-centered ${className}`}>
-    <Text fontSize="0.9rem" roboto bold>This event could not have been possible without our partners.</Text>
+    <Text fontSize="1.5rem" roboto bold>This event could not have been possible without our partners.</Text>
     <Level className="level">
       <LevelItem>
-        <Text fontSize="0.5rem" roboto bold>Penn Institutions</Text>
+        <Text fontSize="1.2rem" roboto bold>Penn Institutions</Text>
         <br/>
         <SubText css={`text-align: center`}>
           <Link href="https://riskcenter.wharton.upenn.edu/">Wharton Risk Center</Link>
@@ -36,7 +36,7 @@ const DonorsLayout = ({ className }) => (
         </SubText>
       </LevelItem>
       <LevelItem>
-        <Text fontSize="0.5rem" roboto bold>Student Groups</Text>
+        <Text fontSize="1.2rem" roboto bold>Student Groups</Text>
         <br/>
         <SubText css={`text-align: center`}>
           <Link href="https://www.climateleadersatpenn.com/">Climate Leaders @ Penn</Link>
