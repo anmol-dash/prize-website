@@ -25,13 +25,13 @@ const EventTitle = s(Subtitle)`
 `
 
 const EventSubtitle = s(Subtitle)`
-    font-size: calc(0.6rem + 1vw);
+    font-size: 1.5rem;
 `
 
 const NumList = s.ol`
-    font-size: calc(0.3rem + 1vw);
+    font-size: 1.2rem;
     font-family: Avenir;
-    margin-left: 1.5vw;
+    margin-left: 20px;
 `
 
 const EventGroup = s.div`

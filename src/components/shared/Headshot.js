@@ -14,7 +14,7 @@ const Image = s.img`
 
 const Caption = s.figcaption`
     font-family: roboto;
-    font-size: calc(0.5rem + 1vw);
+    font-size: 1.4rem;
     text-align: center;
 `
 

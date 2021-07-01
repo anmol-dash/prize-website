@@ -12,7 +12,7 @@ const MenuButton = s.a`
     color: ${GREY};
     cursor: pointer;
     z-index: -1;
-    font-size: calc(${({ fontSize }) => fontSize || '0.2rem'} + 1vw);
+    font-size: 1rem;
     font-family: roboto; 
     font-weight: bold;
     transition: 0.2s;
