@@ -1,6 +1,6 @@
 import React from "react"
 import s from "styled-components"
-import { SubText, Text } from "./shared/Typography"
+import { SubText, Text, Link } from "./shared/Typography"
 
 const LevelItem = s.div.attrs(() => ({
   className: "level-item has-text-left"
@@ -12,31 +12,40 @@ const LevelItem = s.div.attrs(() => ({
 `
 
 const Level = s.div`
-  margin-top: 2vw;
+  margin: 2vw auto;
+  width: 70vw;
 `
 
 const DonorsLayout = ({ className }) => (
   <div className={`container has-text-centered ${className}`}>
-    <b><Text>This event could not have been possible without the support of:</Text></b>
+    <Text fontSize="1.5rem" roboto bold>This event could not have been possible without our partners.</Text>
     <Level className="level">
       <LevelItem>
-        <Text>Penn Institutions</Text>
-        <SubText>
-          <a href="https://riskcenter.wharton.upenn.edu/">Wharton Risk Center</a>
+        <Text fontSize="1.2rem" roboto bold>Penn Institutions</Text>
+        <br/>
+        <SubText css={`text-align: center`}>
+          <Link href="https://riskcenter.wharton.upenn.edu/">Wharton Risk Center</Link>
           <br />
-          <a href="https://www.whartonenergy.com/">Wharton Energy Network</a>
+          <Link href="https://www.whartonenergy.com/">Wharton Energy Network</Link>
           <br />
-          <a href="https://www.sp2.upenn.edu/">School of Social Policy & Practice</a>
+          <Link href="https://www.sp2.upenn.edu/">School of Social Policy & Practice</Link>
+          <br />
+          <Link href="https://fisher.wharton.upenn.edu/">Jerome Fisher Program for Management and Technology</Link>
+          <br />
+          <Link href="https://kleinmanenergy.upenn.edu/">Kleinman Center for Energy Policy</Link>
         </SubText>
       </LevelItem>
       <LevelItem>
-        <Text>Student Groups</Text>
-        <SubText>
-          <a href="https://www.climateleadersatpenn.com/">Climate Leaders @ Penn</a>
+        <Text fontSize="1.2rem" roboto bold>Student Groups</Text>
+        <br/>
+        <SubText css={`text-align: center`}>
+          <Link href="https://www.climateleadersatpenn.com/">Climate Leaders @ Penn</Link>
           <br />
-          <a href="http://pennenvironmentalgroup.weebly.com/">Penn Environmental Group</a>
+          <Link href="https://www.facebook.com/PennEnvironmentalGroup">Penn Environmental Group</Link>
           <br />
-          <a href="https://www.agribusiness-club.com/">Agribusiness Club</a>
+          <Link href="https://www.sustainability.upenn.edu/partners/student-groups">Student Sustainability Association at Penn</Link>
+          <br />
+          <Link href="https://www.agribusiness-club.com/">Wharton AgriBusiness Club</Link>
         </SubText>
       </LevelItem>
     </Level>

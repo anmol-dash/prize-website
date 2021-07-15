@@ -1,63 +1,99 @@
-import React, { useState } from 'react'
+import React from 'react'
 import s from "styled-components"
-import Button from '../components/shared/Button'
-import Logo from '../images/logo.png'
-import Filled from '../images/svg/arrow-filled.svg'
-import Empty from '../images/svg/arrow-empty.svg'
+import MenuButton from '../components/shared/MenuButton'
+import "../pages/styles.scss"
+import { mediaMaxWidth } from '../utils/constants'
 
 
-const Toggle = ({ toggleNavbar, visible }) => {
-    const Icon = visible ? Filled : Empty
-    return <a onClick={toggleNavbar}><Icon width="2rem"/></a>;
-}
+import PrizeLogo from "../images/PCVPrizeSparkTeen.png"
+import Facebook from "../images/menu/facebook.png"
+import Instagram from "../images/menu/instagram.png"
+import LinkedIn from "../images/menu/linkedin.png"
+import Email from "../images/menu/email.png"
 
-const NavButton = s(Button).attrs(() => ({
+
+
+const NavButton = s(MenuButton).attrs(() => ({
     className: `level-item has-text-centered`,
-    fontSize: `1rem`
+    fontSize: `0.2rem`
 }))`
-    visibility: ${({ visible }) => visible ? `visible` : `hidden`};
-    margin: 1vw;
-    flex: 1;
-    padding: .5rem;
+    margin: 3vw 0 0;
+    cursor: pointer; 
+
+    ${mediaMaxWidth("768px")} {
+        margin: 0;
+    }
+`
+
+const SocialMedia = s.img`
+    height: 1.5rem;
+    object-fit: cover;
+    margin: 3.5vw 0.5vw 0;
 `
 
 export const Navbar = () => {
-    const [visible, setVisible] = useState(false);
-    const toggleNavbar = () => setVisible(!visible);
     return <nav
         css={`
             display: flex;
-            width: 100%;
+            width: 90%;
+            margin: 0 auto;
             overflow-x: auto;
-            ${visible || `overflow-x: hidden;`}
+            
+            ${mediaMaxWidth("768px")} {
+                flex-direction: column;
+            }
         `}
         className="navbar"
         role="navigation"
         aria-label="main navigation"
         >
-        <div className="navbar-brand" css={`margin-left: 1rem;`}>
-            <div className="navbar-item">
-                <Toggle toggleNavbar={toggleNavbar} visible={visible} />
-            </div>
-            {visible || <a href="/" className="navbar-item">
+            <a href="/" className="navbar-item">
                 <img 
                     css={`
                         &&& {
                             max-height: 100%;
                         }
-                        margin-left: 1rem;
+                        margin: 1rem 4rem 0 1rem;
                         width: 116px;
                     `}
-                    src={Logo} 
+                    src={PrizeLogo} 
+                    alt="Prize Logo"
                 />
             </a>
-            }
-        </div>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/tracks'>About</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/rules'>Rules</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/faq'>FAQs</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/about'>About</NavButton>
-        <NavButton visible={visible} target="_blank" rel="noreferrer noopener" href='/collaborate'>Collab</NavButton>
-        <NavButton visible={visible} href='mailto: pennclimateventures@gmail.com'>Contact</NavButton>
+
+            <NavButton target="_blank" rel="noreferrer noopener" href='/2021/winners'>
+                2021 Winning Pitches
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/rules'>
+                Official Rules
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/schedule'>
+                Schedule
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/people'>
+                People
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/sponsors'>
+                Sponsors
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/about'>
+                About PCV
+                </NavButton>
+            <NavButton target="_blank" rel="noreferrer noopener" href='/faq'>
+                FAQs
+                </NavButton>
+
+            <a href="https://www.facebook.com/pennclimateventures">
+                <SocialMedia src={Facebook} alt="Facebook" css={`margin-left: 3rem`}/>
+                </a>
+            <a href="https://www.instagram.com/pennclimateventures/?hl=en">
+                <SocialMedia src={Instagram} alt="Instagram"/>
+                </a>
+            <a href="https://www.linkedin.com/company/penn-climate-ventures">
+                <SocialMedia src={LinkedIn} alt="LinkedIn"/>
+                </a>
+            <a href="mailto: pennclimateventures@gmail.com">
+                <SocialMedia src={Email} alt="Email"/>
+            </a>
     </nav>
 }
