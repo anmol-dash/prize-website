@@ -1,13 +1,13 @@
 import React from "react"
+import Helmet from "react-helmet"
 import s from "styled-components"
-import Kleinman from '../images/kleinman.png'
-import MT from '../images/M&T_Logo_Tagline.png'
-import SP2 from '../images/sp2logo.png'
-import WGY from '../images/Whartonglobalyouthprogram.png'
-
 import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
 import { Navbar, Footer } from "../components"
-import Helmet from "react-helmet"
+
+import Kleinman from "../images/sponsors/Kleinman.jpg"
+import MT from "../images/sponsors/M&T.jpg"
+import SP2 from "../images/sponsors/SP2.jpg"
+import WGY from "../images/sponsors/WGY.jpg"
 
 const Logo = s.img`
     height: 6vw;
@@ -17,26 +17,17 @@ const Logo = s.img`
 const Sponsors = () => (
     <>
         <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
-                <title defer={false}>Sponsors</title>
-                <meta charSet="utf-8" />
-                <link rel="canonical" href="https://www.prize.pennclimateventures.org/sponsors" />
-                <meta name="description" content="Sponsor the Penn Climate Ventures Prize."/>
+            <title defer={false}>Sponsors</title>
+            <meta charSet="utf-8" />
+            <link rel="canonical" href="https://www.prize.pennclimateventures.org/sponsors" />
+            <meta name="description" content="Sponsor the Penn Climate Ventures Prize."/>
         </Helmet>
         <Navbar />
         <div css={`padding: 6vw 14vw;`}>
-            <Title>
-                Sponsors
-            </Title>
-
-            <Text fontSize="1.5rem" roboto bold>
-                Help push the next generation into climate with quick, catalytic capital.
-            </Text>
-
+            <Title>Sponsors</Title>
+            <Text fontSize="1.5rem" roboto bold>Help push the next generation into climate with quick, catalytic capital.</Text>
             <br/>
-
-            <Subtitle>
-                Our Supporters for the 2021 PCV Prize:
-            </Subtitle>
+            <Subtitle>Our Supporters for the 2021 PCV Prize:</Subtitle>
 
             <Logo src={SP2} alt="SP2"/>
             <br/>

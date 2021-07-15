@@ -37,8 +37,8 @@ const FooterLayout = ({ className }) => <footer className={`footer has-text-cent
         <FooterButton border href="/2021/winners">2021 Winning Pitches</FooterButton>
         <FooterButton border href="/rules">Official Rules</FooterButton>
         <FooterButton border href="/schedule">Schedule</FooterButton>
-        <FooterButton border href="/People">People</FooterButton>
-        <FooterButton border href="/Sponsors">Sponsors</FooterButton>
+        <FooterButton border href="/people">People</FooterButton>
+        <FooterButton border href="/sponsors">Sponsors</FooterButton>
         <FooterButton border href="/about">About PCV</FooterButton>
         <FooterButton href="/faq">FAQs</FooterButton>
         <a href="https://www.facebook.com/pennclimateventures"><SocialMedia src={Facebook} alt="Facebook"/></a>
