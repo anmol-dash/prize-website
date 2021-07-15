@@ -260,7 +260,7 @@ const PCVTeam = () => {
 const People = () => {
   return (
     <>
-      <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
+    <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
         <title defer={false}>People</title>
         <meta charSet="utf-8" />
         <link rel="canonical" href={"https://www.prize.pennclimateventures.org/people"} />
