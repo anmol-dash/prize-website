@@ -1,6 +1,5 @@
 import React from "react"
 import Helmet from "react-helmet"
-import s from "styled-components"
 import { Grid, Cell } from "styled-css-grid";
 import "../pages/styles.scss"
 import { Title, Text, Subtitle} from "../components/shared/Typography"
@@ -261,8 +260,8 @@ const PCVTeam = () => {
 const People = () => {
   return (
     <>
-      <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize" defer={false}>
-        <Title>People</Title>
+    <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
+        <title defer={false}>People</title>
         <meta charSet="utf-8" />
         <link rel="canonical" href={"https://www.prize.pennclimateventures.org/people"} />
         <meta name="description" content="Penn Climate Ventures official prize people." />
