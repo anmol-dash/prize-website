@@ -1,30 +1,30 @@
 import React from "react"
 import { Subtitle, Text, Link } from "../shared/Typography"
-import { Logo, Columns, ColumnText, Figure, TeamSubtitle } from "./Layout"
+import { Logo, Columns, ColumnText, Figure, TeamSubtitle, Images } from "./Layout"
 
-import RenecycleLogo from '../../images/winners2021/Renecycle.jpg'
-import Hunter from '../../images/winners2021/HunterLee.jpg'
-import Mina from '../../images/winners2021/MinaLiang.jpg'
-import Henry from '../../images/winners2021/HenryLei.jpg'
-import David from '../../images/winners2021/DavidChang.jpg'
-import Ian from '../../images/winners2021/IanGordon.jpg'
+import RenecycleLogo from '../../images/2021/winners/Renecycle.jpg'
+import Hunter from '../../images/2021/winners/HunterLee.jpg'
+import Mina from '../../images/2021/winners/MinaLiang.jpg'
+import Henry from '../../images/2021/winners/HenryLei.jpg'
+import David from '../../images/2021/winners/DavidChang.jpg'
+import Ian from '../../images/2021/winners/IanGordon.jpg'
 
 const Renecycle = () => (
     <div>
-        <Subtitle css={`margin-top: 2vw`}>First Place - ReneCycle</Subtitle>
-        <Logo src={RenecycleLogo} alt="Renecycle" css={`width: 40vw`}/>
+        <Subtitle css={`margin-top: 15px`}>First Place - ReneCycle</Subtitle>
+        <Logo src={RenecycleLogo} alt="Renecycle"/>
         <Text>Using proprietary smart-lock technology, ReneCycle transforms everyday 
             bikes into easily manageable dockless bikeshare. Their fleet management 
             system's integrated hardware and software creates bikeshare that is secure, 
             accessible, and cost-efficient.</Text>
         
-        <Columns css={`text-align: center`}>
+        <Images>
             <Figure name="Hunter Lee" source={Hunter}/>
             <Figure name="Mina Liang" source={Mina}/>
             <Figure name="Henry Lei" source={Henry}/>
             <Figure name="David Chang" source={David}/>
             <Figure name="Ian Gordon" source={Ian}/>
-        </Columns>
+        </Images>
 
         <Columns>
             <ColumnText left>
@@ -72,6 +72,5 @@ const Renecycle = () => (
         </Columns>       
     </div>
 )
-
 
 export default Renecycle

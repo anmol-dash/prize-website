@@ -1,28 +1,37 @@
 import React from "react"
 import s from "styled-components"
 import { SubText, Text, Link } from "./shared/Typography"
+import { mediaMaxWidth } from "../utils/constants"
 
 const LevelItem = s.div.attrs(() => ({
   className: "level-item has-text-left"
 }))`
-  align-self: flex-start;
-  display: flex;
+  // align-self: flex-start;
+  // display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  width: 300px
 `
 
 const Level = s.div`
   margin: 2vw auto;
-  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  
+  ${mediaMaxWidth("768px")} {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const DonorsLayout = ({ className }) => (
-  <div className={`container has-text-centered ${className}`}>
+  <div className={`container has-text-centered ${className}`} css={`padding: 0 10px`}>
     <Text fontSize="1.5rem" roboto bold>This event could not have been possible without our partners.</Text>
     <Level className="level">
       <LevelItem>
         <Text fontSize="1.2rem" roboto bold>Penn Institutions</Text>
-        <br/>
         <SubText css={`text-align: center`}>
           <Link href="https://riskcenter.wharton.upenn.edu/">Wharton Risk Center</Link>
           <br />
@@ -37,7 +46,6 @@ const DonorsLayout = ({ className }) => (
       </LevelItem>
       <LevelItem>
         <Text fontSize="1.2rem" roboto bold>Student Groups</Text>
-        <br/>
         <SubText css={`text-align: center`}>
           <Link href="https://www.climateleadersatpenn.com/">Climate Leaders @ Penn</Link>
           <br />
