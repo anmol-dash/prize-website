@@ -1,6 +1,6 @@
 import React from "react"
 import { Subtitle, Text, Link } from "../shared/Typography"
-import { Logo, Columns, ColumnText, Figure, TeamSubtitle } from "./Layout"
+import { Logo, Columns, ColumnText, Figure, TeamSubtitle, Images } from "./Layout"
 
 import RenecycleLogo from '../../images/winners2021/Renecycle.jpg'
 import Hunter from '../../images/winners2021/HunterLee.jpg'
@@ -12,19 +12,19 @@ import Ian from '../../images/winners2021/IanGordon.jpg'
 const Renecycle = () => (
     <div>
         <Subtitle css={`margin-top: 2vw`}>First Place - ReneCycle</Subtitle>
-        <Logo src={RenecycleLogo} alt="Renecycle" css={`width: 40vw`}/>
+        <Logo src={RenecycleLogo} alt="Renecycle"/>
         <Text>Using proprietary smart-lock technology, ReneCycle transforms everyday 
             bikes into easily manageable dockless bikeshare. Their fleet management 
             system's integrated hardware and software creates bikeshare that is secure, 
             accessible, and cost-efficient.</Text>
         
-        <Columns css={`text-align: center`}>
+        <Images>
             <Figure name="Hunter Lee" source={Hunter}/>
             <Figure name="Mina Liang" source={Mina}/>
             <Figure name="Henry Lei" source={Henry}/>
             <Figure name="David Chang" source={David}/>
             <Figure name="Ian Gordon" source={Ian}/>
-        </Columns>
+        </Images>
 
         <Columns>
             <ColumnText left>

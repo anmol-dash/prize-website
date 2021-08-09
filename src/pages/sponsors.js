@@ -23,7 +23,7 @@ const Sponsors = () => (
             <meta name="description" content="Sponsor the Penn Climate Ventures Prize."/>
         </Helmet>
         <Navbar />
-        <div css={`padding: 6vw 14vw;`}>
+        <div css={`padding: 90px 12vw;`}>
             <Title>Sponsors</Title>
             <Text fontSize="1.5rem" roboto bold>Help push the next generation into climate with quick, catalytic capital.</Text>
             <br/>

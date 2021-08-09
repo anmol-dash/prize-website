@@ -13,26 +13,45 @@ const FooterButton = s(MenuButton).attrs(() => ({
 }))`
     cursor: pointer;
     z-index: 999;
-    ${({border}) => border && `border-right: 0.1rem solid ${GREY}`}
+    ${({border}) => border && `border-right: 0.1rem solid ${GREY}`};
+
+    ${mediaMaxWidth("780px")} {
+        border: none;
+        padding: 5px 0;
+    }
 `
 
 const FooterLevel = s.div`
     display: flex;
-    width: 75%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 0 auto;
+    padding: 50px 0;
+    position: static;
 
-    ${mediaMaxWidth("768px")} {
-        flex-direction: column;
+    ${mediaMaxWidth("780px")} {
+        flex-direction: column;   
+    }
+`
+
+const SocialMediaWrapper = s.span`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    ${mediaMaxWidth("780px")} {
+        margin-top: 10px
     }
 `
 
 const SocialMedia = s.img`
     height: 1.5rem;
     object-fit: cover;
-    margin: 0 0.5vw;
+    margin: 0 8px;
 `
 
-const FooterLayout = ({ className }) => <footer className={`footer has-text-centered ${className}`}>
+const FooterLayout = () => <footer>
     <FooterLevel>
         <FooterButton border href="/2021/winners">2021 Winning Pitches</FooterButton>
         <FooterButton border href="/rules">Official Rules</FooterButton>
@@ -41,10 +60,12 @@ const FooterLayout = ({ className }) => <footer className={`footer has-text-cent
         <FooterButton border href="/sponsors">Sponsors</FooterButton>
         <FooterButton border href="/about">About PCV</FooterButton>
         <FooterButton href="/faq">FAQs</FooterButton>
-        <a href="https://www.facebook.com/pennclimateventures"><SocialMedia src={Facebook} alt="Facebook"/></a>
-        <a href="https://www.instagram.com/pennclimateventures/?hl=en"><SocialMedia src={Instagram} alt="Instagram"/></a>
-        <a href="https://www.linkedin.com/company/penn-climate-ventures"><SocialMedia src={LinkedIn} alt="LinkedIn"/></a>
-        <a href="mailto: pennclimateventures@gmail.com"><SocialMedia src={Email} alt="Email"/></a>
+        <SocialMediaWrapper>
+            <a href="https://www.facebook.com/pennclimateventures"><SocialMedia src={Facebook} alt="Facebook"/></a>
+            <a href="https://www.instagram.com/pennclimateventures/?hl=en"><SocialMedia src={Instagram} alt="Instagram"/></a>
+            <a href="https://www.linkedin.com/company/penn-climate-ventures"><SocialMedia src={LinkedIn} alt="LinkedIn"/></a>
+            <a href="mailto: pennclimateventures@gmail.com"><SocialMedia src={Email} alt="Email"/></a>
+        </SocialMediaWrapper>
     </FooterLevel>
 </footer>
 

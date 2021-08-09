@@ -1,6 +1,6 @@
 import React from "react"
 import { Subtitle, Text, Link } from "../shared/Typography"
-import { Logo, Columns, ColumnText, Figure, TeamSubtitle } from "./Layout"
+import { Logo, Columns, ColumnText, Figure, TeamSubtitle, Images } from "./Layout"
 
 import FoliaLogo from "../../images/winners2021/Folia.jpg"
 import Rosanna from "../../images/winners2021/RosannaJiang.jpg"
@@ -12,12 +12,12 @@ import Ryoma from "../../images/winners2021/RyomaHarris.jpg"
 const Folia = () => (
     <div>
         <Subtitle css={`margin-top: 2vw`}>Second Place - Folia</Subtitle>
-        <Logo src={FoliaLogo} alt="Folia" css={`width: 20vw`}/>
+        <Logo src={FoliaLogo} alt="Folia" width="200px"/>
         <Text>Folia is a B2B Philadelphia-based company dedicated to diverting all 
             food waste from the landfill. Through an online platform, they ensure quality 
             matches between producers of food waste and food upcycling companies.</Text>
         
-        <Columns css={`text-align: center`}>
+        <Images>
             <Link href="https://www.linkedin.com/in/rosanna-jiang-a04139201/">
                 <Figure name="Rosanna Jiang" source={Rosanna}/>
             </Link>
@@ -33,7 +33,7 @@ const Folia = () => (
             <Link href="https://www.linkedin.com/in/ryomah/">
                 <Figure name="Ryoma Harris" source={Ryoma}/>
             </Link>
-        </Columns>
+        </Images>
 
         <Columns>
             <ColumnText left>

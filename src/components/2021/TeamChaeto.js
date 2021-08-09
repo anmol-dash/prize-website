@@ -1,6 +1,6 @@
 import React from "react"
 import { Subtitle, Text, Link } from "../shared/Typography"
-import { Name, Columns, ColumnText, TeamSubtitle } from "./Layout"
+import { Columns, ColumnText, TeamSubtitle, Images, Figure } from "./Layout"
 
 import TeamChaetoLogo from "../../images/winners2021/TeamChaeto.jpg"
 import ChrisNick from "../../images/winners2021/ChrisAndNickKwok.jpg"
@@ -9,14 +9,10 @@ const TeamChaeto = () => (
     <div>
         <Subtitle css={`margin-top: 2vw`}>Third Place - Team Chaeto</Subtitle>
 
-        <Columns css={`text-align: center`}>
-            <img src={TeamChaetoLogo} alt="Team Chaeto" css={`height: 25vw`}/>
-            <figure>
-                <img src={ChrisNick} alt="Christopher and Nicholas Kwok" css={`height: 25vw`}/>
-                <Name>Christopher and Nicholas Kwok</Name>
-            </figure>
-        </Columns>
-
+        <Images>
+            <img src={TeamChaetoLogo} alt="Team Chaeto" css={`height: 360px; padding: 5px 0;`}/>
+            <Figure name="Christopher and Nicholas Kwok" source={ChrisNick} size="350px"/>
+        </Images>
         
         <Text>Team Chaeto pioneers an ecological, sustainable, and feasible solution 
             to the existential crisis of ocean acidification. By modifying the activity 
