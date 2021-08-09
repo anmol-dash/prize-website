@@ -4,6 +4,7 @@ import { Text, Link } from "./Typography"
 
 const ImageSize = `190px`;
 
+
 const Image = s.img`
     width: ${ImageSize};
     height: ${ImageSize};

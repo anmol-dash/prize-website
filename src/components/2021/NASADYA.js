@@ -37,5 +37,4 @@ const NASADYA = () => (
     </div>
 )
 
-
 export default NASADYA

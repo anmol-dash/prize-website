@@ -13,7 +13,7 @@ const TeamChaeto = () => (
             <img src={TeamChaetoLogo} alt="Team Chaeto" css={`height: 360px; padding: 5px 0;`}/>
             <Figure name="Christopher and Nicholas Kwok" source={ChrisNick} size="350px"/>
         </Images>
-        
+     
         <Text>Team Chaeto pioneers an ecological, sustainable, and feasible solution 
             to the existential crisis of ocean acidification. By modifying the activity 
             of hydrogenase and carbonic anhydrase enzymes in chaetomorpha, the team 

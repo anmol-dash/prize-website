@@ -63,7 +63,7 @@ const PrizeTitle = s(Text)`
       color: ${STEEL_BLUE};
       text-align: center;
       font-size: 1.3rem;
-  `
+`
   
 const PrizeSubtitle = s(Text)`
       font-family: roboto;
@@ -71,7 +71,7 @@ const PrizeSubtitle = s(Text)`
       color: ${STEEL_BLUE};
       text-align: center;
       font-size: 3.5rem;
-  `
+`
 
 const WinnersButton = s(Button)`
     background-color: ${GREEN};

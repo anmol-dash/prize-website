@@ -57,7 +57,6 @@ const WeekLayout = React.forwardRef(({ className }, ref) => (
       <Subtitle fontSize="1.8rem" css="padding: 5px 0;">Dive into the most pressing environmental issues of today.</Subtitle>
       <Text fontSize="1.3rem" roboto bold>Kickstart a climate startup in three weeks, supported by a world-class network of mentors.</Text>
     </Description>
-
     <Level className="level">
       <LevelItem>
         <WeekTitle>Week 1</WeekTitle>
