@@ -43,7 +43,7 @@ const LevelItem = s.div.attrs(() => ({
     flex-direction: column;
     width: 18vw;
     margin: 0 auto;
-  `
+`
   
 const Level = s.div`
     margin: 5px auto;
@@ -55,22 +55,22 @@ const Level = s.div`
       padding: 5%;
       flex-direction: column;
     }
-  `
+`
   
-  const PrizeTitle = s(Text)`
+const PrizeTitle = s(Text)`
       font-family: roboto;
       font-weight: bold;
       color: ${STEEL_BLUE};
       text-align: center;
-      font-size: calc(0.8rem + 1vw);
+      font-size: 1.3rem;
   `
   
-  const PrizeSubtitle = s(Text)`
+const PrizeSubtitle = s(Text)`
       font-family: roboto;
       font-weight: bold;
       color: ${STEEL_BLUE};
       text-align: center;
-      font-size: calc(2.8rem + 1vw);
+      font-size: 3.5rem;
   `
 
 const WinnersButton = s(Button)`
