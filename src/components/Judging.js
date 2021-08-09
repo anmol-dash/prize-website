@@ -5,12 +5,12 @@ import { FOREST_GREEN, STEEL_BLUE, GREEN, FOCUS_GREEN, mediaMaxWidth } from "../
 import Button from "../components/shared/Button"
 import Headshot from "../components/shared/Headshot"
 
-import Dennis from "../images/dennis woodside.jpg"
-import Arun from "../images/arun_majumdar.jpg"
-import Lidiya from "../images/lidiya-dervisheva.jpeg"
-import Seth from "../images/seth.jpg"
-import Marisa from "../images/marisa sweeney.jpg"
-import Sam from "../images/sam bursten.jpeg"
+import Arun from "../images/2021/keynote/ArunMajumdar.jpg"
+import Dennis from "../images/2021/keynote/DennisWoodside.jpg"
+import Lidiya from "../images/2021/judges/LidiyaDervisheva.jpg"
+import Seth from "../images/2021/judges/SethBannon.jpg"
+import Marisa from "../images/2021/judges/MarisaSweeney.jpg"
+import Sam from "../images/2021/judges/SamBursten.jpg"
 
 const PeoplePhotos = s.div`
     display: flex;

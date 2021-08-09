@@ -7,11 +7,11 @@ import Button from "../components/shared/Button"
 import Headshot from "../components/shared/Headshot"
 import {GREEN} from "../utils/constants.js"
 
-import Dennis from '../images/dennis woodside.jpg'
-import Lidiya from '../images/lidiya-dervisheva.jpeg'
-import Seth from '../images/seth.jpg'
-import Marisa from '../images/marisa sweeney.jpg'
-import Sam from '../images/sam bursten.jpeg'
+import Dennis from "../images/2021/keynote/DennisWoodside.jpg"
+import Lidiya from "../images/2021/judges/LidiyaDervisheva.jpg"
+import Seth from "../images/2021/judges/SethBannon.jpg"
+import Marisa from "../images/2021/judges/MarisaSweeney.jpg"
+import Sam from "../images/2021/judges/SamBursten.jpg"
 
 const Columns = s.div`
     display: flex;
@@ -301,7 +301,7 @@ const Schedule = () => (
         </Helmet>
         <Navbar />
         <div css={`padding: 90px 12vw;`}>
-            <Title>PCV Prize 2021 Schedule</Title>
+            <Title css={`margin-bottom: 15px`}>PCV Prize 2021 Schedule</Title>
             <Subtitle>Dates & info for 2022 TBA</Subtitle>
             <Timeline />
             <Finals />

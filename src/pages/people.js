@@ -1,32 +1,34 @@
 import React from "react"
 import s from "styled-components"
 import Helmet from "react-helmet"
-import { Grid, Cell } from "styled-css-grid";
 import "../pages/styles.scss"
 import { Title, Text, Subtitle} from "../components/shared/Typography"
 import { Navbar, Footer } from "../components"
 import Headshot from "../components/shared/Headshot"
 
-import ArunMajumdar from '../images/arun_majumdar.jpeg'
-import DennisWoodside from '../images/dennis woodside.jpg'
-import ZhengxiaDou from '../images/zhengxia_dou.jpeg'
-import DavdGalligan from '../images/DavidGalligan.jpg'
-import JamesHagan from '../images/james_hagan.jpeg'
-import PeterPsarras from '../images/peter_psarras.jpeg'
-import ArthurBenthem from '../images/arthur_benthem.jpeg'
-import ESwann from '../images/e_swann.jpg'
-import AlexBehar from '../images/alex_behar.jpeg'
-import ShuoYang from '../images/shuo_yang.jpeg'
-import AllyWarson from '../images/ally_warson.jpeg'
-import KimberlyZou from '../images/kimberly_zou.jpeg'
-import RyFisher from '../images/ry_fisher.jpeg'
-import FranzHochstrasser from '../images/franz_hochstrasser.jpeg'
-import CaitlynMcCloskey from '../images/caitlyn_mcCloskey.jpeg'
-import BenMay from '../images/ben_may.jpeg'
-import AkaashPadmanabha from '../images/akaash_padmanabha.jpeg'
-import PEGLogo from '../images/peg.jpeg'
-import SSAPLogo from '../images/ssap.png'
-import PUCPLogo from '../images/pucp.jpeg'
+import ArunMajumdar from "../images/2021/keynote/ArunMajumdar.jpg"
+import DennisWoodside from "../images/2021/keynote/DennisWoodside.jpg"
+
+import ZhengxiaDou from "../images/2021/panelists/ZhengxiaDou.jpg"
+import DavdGalligan from "../images/2021/panelists/DavidGalligan.jpg"
+import JamesHagan from "../images/2021/panelists/JamesHagan.jpg"
+import PeterPsarras from "../images/2021/panelists/PeterPsarras.jpg"
+import ArthurBenthem from "../images/2021/panelists/ArthurBenthem.jpg"
+import ESwann from "../images/2021/panelists/EMitchellSwann.jpg"
+import AlexBehar from "../images/2021/panelists/AlexBehar.jpg"
+import ShuoYang from "../images/2021/panelists/ShuoYang.jpg"
+import AllyWarson from "../images/2021/panelists/AllyWarson.jpg"
+import KimberlyZou from "../images/2021/panelists/KimberlyZou.jpg"
+import RyFisher from "../images/2021/panelists/RyStoreyFisher.jpg"
+import FranzHochstrasser from "../images/2021/panelists/FranzHochstrasser.jpg"
+
+import CaitlynMcCloskey from "../images/2021/moderators/CaitlynMcCloskey.jpg"
+import BenMay from "../images/2021/moderators/BenMay.jpg"
+import AkaashPadmanabha from "../images/2021/moderators/AkaashPadmanabha.jpg"
+
+import PEGLogo from "../images/2021/cosponsors/peg.jpg"
+import SSAPLogo from "../images/2021/cosponsors/ssap.jpg"
+import PUCPLogo from "../images/2021/cosponsors/pucp.jpg"
 
 const GridLayout = s.div`
   display: flex;
@@ -239,7 +241,7 @@ const PCVTeam = () => {
 const People = () => {
   return (
     <>
-    <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
+      <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
         <title defer={false}>People</title>
         <meta charSet="utf-8" />
         <link rel="canonical" href={"https://www.prize.pennclimateventures.org/people"} />
@@ -247,7 +249,7 @@ const People = () => {
       </Helmet>
       <Navbar />
       <div css={`padding: 90px 12vw;`}>
-        <Title>People (2021)</Title>
+        <Title css={`margin-bottom: 15px`}>People (2021)</Title>
         <Keynote/>
         <br />
         <Panelists/>

@@ -2,12 +2,12 @@ import React from "react"
 import { Subtitle, Text, Link } from "../shared/Typography"
 import { Columns, ColumnText, TeamSubtitle, Images, Figure } from "./Layout"
 
-import TeamChaetoLogo from "../../images/winners2021/TeamChaeto.jpg"
-import ChrisNick from "../../images/winners2021/ChrisAndNickKwok.jpg"
+import TeamChaetoLogo from "../../images/2021/winners/TeamChaeto.jpg"
+import ChrisNick from "../../images/2021/winners/ChrisAndNickKwok.jpg"
 
 const TeamChaeto = () => (
     <div>
-        <Subtitle css={`margin-top: 2vw`}>Third Place - Team Chaeto</Subtitle>
+        <Subtitle css={`margin-top: 15px`}>Third Place - Team Chaeto</Subtitle>
 
         <Images>
             <img src={TeamChaetoLogo} alt="Team Chaeto" css={`height: 360px; padding: 5px 0;`}/>

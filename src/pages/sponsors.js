@@ -4,10 +4,10 @@ import s from "styled-components"
 import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
 import { Navbar, Footer } from "../components"
 
-import Kleinman from "../images/sponsors/Kleinman.jpg"
-import MT from "../images/sponsors/M&T.jpg"
-import SP2 from "../images/sponsors/SP2.jpg"
-import WGY from "../images/sponsors/WGY.jpg"
+import Kleinman from "../images/2021/sponsors/Kleinman.jpg"
+import MT from "../images/2021/sponsors/M&T.jpg"
+import SP2 from "../images/2021/sponsors/SP2.jpg"
+import WGY from "../images/2021/sponsors/WGY.jpg"
 
 const Logo = s.img`
     height: 6vw;
@@ -24,7 +24,7 @@ const Sponsors = () => (
         </Helmet>
         <Navbar />
         <div css={`padding: 90px 12vw;`}>
-            <Title>Sponsors</Title>
+            <Title css={`margin-bottom: 15px`}>Sponsors</Title>
             <Text fontSize="1.5rem" roboto bold>Help push the next generation into climate with quick, catalytic capital.</Text>
             <br/>
             <Subtitle>Our Supporters for the 2021 PCV Prize:</Subtitle>

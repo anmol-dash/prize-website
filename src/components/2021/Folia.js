@@ -2,16 +2,16 @@ import React from "react"
 import { Subtitle, Text, Link } from "../shared/Typography"
 import { Logo, Columns, ColumnText, Figure, TeamSubtitle, Images } from "./Layout"
 
-import FoliaLogo from "../../images/winners2021/Folia.jpg"
-import Rosanna from "../../images/winners2021/RosannaJiang.jpg"
-import Caroline from "../../images/winners2021/CarolineLi.jpg"
-import Zachary from "../../images/winners2021/ZacharyHuang-Ogata.jpg"
-import Stephanie from "../../images/winners2021/StephanieBi.jpg"
-import Ryoma from "../../images/winners2021/RyomaHarris.jpg"
+import FoliaLogo from "../../images/2021/winners/Folia.jpg"
+import Rosanna from "../../images/2021/winners/RosannaJiang.jpg"
+import Caroline from "../../images/2021/winners/CarolineLi.jpg"
+import Zachary from "../../images/2021/winners/ZacharyHuang-Ogata.jpg"
+import Stephanie from "../../images/2021/winners/StephanieBi.jpg"
+import Ryoma from "../../images/2021/winners/RyomaHarris.jpg"
 
 const Folia = () => (
     <div>
-        <Subtitle css={`margin-top: 2vw`}>Second Place - Folia</Subtitle>
+        <Subtitle css={`margin-top: 15px`}>Second Place - Folia</Subtitle>
         <Logo src={FoliaLogo} alt="Folia" width="200px"/>
         <Text>Folia is a B2B Philadelphia-based company dedicated to diverting all 
             food waste from the landfill. Through an online platform, they ensure quality 
