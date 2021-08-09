@@ -5,15 +5,16 @@ import { FOREST_GREEN, STEEL_BLUE, GREEN, FOCUS_GREEN, mediaMaxWidth } from "../
 import Button from "../components/shared/Button"
 import Headshot from "../components/shared/Headshot"
 
-import Dennis from "../images/dennis woodside.jpg"
-import Arun from "../images/arun_majumdar.jpg"
-import Lidiya from "../images/lidiya-dervisheva.jpeg"
-import Seth from "../images/seth.jpg"
-import Marisa from "../images/marisa sweeney.jpg"
-import Sam from "../images/sam bursten.jpeg"
+import Arun from "../images/2021/keynote/ArunMajumdar.jpg"
+import Dennis from "../images/2021/keynote/DennisWoodside.jpg"
+import Lidiya from "../images/2021/judges/LidiyaDervisheva.jpg"
+import Seth from "../images/2021/judges/SethBannon.jpg"
+import Marisa from "../images/2021/judges/MarisaSweeney.jpg"
+import Sam from "../images/2021/judges/SamBursten.jpg"
 
-const Columns = s.div`
+const PeoplePhotos = s.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     margin-top: 2vw;
@@ -24,11 +25,12 @@ const Circle = s.a`
     color: white;
     font-family: roboto;
     font-size: 2rem;
-    border-radius: 50%;
-    width: 13vw;
-    height: 13vw;
+    border-radius: 150px;
+    width: 190px;
+    height: 190px;
     text-align: center;
-    line-height: 13vw;
+    line-height: 190px;
+    margin: 15px 0;
 
     :hover{
         color: white;
@@ -40,39 +42,35 @@ const LevelItem = s.div.attrs(() => ({
   }))`
     flex-direction: column;
     width: 18vw;
-    padding: 0 3vw;
+    margin: 0 auto;
+`
   
-    ${mediaMaxWidth("768px")} {
-      flex-direction: row;
-    }
-  `
-  
-  const Level = s.div`
-    margin: 2vw 9vw 0;
+const Level = s.div`
+    margin: 5px auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
   
     ${mediaMaxWidth("768px")} {
       width: 100%;
-      padding: 10%;
+      padding: 5%;
+      flex-direction: column;
     }
-  `
-
-const PrizeTitle = s(Text)`
-    font-family: roboto;
-    font-weight: bold;
-    color: ${STEEL_BLUE};
-    text-align: center;
-    font-size: calc(0.8rem + 1vw);
 `
-
+  
+const PrizeTitle = s(Text)`
+      font-family: roboto;
+      font-weight: bold;
+      color: ${STEEL_BLUE};
+      text-align: center;
+      font-size: 1.3rem;
+`
+  
 const PrizeSubtitle = s(Text)`
-    font-family: roboto;
-    font-weight: bold;
-    color: ${STEEL_BLUE};
-    text-align: center;
-    font-size: calc(2.8rem + 1vw);
+      font-family: roboto;
+      font-weight: bold;
+      color: ${STEEL_BLUE};
+      text-align: center;
+      font-size: 3.5rem;
 `
 
 const WinnersButton = s(Button)`
@@ -94,29 +92,33 @@ const WinnersButton = s(Button)`
 const People = () => (
     <div>
         <Subtitle center>Mentors, Judges, & Speakers</Subtitle>
-        <Columns>
+        <PeoplePhotos>
             <Headshot 
                 imageSrc={Dennis} 
                 imageAlt={"Dennis"} 
                 name={"Dennis Woodside"} 
-                description={<>President <br/> @ Impossible Foods</>}/>
+                description={<>President <br/> @ Impossible Foods</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Arun} 
                 imageAlt={"Arun"} 
                 name={"Dr. Arun Majumdar"} 
-                description={<>Founding Director <br/> @ ARPA-E <br/> Former VP of Energy <br/> @ Google</>}/>
+                description={<>Founding Director <br/> @ ARPA-E <br/> Former VP of Energy <br/> @ Google</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Marisa} 
                 imageAlt={"Marisa"} 
                 name={"Marisa Sweeney"} 
-                description={<>Director <br/> @ Generate Capital</>}/>
+                description={<>Director <br/> @ Generate Capital</>}
+                width="190px"/>
              <Headshot 
                 imageSrc={Lidiya} 
                 imageAlt={"Lidiya"} 
                 name={"Lidiya Dervisheva"} 
-                description={<>Partner <br/> @ Next47</>}/>
+                description={<>Partner <br/> @ Next47</>}
+                width="190px"/>
             <Circle href="/people">+ more</Circle>
-        </Columns>
+        </PeoplePhotos>
     </div>
 )
 
@@ -166,36 +168,38 @@ const Finals = () => (
 
         <Text fontSize="2rem" roboto bold>and judging by</Text>
 
-        <Columns>
+        <PeoplePhotos>
             <Headshot 
-                    imageSrc={Lidiya} 
-                    imageAlt={"Lidiya Dervisheva"} 
-                    name={"Lidiya Dervisheva"} 
-                    description={<>Partner <br/> @ Next47</>}/>
+                imageSrc={Lidiya} 
+                imageAlt={"Lidiya Dervisheva"} 
+                name={"Lidiya Dervisheva"} 
+                description={<>Partner <br/> @ Next47</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Seth} 
                 imageAlt={"Seth Bannon"} 
                 name={"Seth Bannon"} 
-                description={<>Founding Partner <br/> @ Fifty Years</>}/>
-            
+                description={<>Founding Partner <br/> @ Fifty Years</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Marisa} 
                 imageAlt={"Marisa Sweeney"} 
                 name={"Marisa Sweeney"} 
-                description={<>Director <br/> @ Generate Capital</>}/>
-
+                description={<>Director <br/> @ Generate Capital</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Sam} 
                 imageAlt={"Sam Bursten"} 
                 name={"Sam Bursten"} 
-                description={<>Vice President <br/>@ Energy Impact Partners</>}/>
-        </Columns>
+                description={<>Vice President <br/>@ Energy Impact Partners</>}
+                width="190px"/>
+        </PeoplePhotos>
     </div>
 )
 
 
 const Judging = () => (
-    <div>
+    <div css={`padding: 0 10px`}>
         <People />
         <Prizes />
         <Finals />

@@ -9,37 +9,29 @@ const LevelItem = s.div.attrs(() => ({
 }))`
   flex-direction: column;
   width: 25vw;
-  padding: 0 3vw;
+  padding: 0 40px;
 
-  ${mediaMaxWidth("768px")} {
-    flex-direction: row;
+  ${mediaMaxWidth("900px")} {
+    all: unset;
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
   }
 `
 
 const Level = s.div`
-  margin: 2vw 9vw 0;
+  margin: 2vw 6vw;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 
-  ${mediaMaxWidth("768px")} {
-    width: 100%;
-    padding: 10%;
-  }
-`
-
-const responsiveText = `
-  ${mediaMaxWidth("768px")} {
-    font-size: 2rem;
+  ${mediaMaxWidth("900px")} {
+    flex-direction: column;
   }
 `
 
 const WeekTitle = s(Subtitle)`
   color: ${STEEL_BLUE};
-  ${responsiveText}
-  ${mediaMaxWidth("768px")} {
-    margin-right: auto;
-  }
 `
 
 const WeekSubtitle = s(Subtitle)`
@@ -55,10 +47,16 @@ const List = s.ul`
   margin-bottom: 1vw;
 `
 
+const Description = s.div`
+  padding: 0 40px;
+`
+
 const WeekLayout = React.forwardRef(({ className }, ref) => (
   <div ref={ref} className={`container has-text-centered ${className}`}>
-    <Subtitle fontSize="1.8rem" css="padding: 2vw 0 0;">Dive into the most pressing environmental issues of today.</Subtitle>
-    <Text fontSize="1.3rem" roboto bold>Kickstart a climate startup in three weeks, supported by a world-class network of mentors.</Text>
+    <Description>
+      <Subtitle fontSize="1.8rem" css="padding: 5px 0;">Dive into the most pressing environmental issues of today.</Subtitle>
+      <Text fontSize="1.3rem" roboto bold>Kickstart a climate startup in three weeks, supported by a world-class network of mentors.</Text>
+    </Description>
     <Level className="level">
       <LevelItem>
         <WeekTitle>Week 1</WeekTitle>

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Helmet from "react-helmet"
 import { Navbar, Footer} from "../components"
 import s from "styled-components"
@@ -7,17 +7,18 @@ import Button from "../components/shared/Button"
 import Headshot from "../components/shared/Headshot"
 import {GREEN} from "../utils/constants.js"
 
-import Dennis from '../images/dennis woodside.jpg'
-import Lidiya from '../images/lidiya-dervisheva.jpeg'
-import Seth from '../images/seth.jpg'
-import Marisa from '../images/marisa sweeney.jpg'
-import Sam from '../images/sam bursten.jpeg'
+import Dennis from "../images/2021/keynote/DennisWoodside.jpg"
+import Lidiya from "../images/2021/judges/LidiyaDervisheva.jpg"
+import Seth from "../images/2021/judges/SethBannon.jpg"
+import Marisa from "../images/2021/judges/MarisaSweeney.jpg"
+import Sam from "../images/2021/judges/SamBursten.jpg"
 
 const Columns = s.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 2vw;
+    margin-top: 10px;
 `
 
 const EventTitle = s(Subtitle)`
@@ -26,6 +27,7 @@ const EventTitle = s(Subtitle)`
 
 const EventSubtitle = s(Subtitle)`
     font-size: 1.5rem;
+    margin-top: 15px
 `
 
 const NumList = s.ol`
@@ -35,7 +37,7 @@ const NumList = s.ol`
 `
 
 const EventGroup = s.div`
-    margin: 2vw 0;
+    margin: 10px 0;
 `
 
 const RoundedRectangle = s.div`
@@ -48,6 +50,16 @@ const RoundedRectangle = s.div`
     margin: 4vw auto;
 `
 
+const EventDate = s.div`
+    flex-basis: 100px; 
+    padding-left: 5px; 
+    text-align: center;
+
+    @media screen and (max-width: 740px) {
+        font-size: 1.2rem !important;
+    }
+`
+
 const EventDetails = ({date, description, buttonText, buttonLink}) => {
     const dayRegex = /\s\d{1,2}\s/;
     const monthRegex = /^\w{3}/;
@@ -57,20 +69,36 @@ const EventDetails = ({date, description, buttonText, buttonLink}) => {
     const day = date ? date.match(dayRegex) : "";
     const time = date ? date.match(timeRegex)[0] : "";
 
+    const [isDesktop, setDesktop] = useState(
+        typeof window !== "undefined" ? window.innerWidth > 740 : 740);
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 740);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+      });
+
     return (
         <div
             css={`display: flex;
                   border-left: 0.3rem solid ${GREEN};
                   flex-wrap: wrap;
-                  margin: 1vw 2vw;
+                  margin: 10px 25px;
                   `}>
-            {date && <div css={`flex-basis: 7vw; padding-left: 1vw; text-align: center`}>
+            {date && (isDesktop ? (
+                <div css={`flex-basis: 100px; padding-left: 5px; text-align: center;`}>
                     <Text fontSize="1.2rem" roboto bold>{month}</Text>
                     <Text fontSize="2.2rem" roboto bold css={`line-height: 1`}>{day}</Text>
                     <Text fontSize="1.2rem" roboto bold >{time}</Text>
                     <Text roboto bold css={`line-height: 0.8`}>EST</Text>
-            </div>}
-            <div css={`flex-basis: 55vw; padding-left: 1vw`}>
+                </div> 
+            ) : (
+                <Text fontSize="1.2rem" roboto bold css={`padding-left: 20px`}>{month} {day} @ {time} EST</Text>
+            ))}
+            <div css={`flex-basis: 55vw; padding-left: 20px`}>
                 <Text>{description}</Text>
                 {buttonText && <Button href={buttonLink}>{buttonText}</Button>}
             </div>
@@ -235,27 +263,29 @@ const Finals = () => (
 
         <Columns>
             <Headshot 
-                    imageSrc={Lidiya} 
-                    imageAlt={"Lidiya Dervisheva"} 
-                    name={"Lidiya Dervisheva"} 
-                    description={<>Partner <br/> @ Next47</>}/>
+                imageSrc={Lidiya} 
+                imageAlt={"Lidiya Dervisheva"} 
+                name={"Lidiya Dervisheva"} 
+                description={<>Partner <br/> @ Next47</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Seth} 
                 imageAlt={"Seth Bannon"} 
                 name={"Seth Bannon"} 
-                description={<>Founding Partner <br/> @ Fifty Years</>}/>
-            
+                description={<>Founding Partner <br/> @ Fifty Years</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Marisa} 
                 imageAlt={"Marisa Sweeney"} 
                 name={"Marisa Sweeney"} 
-                description={<>Director <br/> @ Generate Capital</>}/>
-
+                description={<>Director <br/> @ Generate Capital</>}
+                width="190px"/>
             <Headshot 
                 imageSrc={Sam} 
                 imageAlt={"Sam Bursten"} 
                 name={"Sam Bursten"} 
-                description={<>Vice President <br/>@ Energy Impact Partners</>}/>
+                description={<>Vice President <br/>@ Energy Impact Partners</>}
+                width="190px"/>
         </Columns>
     </RoundedRectangle>
 )
@@ -270,9 +300,9 @@ const Schedule = () => (
             <meta name="description" content="Penn Climate Ventures official schedule."/>
         </Helmet>
         <Navbar />
-        <div css={`padding: 6vw 14vw;`}>
-            <Title>PCV Prize 2021 Schedule</Title>
-            <Subtitle>Dates for 2022 TBA</Subtitle>
+        <div css={`padding: 90px 12vw;`}>
+            <Title css={`margin-bottom: 15px`}>PCV Prize 2021 Schedule</Title>
+            <Subtitle>Dates & info for 2022 TBA</Subtitle>
             <Timeline />
             <Finals />
         </div>

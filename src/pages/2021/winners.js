@@ -1,14 +1,29 @@
 import React from "react"
+import s from "styled-components"
 import Helmet from "react-helmet"
 import { Title } from "../../components/shared/Typography"
 import { STEEL_BLUE } from "../../utils/constants"
 import { Navbar, Footer } from "../../components"
 
-import { Columns, ColumnText, TeamSummary } from "../../components/2021/Layout"
+import { ColumnText, TeamSummary } from "../../components/2021/Layout"
 import Renecycle from "../../components/2021/Renecycle"
 import Folia from "../../components/2021/Folia"
 import TeamChaeto from "../../components/2021/TeamChaeto"
 import NASADYA from "../../components/2021/NASADYA"
+
+const Finalists = s.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 15px auto;
+    flex-wrap: wrap;
+    font-size: 0.6rem
+`
+
+const Team = s.div`
+    margin: 10px;
+`
 
 const Summary = () => (
     <div css={`text-align: center`}>
@@ -31,31 +46,31 @@ const Summary = () => (
             </TeamSummary> <br/>
         </div>
 
-        <Columns css={`font-size: 0.6rem`}>
-            <ColumnText>
+        <Finalists>
+            <Team>
                 <TeamSummary fontColor={STEEL_BLUE}>Waste and Circularity</TeamSummary>
                 <TeamSummary>Happy Earth Company<br/>
                     College Thrifts<br/> <br/></TeamSummary>
                 <TeamSummary fontColor={STEEL_BLUE}>Wild Card</TeamSummary>
                 <TeamSummary>Beyond Capacity <br/>
                         GarboCarbo<br/> <br/></TeamSummary>
-            </ColumnText>
+            </Team>
 
-            <ColumnText>
+            <Team>
                 <TeamSummary fontColor={STEEL_BLUE}>Energy and Transportation</TeamSummary>
                 <TeamSummary>Renecycle<br/>
                     NASADYA<br/> <br/></TeamSummary>
                 <TeamSummary fontColor={STEEL_BLUE}>High School</TeamSummary>
                 <TeamSummary>Team Chaeto <br/>
                     Promethean Energy<br/> <br/></TeamSummary>
-            </ColumnText>
+            </Team>
 
-            <ColumnText>
+            <Team>
                 <TeamSummary fontColor={STEEL_BLUE}>Food and Agriculture</TeamSummary>
                 <TeamSummary>Axo<br/>
                     Folia<br/> <br/></TeamSummary>
-            </ColumnText>
-        </Columns>
+            </Team>
+        </Finalists>
     </div>
 )
 
@@ -68,7 +83,7 @@ const Winners2021 = () => (
             <meta name="description" content="Penn Climate Ventures 2021 winning pitches." />
         </Helmet>
         <Navbar />
-        <div css={`padding: 6vw 12vw;`}>
+        <div css={`padding: 90px 12vw;`}>
             <Title>2021 Winning Pitches</Title>
             <Renecycle />
             <Folia />

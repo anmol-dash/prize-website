@@ -6,6 +6,7 @@ export const Title = s.h1`
   font-family: Roboto;
   font-weight: bold;
   color: ${STEEL_BLUE};
+  line-height: 4rem;
 `
 
 export const Subtitle = s.h2`
