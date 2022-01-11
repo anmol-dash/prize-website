@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import "./styles.scss"
 
 import {
-  Navbar, 
+  Navbar,
   Hero,
   Weekly,
   Donors,
@@ -25,9 +25,9 @@ const IndexPage = () => {
       </Helmet>
       <Navbar />
       <Hero scrollTo={scrollTo} />
-      <Weekly ref={sectionRef} />
-      <Judging />
-      <Donors />
+      {/*<Weekly ref={sectionRef} />*/}
+      {/*<Judging />*/}
+      {/*<Donors />*/}
       <Footer />
     </>
   )

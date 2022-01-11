@@ -13,7 +13,7 @@ const FooterButton = s(MenuButton).attrs(() => ({
 }))`
     cursor: pointer;
     z-index: 999;
-    ${({border}) => border && `border-right: 0.1rem solid ${GREY}`};
+    // ${({border}) => border && `border-right: 0.1rem solid ${GREY}`};
 
     ${mediaMaxWidth("780px")} {
         border: none;
@@ -53,13 +53,13 @@ const SocialMedia = s.img`
 
 const FooterLayout = () => <footer>
     <FooterLevel>
-        <FooterButton border href="/2021/winners">2021 Winning Pitches</FooterButton>
-        <FooterButton border href="/rules">Official Rules</FooterButton>
-        <FooterButton border href="/schedule">Schedule</FooterButton>
-        <FooterButton border href="/people">People</FooterButton>
-        <FooterButton border href="/sponsors">Sponsors</FooterButton>
+        {/*<FooterButton border href="/2021/winners">2021 Winning Pitches</FooterButton>*/}
+        {/*<FooterButton border href="/rules">Official Rules</FooterButton>*/}
+        {/*<FooterButton border href="/schedule">Schedule</FooterButton>*/}
+        {/*<FooterButton border href="/people">People</FooterButton>*/}
+        {/*<FooterButton border href="/sponsors">Sponsors</FooterButton>*/}
         <FooterButton border href="/about">About PCV</FooterButton>
-        <FooterButton href="/faq">FAQs</FooterButton>
+        {/*<FooterButton href="/faq">FAQs</FooterButton>*/}
         <SocialMediaWrapper>
             <a href="https://www.facebook.com/pennclimateventures"><SocialMedia src={Facebook} alt="Facebook"/></a>
             <a href="https://www.instagram.com/pennclimateventures/?hl=en"><SocialMedia src={Instagram} alt="Instagram"/></a>
