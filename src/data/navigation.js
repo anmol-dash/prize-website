@@ -7,6 +7,7 @@ import React from "react";
 import s from "styled-components"
 
 export const navLinks = [
+  /*
   {
     linkName: "2021 Winning Pitches",
     url: "/2021/winners"
@@ -31,6 +32,7 @@ export const navLinks = [
     linkName: "FAQ",
     url: "/faq"
   },
+  */
   {
     linkName: "About PCV",
     url: "/about"

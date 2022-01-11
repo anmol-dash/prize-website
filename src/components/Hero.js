@@ -28,7 +28,7 @@ const HeroLayout = ({ className, scrollTo }) => (
   <div className={`container has-text-centered ${className}`}>
     <InlineBlock>
       <Subtitle>
-      March 30th - April 24th | Open to students globally.
+      March 25th - April 16th | Open to students globally.
       </Subtitle>
       <Title>Penn Climate Ventures Prize</Title>
       <Subtitle>
@@ -36,7 +36,10 @@ const HeroLayout = ({ className, scrollTo }) => (
       </Subtitle>
     </InlineBlock>
     <br />
-    <Button 
+    <Button
+      href="https://forms.gle/EgRzEcfNBrJUMnDB8"
+      target="blank"
+      rel="noreferrer noopener"
       css={`display: block; 
             width: 350px; 
             margin: 50px auto;
@@ -46,15 +49,17 @@ const HeroLayout = ({ className, scrollTo }) => (
             :hover {
               background-color: #86b3d1;
             }`}>
-      Registration Closed for 2021
+      Sign up to stay tuned
     </Button>
 
+    {/*
     <a>
       <Chevron onClick={scrollTo} css={`
         width: 3rem;
         margin-top: 10px;
       `} />
     </a>
+    */}
   </div>
 )
 
