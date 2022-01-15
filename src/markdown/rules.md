@@ -4,85 +4,111 @@ title: "Official Rules"
 description: "The official rules for the Penn Climate Ventures Prize."
 ---
 
-# PCV Prize Official Rules
-
-### The PCV Prize is an annual student climate tech startup competition hosted by Penn Climate Ventures at the University of Pennsylvania.
+# **PCV Prize Official Rules**
 
 
-## 1. Competition Tracks
-
-There are two groups of tracks: Collegiate Tracks and the High School Track.
-
-### Collegiate Tracks
-- Waste and Circularity
-- Energy and Transportation
-- Food and Agriculture
-- Wild Card
-
-### High School Teams
-All high school teams will compete in the same track.
+### **The PCV Prize is an annual student climate tech startup competition hosted by Penn Climate Ventures at the University of Pennsylvania.**
 
 
-## 2. Eligibility
+## **1. Competition Tracks**
 
-### Individual Eligibility
-All students enrolled at a university or high school in the world are eligible to compete.
+There are two groups of tracks: Themed Tracks and the High School Track.
 
-### Team Eligibility
+
+### **Themed Tracks**
+
+
+
+* Waste and Circularity
+* Energy and Transportation
+* Food and Agriculture
+* Wild Card
+
+
+<h3Line>High School Track</h3Line> | *In Partnership with Zipline Theory*
+
+
+## **2. Eligibility**
+
+
+### **Individual Eligibility**
+
+All students enrolled at any university or high school globally are eligible to compete.
+
+
+### **Team Eligibility**
+
 PCV Prize teams compete in groups of 1-5. Depending on your track, different eligibility rules may apply. **The PCV Prize team reserves the right to determine a team’s eligibility.**
 
-### For All Teams
-- You do NOT need to have an incorporated business to apply; all concepts are welcome, whether it's just a great idea or a revenue-making startup
-- If you do have an established startup, you must not have received more than $25K in external funding, dilutive or non-dilutive.
 
-### For Collegiate Teams
-All team members must be currently enrolled students, at either the high school, undergrad, or graduate school level. We'd recommend teams solely consisting of high school members to participate in the high school track.
+### **For All Teams**
 
-### For High School Teams
+
+
+* You do NOT need to have an incorporated business to apply; all concepts are welcome, whether it's just a great idea or a revenue-making startup
+* If you do have an established startup, you must not have received more than $25K in external funding, dilutive or non-dilutive.
+
+
+### **For Teams competing in Themed Tracks**
+
+All team members must be currently enrolled students, at either the high school, undergrad, or graduate school level. We recommend teams solely consisting of high school members to participate in the high school track.
+
+
+### **For High School Teams**
+
 All team members must be currently enrolled in a high school anywhere around the world.
 
 
-## 3. Registration
+## **3. Registration**
+
 All competitors need to register for the PCV Prize. Registrants receive the latest updates on all events and sessions.
 
-### Individual Registrations (DUE DATE FOR 2022 PRIZE TBA) 
-Every team member needs to register at:
-
-### Team Registrations (DUE DATE FOR 2022 PRIZE TBA)
-Once you've decided on your team, register at:
+Registration details will be released in early March.
 
 
-## 4. Submissions
-
-### All submissions are due (DUE DATE FOR 2022 PRIZE TBA):
-Once you feel ready, submit your team's deck and presentation at:
-
-### Submission Materials
-- Pitch video (maximum 5 minutes, recommended 3-4)
-- Pitch deck (maximum 20 slides, recommended 10-12)
-- (OPTIONAL) 2 supplemental PDFs (each PDF is maximum 10 pages) 
-
-Round 1 submission rubric to come.
-
-## 5. First Round Judging 
-
-### Before the first round, teams will have the opportunity to attend:
-- (OPTIONAL) 1-on-1 office hours with industry experts
-- (OPTIONAL) 1-on-1 office hours with the PCV consulting team
-
-### First round pitches are ranked on:
-- Technical feasibility
-- Potential environmental impact
-- Financial viability
-Rubric will be posted soon.
-
-### Two finalists will from each track will be announced the morning of (DATE TBA). Good luck!
+## **4. Submissions and Judging**
 
 
-## 6. Finals (DATE TBA)
+### **First Round Judging — Due 4/8**
 
-### During our finalists week, our 10 finalists will receive:
-- 1-on-1 Mentorship
-- Investor Intros
 
-### ​Finalists compete LIVE for first, second, and third place awards in closing session!
+#### **Before the first round, teams will have the opportunity to attend:**
+
+
+
+* (OPTIONAL) 1-on-1 office hours with industry experts
+* (OPTIONAL) 1-on-1 office hours with the PCV consulting team
+
+#### **Submission Materials:**
+
+
+
+* Pitch video (maximum 5 minutes, recommended 3-4)
+* Pitch deck (maximum 20 slides, recommended 10-12)
+* (OPTIONAL) 2 supplemental PDFs (each PDF is maximum 10 pages)
+
+
+#### **First-round pitches are ranked on:**
+
+
+
+* Technical feasibility
+* Potential environmental impact
+* Financial viability 
+
+
+#### **Two finalists from each track will move on to the Final Round.**
+
+### **Final Round Judging — Due 4/16**
+
+
+
+#### **During our finalists week, our 10 finalists will receive:**
+
+
+
+* 1-on-1 Mentorship
+* Investor Intros
+
+
+### **​Finalists compete LIVE for first, second, and third place awards in the closing session.**
