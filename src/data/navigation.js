@@ -12,10 +12,12 @@ export const navLinks = [
     linkName: "2021 Winning Pitches",
     url: "/2021/winners"
   },
+  */
   {
     linkName: "Official Rules",
     url: "/rules"
   },
+  /*
   {
     linkName: "Schedule",
     url: "/schedule"
@@ -28,11 +30,15 @@ export const navLinks = [
     linkName: "Sponsors",
     url: "/sponsors"
   },
+  */
   {
     linkName: "FAQ",
     url: "/faq"
   },
-  */
+  {
+    linkName: "Past Competitions",
+    url: "/past-competitions"
+  },
   {
     linkName: "About PCV",
     url: "/about"

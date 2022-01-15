@@ -1,13 +1,13 @@
 import React from "react"
 import Helmet from "react-helmet"
 import s from "styled-components"
-import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
-import { Navbar, Footer } from "../components"
+import { Title, Text, Subtitle, Link } from "../../components/shared/Typography"
+import { Navbar, Footer } from "../../components"
 
-import Kleinman from "../images/2021/sponsors/Kleinman.jpg"
-import MT from "../images/2021/sponsors/M&T.jpg"
-import SP2 from "../images/2021/sponsors/SP2.jpg"
-import WGY from "../images/2021/sponsors/WGY.jpg"
+import Kleinman from "../../images/2021/sponsors/Kleinman.jpg"
+import MT from "../../images/2021/sponsors/M&T.jpg"
+import SP2 from "../../images/2021/sponsors/SP2.jpg"
+import WGY from "../../images/2021/sponsors/WGY.jpg"
 
 const Logo = s.img`
     height: 6vw;
@@ -37,14 +37,14 @@ const Sponsors = () => (
             <br/>
             <Logo src={MT} alt="MT"/>
             <br/>
-            
+
             <Text>
-                If you would like to become a sponsor of our 2022 Prize, please shoot us an email at 
+                If you would like to become a sponsor of our 2022 Prize, please shoot us an email at
                 <Link href="mailto:pennclimateventures@gmail.com"> pennclimateventures@gmail.com</Link>!
             </Text>
         </div>
         <Footer />
-    </>        
+    </>
 )
 
 export default Sponsors
