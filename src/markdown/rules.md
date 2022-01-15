@@ -25,8 +25,7 @@ There are two groups of tracks: Themed Tracks and the High School Track.
 * Wild Card
 
 
-### **High School Track**
-*In Partnership with Zipline Theory*
+<h3Line>High School Track</h3Line> | *In Partnership with Zipline Theory*
 
 
 ## **2. Eligibility**
@@ -50,7 +49,7 @@ PCV Prize teams compete in groups of 1-5. Depending on your track, different eli
 * If you do have an established startup, you must not have received more than $25K in external funding, dilutive or non-dilutive.
 
 
-### **For Teams competing in Themed Tracks **
+### **For Teams competing in Themed Tracks**
 
 All team members must be currently enrolled students, at either the high school, undergrad, or graduate school level. We recommend teams solely consisting of high school members to participate in the high school track.
 
@@ -70,20 +69,17 @@ Registration details will be released in early March.
 ## **4. Submissions and Judging**
 
 
-### **First Round Judging **
+### **First Round Judging — Due 4/8**
 
 
-### **Due 4/8**
-
-
-### **Before the first round, teams will have the opportunity to attend:**
+#### **Before the first round, teams will have the opportunity to attend:**
 
 
 
 * (OPTIONAL) 1-on-1 office hours with industry experts
 * (OPTIONAL) 1-on-1 office hours with the PCV consulting team
 
-**Submission Materials:**
+#### **Submission Materials:**
 
 
 
@@ -92,7 +88,7 @@ Registration details will be released in early March.
 * (OPTIONAL) 2 supplemental PDFs (each PDF is maximum 10 pages)
 
 
-### **First-round pitches are ranked on:**
+#### **First-round pitches are ranked on:**
 
 
 
@@ -101,14 +97,13 @@ Registration details will be released in early March.
 * Financial viability 
 
 
-### **Two finalists will from each track will move on to the Final Round**
+#### **Two finalists from each track will move on to the Final Round.**
 
-**Final Round Judging**
-
-**Due 4/16**
+### **Final Round Judging — Due 4/16**
 
 
-### **During our finalists week, our 10 finalists will receive:**
+
+#### **During our finalists week, our 10 finalists will receive:**
 
 
 

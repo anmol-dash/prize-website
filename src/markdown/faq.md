@@ -27,4 +27,4 @@ title: "FAQs"
 * Can I apply without prior experience with tech or startups?
     * We strongly encourage anyone interested in the PCV Prize or climate innovation to apply. There are no requirements for what a successful PCV Prize team will look like, and we will be hosting educational events to help teams build and strengthen their startup ideas.
 * What type of solution should I present?
-    * Anywhere from just an idea to a working prototype. The key caveat is that teams must have less than 25K in external funding. As much as we would love to support great climate startups that are already growing, we’re focused on encouraging new students to enter the scene. Feel free to check out the winning pitches from [our last competition](/past-competition).
+    * Anywhere from just an idea to a working prototype. The key caveat is that teams must have less than 25K in external funding. As much as we would love to support great climate startups that are already growing, we’re focused on encouraging new students to enter the scene. Feel free to check out the winning pitches from [our last competition](/past-competitions).
