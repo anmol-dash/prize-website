@@ -1,6 +1,6 @@
 import React, {Component } from 'react'
 import s from "styled-components"
-import Logo from "../images/PCVPrizeSparkTeen.jpg"
+import Logo from "../images/PCVxZipline.png"
 import { STEEL_BLUE, MIDNIGHT_BLUE, GREEN } from "../utils/constants"
 import {navLinks, smLinks} from "../data/navigation"
 
