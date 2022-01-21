@@ -2,6 +2,7 @@ import React from 'react'
 import s from "styled-components"
 import  MenuButton from './shared/MenuButton'
 import { mediaMaxWidth, GREY } from '../utils/constants'
+import { navLinks } from "../data/navigation";
 
 import Facebook from "../images/menu/facebook.png"
 import Instagram from "../images/menu/instagram.png"
@@ -53,13 +54,11 @@ const SocialMedia = s.img`
 
 const FooterLayout = () => <footer>
     <FooterLevel>
-        {/*<FooterButton border href="/2021/winners">2021 Winning Pitches</FooterButton>*/}
-        {/*<FooterButton border href="/rules">Official Rules</FooterButton>*/}
-        {/*<FooterButton border href="/schedule">Schedule</FooterButton>*/}
-        {/*<FooterButton border href="/people">People</FooterButton>*/}
-        {/*<FooterButton border href="/sponsors">Sponsors</FooterButton>*/}
-        <FooterButton border href="/about">About PCV</FooterButton>
-        {/*<FooterButton href="/faq">FAQs</FooterButton>*/}
+        { navLinks.map( navLink => (
+          <FooterButton rel="noreferrer noopener" href={navLink.url} >
+              {navLink.linkName}
+          </FooterButton>
+        )) }
         <SocialMediaWrapper>
             <a href="https://www.facebook.com/pennclimateventures"><SocialMedia src={Facebook} alt="Facebook"/></a>
             <a href="https://www.instagram.com/pennclimateventures/?hl=en"><SocialMedia src={Instagram} alt="Instagram"/></a>
