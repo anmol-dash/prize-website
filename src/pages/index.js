@@ -7,6 +7,7 @@ import {
   Hero,
   Weekly,
   Donors,
+  Sponsors,
   Footer
 } from "../components"
 
@@ -28,6 +29,7 @@ const IndexPage = () => {
       {/*<Weekly ref={sectionRef} />*/}
       {/*<Judging />*/}
       {/*<Donors />*/}
+      <Sponsors />
       <Footer />
     </>
   )
