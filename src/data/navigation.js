@@ -26,11 +26,11 @@ export const navLinks = [
     linkName: "People",
     url: "/people"
   },
+  */
   {
     linkName: "Sponsors",
     url: "/sponsors"
   },
-  */
   {
     linkName: "FAQ",
     url: "/faq"

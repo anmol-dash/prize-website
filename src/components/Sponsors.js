@@ -1,56 +1,88 @@
 import React from "react"
 import s from "styled-components"
-import { SubText, Text, Link } from "./shared/Typography"
-import { mediaMaxWidth } from "../utils/constants"
+import {Text, Link, Subtitle} from "./shared/Typography"
 
 import RiskCenter from "../images/sponsors/RiskCenter.png"
 import LSPower from "../images/sponsors/LSPower.png"
+import SP2 from "../images/sponsors/SP2.png"
 
-const LevelItem = s.div.attrs(() => ({
-  className: "level-item has-text-left"
-}))`
-  // align-self: flex-start;
-  // display: flex;
-  flex-direction: column;
-  // flex-wrap: wrap;
-  width: 300px
+const silverSponsors = [
+  {
+    name: "Wharton Risk Management and Decision Process Center",
+    link: "https://riskcenter.wharton.upenn.edu/",
+    image: RiskCenter
+  },
+  {
+    name: "Penn Social Policy & Practice",
+    link: "https://www.sp2.upenn.edu/",
+    image: SP2
+  }
+]
+
+const bronzeSponsors = [
+  {
+    name: "LSPower",
+    link: "https://www.lspower.com/",
+    image: LSPower
+  }
+]
+
+const alumSponsors = [
+  {
+    name: "David Wierz",
+    info: "G89 G02"
+  }
+]
+
+const CategoryTitle = s(Subtitle)`
+  margin-top: 30px;
+  margin-bottom: 15px;
 `
 
-const Level = s.div`
-  margin: 2vw auto;
+const SponsorCategory = s.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  
-  ${mediaMaxWidth("768px")} {
-    flex-direction: column;
-    align-items: center;
-  }
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 `
 
-const Logo = s.img`
-  max-width: 800px;
+const SponsorWrapper = s.div`
   margin: 20px;
+  max-width: 600px;
 `
 
-const SponsorsLayout = ({ className }) => (
-  <div className={`container has-text-centered ${className}`} css={`padding: 0 10px`}>
-    <Text fontSize="1.5rem" roboto bold>This event could not have been possible without our sponsors.</Text>
-    <Level className="level">
-      <LevelItem>
-        <SubText css={`text-align: center`}>
-          <Link href="https://riskcenter.wharton.upenn.edu/"><Logo src={RiskCenter}/></Link>
-          <br />
-          <Link href="https://www.lspower.com/"><Logo src={LSPower}/></Link>
-          <br />
-        </SubText>
-      </LevelItem>
-    </Level>
+export const Sponsors = ({ includeAlum }) => (
+  <div className={`container has-text-centered`}>
+    <Text fontSize="1.5rem" roboto bold css={{margin: `60px auto`}}>
+      This event could not have been possible without our sponsors.
+    </Text>
+
+    <CategoryTitle>Silver</CategoryTitle>
+    <SponsorCategory>
+      {silverSponsors.map(sponsor => (
+        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name}/></Link></SponsorWrapper>
+      )) }
+    </SponsorCategory>
+
+    <CategoryTitle>Bronze</CategoryTitle>
+    <SponsorCategory>
+      {bronzeSponsors.map(sponsor => (
+        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name}/></Link></SponsorWrapper>
+      )) }
+    </SponsorCategory>
+
+    {includeAlum
+      ? <>
+        <CategoryTitle>Alum Sponsors</CategoryTitle>
+        <SponsorCategory>
+        {alumSponsors.map(sponsor => (
+          <SponsorWrapper>{sponsor.name} {sponsor.info}</SponsorWrapper>
+        )) }
+        </SponsorCategory>
+        </>
+      : <></>
+    }
   </div>
 )
 
-export const Sponsors = s(SponsorsLayout)`
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-`
