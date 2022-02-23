@@ -5,6 +5,7 @@ import {Text, Link, Subtitle} from "./shared/Typography"
 import RiskCenter from "../images/sponsors/RiskCenter.png"
 import LSPower from "../images/sponsors/LSPower.png"
 import SP2 from "../images/sponsors/SP2.png"
+import Penn_LPS from "../images/sponsors/Penn_LPS.png"
 
 const silverSponsors = [
   {
@@ -24,6 +25,11 @@ const bronzeSponsors = [
     name: "LSPower",
     link: "https://www.lspower.com/",
     image: LSPower
+  },
+  {
+    name: "Penn LPS",
+    link: "https://www.lps.upenn.edu/",
+    image: Penn_LPS
   }
 ]
 
@@ -58,17 +64,17 @@ export const Sponsors = ({ includeAlum }) => (
       This event could not have been possible without our sponsors.
     </Text>
 
-    <CategoryTitle>Silver</CategoryTitle>
+    {includeAlum && <CategoryTitle>Silver</CategoryTitle>}
     <SponsorCategory>
       {silverSponsors.map(sponsor => (
-        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name}/></Link></SponsorWrapper>
+        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "100px", objectFit: "contain"}}/></Link></SponsorWrapper>
       )) }
     </SponsorCategory>
 
-    <CategoryTitle>Bronze</CategoryTitle>
+    {includeAlum && <CategoryTitle>Bronze</CategoryTitle>}
     <SponsorCategory>
       {bronzeSponsors.map(sponsor => (
-        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name}/></Link></SponsorWrapper>
+        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "100px", objectFit: "contain"}}/></Link></SponsorWrapper>
       )) }
     </SponsorCategory>
 
