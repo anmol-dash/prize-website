@@ -5,7 +5,9 @@ import {Text, Link, Subtitle} from "./shared/Typography"
 import RiskCenter from "../images/sponsors/RiskCenter.png"
 import LSPower from "../images/sponsors/LSPower.png"
 import SP2 from "../images/sponsors/SP2.png"
-import Penn_LPS from "../images/sponsors/Penn_LPS.png"
+import PennLPS from "../images/sponsors/PennLPS.png"
+import Kleinman from "../images/sponsors/Kleinman.jpg"
+import TheYieldLab from "../images/sponsors/TheYieldLab.png"
 
 const silverSponsors = [
   {
@@ -17,6 +19,11 @@ const silverSponsors = [
     name: "Penn Social Policy & Practice",
     link: "https://www.sp2.upenn.edu/",
     image: SP2
+  },
+  {
+    name: "Kleinman Center for Energy Policy",
+    link: "https://kleinmanenergy.upenn.edu/",
+    image: Kleinman
   }
 ]
 
@@ -29,7 +36,13 @@ const bronzeSponsors = [
   {
     name: "Penn LPS",
     link: "https://www.lps.upenn.edu/",
-    image: Penn_LPS
+    image: PennLPS
+  },
+  {
+    name: "The Yield Lab",
+    link: "https://www.theyieldlab.com/",
+    image: TheYieldLab,
+    short: true
   }
 ]
 
@@ -73,8 +86,9 @@ export const Sponsors = ({ includeAlum }) => (
 
     {includeAlum && <CategoryTitle>Bronze</CategoryTitle>}
     <SponsorCategory>
-      {bronzeSponsors.map(sponsor => (
-        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "100px", objectFit: "contain"}}/></Link></SponsorWrapper>
+      {bronzeSponsors.map(sponsor => (sponsor.short ? 
+        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "140px"}}/></Link></SponsorWrapper>
+        : <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "100px", objectFit: "contain"}}/></Link></SponsorWrapper>
       )) }
     </SponsorCategory>
 
