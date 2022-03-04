@@ -37,7 +37,7 @@ const HeroLayout = ({ className, scrollTo }) => (
     </InlineBlock>
     <br />
     <Button
-      href="https://forms.gle/EgRzEcfNBrJUMnDB8"
+      href="https://tinyurl.com/PCV22Signup"
       target="blank"
       rel="noreferrer noopener"
       css={`display: block; 
@@ -49,7 +49,7 @@ const HeroLayout = ({ className, scrollTo }) => (
             :hover {
               background-color: #86b3d1;
             }`}>
-      Sign up to stay tuned
+      Individual Registration Open
     </Button>
 
     {/*
