@@ -10,3 +10,4 @@ description: "Past competitions hosted Penn Climate Ventures Prize."
 - [2021 Winning Pitches](/2021/winners)
 - [2021 People](/2021/people)
 - [2021 Sponsors](/2021/sponsors)
+- [2021 Judges](/2021/judges)
