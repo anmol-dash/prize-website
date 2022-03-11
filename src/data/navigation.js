@@ -17,11 +17,11 @@ export const navLinks = [
     linkName: "Official Rules",
     url: "/rules"
   },
-  /*
   {
     linkName: "Schedule",
     url: "/schedule"
   },
+  /*
   {
     linkName: "People",
     url: "/people"

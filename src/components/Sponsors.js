@@ -8,6 +8,7 @@ import SP2 from "../images/sponsors/SP2.png"
 import PennLPS from "../images/sponsors/PennLPS.png"
 import Kleinman from "../images/sponsors/Kleinman.jpg"
 import TheYieldLab from "../images/sponsors/TheYieldLab.png"
+import JeromeFisher from "../images/sponsors/JeromeFisher.jpg"
 
 const silverSponsors = [
   {
@@ -43,7 +44,13 @@ const bronzeSponsors = [
     link: "https://www.theyieldlab.com/",
     image: TheYieldLab,
     short: true
-  }
+  },
+  {
+    name: "Jerome Fisher Program",
+    link: "https://fisher.wharton.upenn.edu/",
+    image: JeromeFisher,
+    short:true
+  },
 ]
 
 const alumSponsors = [
@@ -86,7 +93,7 @@ export const Sponsors = ({ includeAlum }) => (
 
     {includeAlum && <CategoryTitle>Bronze</CategoryTitle>}
     <SponsorCategory>
-      {bronzeSponsors.map(sponsor => (sponsor.short ? 
+      {bronzeSponsors.map(sponsor => (sponsor.short ?
         <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "140px"}}/></Link></SponsorWrapper>
         : <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "100px", objectFit: "contain"}}/></Link></SponsorWrapper>
       )) }
