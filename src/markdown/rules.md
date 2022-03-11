@@ -17,13 +17,29 @@ There are two groups of tracks: Themed Tracks and the High School Track.
 
 ### **Themed Tracks**
 
-
-
-* Waste and Circularity
-* Energy and Transportation
-* Food and Agriculture
-* Wild Card
-
+* **Waste and Circularity**
+    * Excessive waste
+    * Landfills (lack of proper on-site waste management); leakage
+    * Profit-based regulations
+    * Mislabeling of “green” technologies
+    * Toxic waste
+    * Contamination & improper recycling
+* **Energy and Transportation**
+    * Poor renewable energy grid stability 
+    * Transportation with net-zero carbon emissions
+    * Inadequate energy storage & transportation (particularly solar energy)
+    * Insufficient electric vehicle charging infrastructure
+    * Unequal energy transition for low-income communities
+    * Lack of renewable energy infrastructure
+    * Electric vehicle long-distance range anxiety
+* **Food and Agriculture**
+    * Rising demand for food globally; 
+    * Loss of biodiversity during farming; 
+    * Lack of improvement in farming productivity and food system resiliency; 
+    * Increased and more intense natural hazards impacting farms; 
+    * Hunger, poverty, and malnutrition;
+    * Unsustainable usage of natural resources
+* **Wild Card**
 
 <h3Line>High School Track</h3Line> | *In Partnership with Zipline Theory*
 
