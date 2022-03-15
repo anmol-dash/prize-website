@@ -45,6 +45,8 @@ There are two groups of tracks: Themed Tracks and the High School Track.
 
 Teams competing in the High School Track are NOT required to adhere to a specific topic but still must be related to climate action.
 
+_For more details about the **high school track**, see [here](https://docs.google.com/document/d/1fs6Qsa8faxrbPpHsgLzlkkUKkCI2n0cb722XdPr4HcQ/edit?usp=sharing)_
+
 
 ## **2. Eligibility**
 
