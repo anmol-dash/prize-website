@@ -7,13 +7,18 @@ import {
   Footer
 } from "../components"
 import SEO from "../components/seo";
+import {Title} from "../components/shared/Typography";
 
 const SponsorsPage = () => {
   return (
     <>
       <SEO title="Sponsors" defer={false} />
       <Navbar />
-      <Sponsors includeAlum={"yes"}/>
+
+      <div css={`padding: 90px 12vw;`}>
+        <Title css={`margin-bottom: 15px`}>Sponsors</Title>
+        <Sponsors includeAlum={"yes"}/>
+      </div>
       <Footer />
     </>
   )
