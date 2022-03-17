@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import Helmet from "react-helmet"
 import { Navbar, Footer} from "../components"
 import s from "styled-components"
 import { Title, Text, Subtitle, Link } from "../components/shared/Typography"
@@ -8,14 +7,7 @@ import Headshot from "../components/shared/Headshot"
 import {GREEN} from "../utils/constants.js"
 
 import AndrewBeebe from "../images/2022/andrew_beebe.png"
-
-const Columns = s.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 10px;
-`
+import SEO from "../components/seo";
 
 const EventTitle = s(Subtitle)`
     color: ${GREEN};
@@ -216,13 +208,8 @@ const Finals = () => (
 
 const Schedule = () => (
     <>
-        <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
-            <title defer={false}>Schedule</title>
-            <meta charSet="utf-8" />
-            <link rel="canonical" href="https://www.prize.pennclimateventures.org/schedule" />
-            <meta name="description" content="Penn Climate Ventures official schedule."/>
-        </Helmet>
-        <Navbar />
+      <SEO title="Schedule" defer={false} />
+      <Navbar />
         <div css={`padding: 90px 12vw;`}>
             <Title css={`margin-bottom: 15px`}>PCV Prize 2022 Schedule</Title>
             <Subtitle>March 25 — April 16</Subtitle>

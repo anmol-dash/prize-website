@@ -8,8 +8,6 @@ title: "FAQs"
 
 ## General
 
-
-
 * What is the PCV Prize?
     * The PCV Prize is a new annual competition where student teams can pitch a climate tech startup concept for a chance at $5K in non-dilutive funding, as well as mentorship and publicity opportunities.
 * Why are you holding the PCV Prize?
@@ -17,8 +15,6 @@ title: "FAQs"
 
 
 ## Eligibility 
-
-
 
 * Who can apply?
     * All students enrolled at a university or high school in the world are eligible to compete. All core members of the team must be current students. The PCV Prize team reserves the right to determine a team’s eligibility.

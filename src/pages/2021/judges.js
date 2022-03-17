@@ -1,6 +1,5 @@
 import React from "react"
 import s from "styled-components"
-import Helmet from "react-helmet"
 import "../styles.scss"
 import { Title, Text, Subtitle} from "../../components/shared/Typography"
 import { Navbar, Footer } from "../../components"
@@ -12,6 +11,7 @@ import Marisa from "../../images/2021/judges/MarisaSweeney.jpg"
 import Sam from "../../images/2021/judges/SamBursten.jpg"
 import Dennis from "../../images/2021/keynote/DennisWoodside.jpg";
 import Arun from "../../images/2021/keynote/ArunMajumdar.jpg";
+import SEO from "../../components/seo";
 
 const GridLayout = s.div`
   display: flex;
@@ -109,12 +109,7 @@ const Finals = () => (
 const Judges = () => {
   return (
     <>
-      <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
-        <title defer={false}>Judges</title>
-        <meta charSet="utf-8" />
-        <link rel="canonical" href={"https://www.prize.pennclimateventures.org/2021/people"} />
-        <meta name="description" content="Penn Climate Ventures official prize people." />
-      </Helmet>
+      <SEO title="2021 Judges" defer={false} />
       <Navbar />
       <div css={`padding: 90px 12vw;`}>
         <Title css={`margin-bottom: 15px`}>Judges (2021)</Title>
