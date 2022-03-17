@@ -14,7 +14,7 @@ module.exports = {
       "tech",
       "Penn",
     ],
-    image: "src/images/PCVxZipline.png"
+    image: "web_preview.png"
   },
   plugins: [
     "gatsby-plugin-styled-components",
