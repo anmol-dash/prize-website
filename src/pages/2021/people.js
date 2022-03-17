@@ -1,6 +1,5 @@
 import React from "react"
 import s from "styled-components"
-import Helmet from "react-helmet"
 import "../styles.scss"
 import { Title, Text, Subtitle} from "../../components/shared/Typography"
 import { Navbar, Footer } from "../../components"
@@ -29,6 +28,7 @@ import AkaashPadmanabha from "../../images/2021/moderators/AkaashPadmanabha.jpg"
 import PEGLogo from "../../images/2021/cosponsors/peg.jpg"
 import SSAPLogo from "../../images/2021/cosponsors/ssap.jpg"
 import PUCPLogo from "../../images/2021/cosponsors/pucp.jpg"
+import SEO from "../../components/seo";
 
 const GridLayout = s.div`
   display: flex;
@@ -241,12 +241,7 @@ const PCVTeam = () => {
 const People = () => {
   return (
     <>
-      <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize">
-        <title defer={false}>People</title>
-        <meta charSet="utf-8" />
-        <link rel="canonical" href={"https://www.prize.pennclimateventures.org/2021/people"} />
-        <meta name="description" content="Penn Climate Ventures official prize people." />
-      </Helmet>
+      <SEO title="2021 People" defer={false} />
       <Navbar />
       <div css={`padding: 90px 12vw;`}>
         <Title css={`margin-bottom: 15px`}>People (2021)</Title>

@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Helmet from "react-helmet"
 import "../pages/styles.scss"
 import "./template.scss"
 
 import { Navbar, Footer } from "../components"
+import SEO from "../components/seo";
 
 const Template = ({ data: {
     markdownRemark: {
@@ -12,13 +12,8 @@ const Template = ({ data: {
         html
     }
 } }) => (
-    <>  
-        <Helmet defaultTitle="PCV Prize" titleTemplate="%s | PCV Prize" defer={false}>
-          <title>{frontmatter.title}</title>
-          <meta charSet="utf-8" />
-          <link rel="canonical" href={"https://www.prize.pennclimateventures.org/"+frontmatter.slug} />
-          <meta name="description" content={frontmatter.description}/>
-      </Helmet>
+    <>
+        <SEO title={frontmatter.title} defer={false} />
         <Navbar />
         <div className="container">
             <div

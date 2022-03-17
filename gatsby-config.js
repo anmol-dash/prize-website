@@ -1,6 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: "PCV Prize Website",
+    title: "PCV Prize Competition",
+    description: "Penn Climate Ventures. Catalyzing climate action.",
+    author: "PCV",
+    keywords: [
+      "competition",
+      "pitch",
+      "prize",
+      "climate",
+      "environment",
+      "startup",
+      "venture",
+      "tech",
+      "Penn",
+    ],
+    image: "src/images/PCVxZipline.png"
   },
   plugins: [
     "gatsby-plugin-styled-components",
