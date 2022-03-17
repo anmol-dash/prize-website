@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types"
 import React from "react";
 import {graphql, useStaticQuery} from "gatsby";
+import metaImage from "../images/PCVxZipline.png";
 
 function SEO({ description, lang, meta, title, defer}) {
   const { site } = useStaticQuery(
@@ -19,7 +20,8 @@ function SEO({ description, lang, meta, title, defer}) {
       }
     `
   )
-  const image = site.siteMetadata.image
+
+  const image = metaImage || site.siteMetadata.image;
   const keywords = site.siteMetadata.keywords
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
