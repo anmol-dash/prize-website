@@ -53,8 +53,7 @@ _For more details about the **high school track**, see [here](https://docs.googl
 
 ### **Individual Eligibility**
 
-All students enrolled at any university or high school globally are eligible to compete.
-
+All students enrolled at any university or high school globally or on gap year are eligible to compete.
 
 ### **Team Eligibility**
 
@@ -84,7 +83,14 @@ All competitors need to register for the PCV Prize. Registrants receive the late
 Individual registration is now open at [here](https://tinyurl.com/PCV22Signup)!
 
 
-## **4. Submissions and Judging**
+## **4. Prize**
+
+The top 3 winning finalists will receive $5000, $2500, and $1000 respectively. All competitors will
+have access to speaking events and mentorship opportunities from industry leaders.
+
+
+
+## **5. Submissions and Judging**
 
 
 ### **First Round Judging:**
