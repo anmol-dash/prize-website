@@ -32,7 +32,10 @@ const HeroLayout = ({ className, scrollTo }) => (
       </Subtitle>
       <Title>Penn Climate Ventures Prize</Title>
       <Subtitle>
-        catalyzing climate action
+        Deep dive into the most pressing environmental issues today
+      </Subtitle>
+      <Subtitle>
+        with industry leader panels, mentorship opportunities, and cash prizes up to $5000
       </Subtitle>
     </InlineBlock>
     <br />
