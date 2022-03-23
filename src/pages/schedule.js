@@ -8,6 +8,7 @@ import {GREEN} from "../utils/constants.js"
 
 import AndrewBeebe from "../images/2022/andrew_beebe.png"
 import SEO from "../components/seo";
+import ShuoYang from "../images/2022/ShuoYang.jpg"
 
 const EventTitle = s(Subtitle)`
     color: ${GREEN};
@@ -130,7 +131,7 @@ const Timeline = () => (
 
             <EventSubtitle>Individual Registration</EventSubtitle>
             <EventDetails
-                date="MAR 20 11:59 PM EST"
+                date="MAR 26 11:59 PM EST"
                 description="Register individually and start building your team through our online PCV Prize Discord community and stay up to date with our latest news."
                 buttonText="Register Now!"
                 buttonLink="https://tinyurl.com/PCV22Signup"/>
@@ -184,8 +185,8 @@ const Timeline = () => (
             <EventSubtitle>Pitching 101</EventSubtitle>
             <EventDetails
                 date="APR 5 7 PM EST"
-                description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/">Fifty Years</Link></>}/>
-
+                description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/">Fifty Years</Link></>}
+                image={ShuoYang}/>
             <EventSubtitle>Pitch Office Hours</EventSubtitle>
             <EventDetails
                 description="Sign up for mentor office hours."
