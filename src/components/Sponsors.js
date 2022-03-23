@@ -10,6 +10,18 @@ import Kleinman from "../images/sponsors/Kleinman.jpg"
 import TheYieldLab from "../images/sponsors/TheYieldLab.png"
 import JeromeFisher from "../images/sponsors/JeromeFisher.jpg"
 import Blackhorn from "../images/sponsors/Blackhorn.png"
+import Banyan from "../images/sponsors/Banyan.png"
+import Headshot from "../components/shared/Headshot"
+import DavidWertz from "../images/sponsors/DavidWertz.jpg"
+
+const goldSponsors = [
+  {
+    name: "Banyan Infrastructure",
+    link: "https://www.banyaninfrastructure.com/",
+    image: Banyan,
+    short: true
+  }
+]
 
 const silverSponsors = [
   {
@@ -63,7 +75,8 @@ const bronzeSponsors = [
 const alumSponsors = [
   {
     name: "David Wierz",
-    info: "G89 G02"
+    info: "G89 G02",
+    image: DavidWertz
   }
 ]
 
@@ -90,7 +103,13 @@ export const Sponsors = ({ includeAlum }) => (
     <Text fontSize="1.5rem" roboto bold css={{margin: `60px auto`}}>
       This event could not have been possible without our sponsors.
     </Text>
-
+    {includeAlum && <CategoryTitle>Gold</CategoryTitle>}
+    <SponsorCategory>
+      {goldSponsors.map(sponsor => (sponsor.short ?
+        <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "140px"}}/></Link></SponsorWrapper>
+        : <SponsorWrapper><Link href={sponsor.link}><img src={sponsor.image} alt={sponsor.name} style={{height: "100px", objectFit: "contain"}}/></Link></SponsorWrapper>
+      )) }
+    </SponsorCategory>
     {includeAlum && <CategoryTitle>Silver</CategoryTitle>}
     <SponsorCategory>
       {silverSponsors.map(sponsor => (sponsor.short ?
@@ -112,7 +131,10 @@ export const Sponsors = ({ includeAlum }) => (
         <CategoryTitle>Alum Sponsors</CategoryTitle>
         <SponsorCategory>
         {alumSponsors.map(sponsor => (
-          <SponsorWrapper>{sponsor.name} {sponsor.info}</SponsorWrapper>
+          <SponsorWrapper>
+            {sponsor.image && <Headshot imageSrc={sponsor.image} imageAlt="Image"/>}
+            <Text>{sponsor.name} {sponsor.info}</Text>
+          </SponsorWrapper>
         )) }
         </SponsorCategory>
         </>
