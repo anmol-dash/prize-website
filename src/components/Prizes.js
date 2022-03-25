@@ -44,7 +44,7 @@ const PrizeTitle = s(Title)`
 
 const PrizesLayout = React.forwardRef(({ className }, ref) => (
   <div ref={ref} className={`container has-text-centered ${className}`}>
-    <Subtitle fontSize="1.5rem" css="padding: 2vw;">Dive into the most pressing environmental issues of today.</Subtitle>
+    <Subtitle>Prizes</Subtitle>
     <Level className="level">
       <LevelItem>
         <PrizeSubtitle roboto>Grand Prize</PrizeSubtitle>
@@ -56,7 +56,7 @@ const PrizesLayout = React.forwardRef(({ className }, ref) => (
       </LevelItem>
       <LevelItem>
         <PrizeSubtitle roboto>Third</PrizeSubtitle>
-        <PrizeTitle>$1250</PrizeTitle>
+        <PrizeTitle>$1000</PrizeTitle>
       </LevelItem>
     </Level>
   </div>
