@@ -9,6 +9,8 @@ import {
 } from "../components"
 
 import SEO from "../components/seo";
+import {MiniSchedule} from "../components/MiniSchedule";
+import {Prizes} from "../components/Prizes";
 
 const IndexPage = () => {
   const sectionRef = useRef(null)
@@ -18,6 +20,8 @@ const IndexPage = () => {
       <SEO title="Home" defer={false} />
       <Navbar />
       <Hero scrollTo={scrollTo} />
+      <MiniSchedule/>
+      <Prizes/>
       <Sponsors />
       <Footer />
     </>
