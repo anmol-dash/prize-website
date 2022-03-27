@@ -80,7 +80,9 @@ All team members must be currently enrolled in a high school anywhere around the
 
 All competitors need to register for the PCV Prize. Registrants receive the latest updates on all events and sessions.
 
-Individual registration is now open at [here](https://tinyurl.com/PCV22Signup)!
+Individual registration is now open [here](https://tinyurl.com/PCV22Signup)!
+
+Team registration is now open [here](https://tinyurl.com/PCV22team)!
 
 
 ## **4. Prize**

@@ -34,9 +34,16 @@ export const MiniSchedule = () => (
 
     <br/><br/>
     <Text>
-      Now Individual Registration Open at {' '}
+      Individual Registration Open at {' '}
       <Link href="https://tinyurl.com/PCV22Signup" target="blank" rel="noreferrer noopener">
         tinyurl.com/PCV22Signup
+      </Link>!
+    </Text>
+    <br/><br/>
+    <Text>
+      Team Registration Open at {' '}
+      <Link href="https://tinyurl.com/PCV22team" target="blank" rel="noreferrer noopener">
+        tinyurl.com/PCV22team
       </Link>!
     </Text>
     <br/><br/>
