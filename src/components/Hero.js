@@ -39,6 +39,7 @@ const HeroLayout = ({ className, scrollTo }) => (
       </Subtitle>
     </InlineBlock>
     <br />
+
     <Button
       href="https://tinyurl.com/PCV22Signup"
       target="blank"
@@ -53,6 +54,22 @@ const HeroLayout = ({ className, scrollTo }) => (
               background-color: #86b3d1;
             }`}>
       Individual Registration Open
+    </Button>
+
+    <Button
+      href="https://tinyurl.com/PCV22team"
+      target="blank"
+      rel="noreferrer noopener"
+      css={`display: block; 
+            width: 350px; 
+            margin: 50px auto;
+            background-color: #86b3d1;
+            font-weight: bold;
+
+            :hover {
+              background-color: #86b3d1;
+            }`}>
+      Team Registration Open
     </Button>
 
     {/*
