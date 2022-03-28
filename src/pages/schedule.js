@@ -145,6 +145,30 @@ const Timeline = () => (
         </EventGroup>
 
         <EventGroup>
+          <EventTitle>PCV Prize Launch Event</EventTitle>
+          <Text>You will be briefed on prize details, hear from Andrew Beebe, and get a chance to network with peers.</Text>
+          <EventSubtitle>Opening Keynote with Andrew Beebe</EventSubtitle>
+          <EventDetails
+            date="MAR 25 6 PM EST"
+            description={<>Managing Director @ <Link href="https://obvious.com/team/andrew-beebe/">Obvious Ventures</Link> </>}
+            image={AndrewBeebe}/>
+        </EventGroup>
+
+        <EventGroup>
+          <EventTitle>Workshop Your Proposal</EventTitle>
+
+          <EventSubtitle>Pitching 101</EventSubtitle>
+          <EventDetails
+            date="APR 5 7 PM EST"
+            description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/">Fifty Years</Link></>}
+            image={ShuoYang}/>
+          <EventSubtitle>Pitch Office Hours</EventSubtitle>
+          <EventDetails
+            description="Sign up for mentor office hours."
+            buttonText="Link will be available on 3/26"/>
+        </EventGroup>
+
+        <EventGroup>
             <EventTitle>Attend a State-of-the-Field Panel</EventTitle>
             <Text>Discussions about current research, innovations, and challenges with leading experts in the fields.</Text>
 
@@ -167,30 +191,6 @@ const Timeline = () => (
                   Luis Garcia @ <Link href="https://cultiviansbx.com/news-and-events/about/meet-the-team/luis-garcia/" target="_blank" rel="noreferrer noopener">Cultivian Sandbox</Link>
                 </>}/>
             <Button href="">Link will be available on 3/26</Button>
-        </EventGroup>
-
-        <EventGroup>
-            <EventTitle>PCV Prize Launch Event</EventTitle>
-            <Text>You will be briefed on prize details, hear from Andrew Beebe, and get a chance to network with peers.</Text>
-            <EventSubtitle>Opening Keynote with Andrew Beebe</EventSubtitle>
-            <EventDetails
-                date="MAR 25 6 PM EST"
-                description={<>Managing Director @ <Link href="https://obvious.com/team/andrew-beebe/">Obvious Ventures</Link> </>}
-                image={AndrewBeebe}/>
-        </EventGroup>
-
-        <EventGroup>
-            <EventTitle>Workshop Your Proposal</EventTitle>
-
-            <EventSubtitle>Pitching 101</EventSubtitle>
-            <EventDetails
-                date="APR 5 7 PM EST"
-                description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/">Fifty Years</Link></>}
-                image={ShuoYang}/>
-            <EventSubtitle>Pitch Office Hours</EventSubtitle>
-            <EventDetails
-                description="Sign up for mentor office hours."
-                buttonText="Link will be available on 3/26"/>
         </EventGroup>
 
         <RoundedRectangle>

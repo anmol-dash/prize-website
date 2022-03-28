@@ -40,7 +40,7 @@ const HeroLayout = ({ className, scrollTo }) => (
     </InlineBlock>
     <br />
 
-    <Button
+    {/* <Button
       href="https://tinyurl.com/PCV22Signup"
       target="blank"
       rel="noreferrer noopener"
@@ -54,7 +54,7 @@ const HeroLayout = ({ className, scrollTo }) => (
               background-color: #86b3d1;
             }`}>
       Individual Registration Open
-    </Button>
+    </Button> */}
 
     <Button
       href="https://tinyurl.com/PCV22team"
