@@ -33,18 +33,21 @@ export const MiniSchedule = () => (
     <Subtitle>Timeline</Subtitle>
 
     <br/><br/>
-    <Text>
+    {/* <Text>
       Individual Registration Open at {' '}
       <Link href="https://tinyurl.com/PCV22Signup" target="blank" rel="noreferrer noopener">
         tinyurl.com/PCV22Signup
       </Link>!
-    </Text>
+    </Text> */}
     <br/><br/>
     <Text>
       Team Registration Open at {' '}
       <Link href="https://tinyurl.com/PCV22team" target="blank" rel="noreferrer noopener">
         tinyurl.com/PCV22team
       </Link>!
+    </Text>
+    <Text>
+      (Individual competitors must also register as a team)
     </Text>
     <br/><br/>
 
