@@ -27,18 +27,11 @@ const EventDescription = s(Text)`
 
 export const MiniSchedule = () => (
   <div css={` width: 70vw;
-              padding: 3vw;
+              padding: 0 3vw;
               display: block;
-              margin: 1vw auto`}>
+              margin: 60px auto`}>
     <Subtitle>Timeline</Subtitle>
 
-    <br/><br/>
-    {/* <Text>
-      Individual Registration Open at {' '}
-      <Link href="https://tinyurl.com/PCV22Signup" target="blank" rel="noreferrer noopener">
-        tinyurl.com/PCV22Signup
-      </Link>!
-    </Text> */}
     <br/><br/>
     <Text>
       Team Registration Open at {' '}
