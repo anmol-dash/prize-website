@@ -91,10 +91,117 @@ Team registration is now open [here](https://tinyurl.com/PCV22team)!
 The top 3 winning finalists will receive $5000, $2500, and $1000 respectively. All competitors will
 have access to speaking events and mentorship opportunities from industry leaders.
 
+## **5. Rubric**
+
+<style>
+.rubric {
+  padding: 0;
+}
+.rubric tr, .rubric th, .rubric td {
+  border: 0.75px solid gray;
+}
+.rubric th, .rubric td {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+.rubric th {
+  vertical-align: middle;
+}
+.rubric tr th:nth-of-type(2){
+  text-align: center;
+}
+</style>
+
+<div class="rubric">
+<table>
+  <colgroup>
+    <col>
+    <col style="width: 5rem">
+  </colgroup>
+
+  <tr style="background-color: #e6e6e6">
+    <th>Category / Criterion</th>
+    <th>Points </br> (100)</th>
+  </tr>
+  
+  <tr>
+    <th>Problem</th>
+    <th>/ 15</th>
+  </tr>
+  <tr>
+    <td>Has the team conducted thorough research into the climate-related problem they are targeting? Is there evidence that they have gathered unique and specific knowledge during information discovery?</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th>Solution</th>
+    <th>/ 30</th>
+  </tr>
+  <tr>
+    <td>Is the team capable of implementing their proposed solution?</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Does the team have a deep understanding of the inner workings of their solution?</td>
+    <td> </td>
+  </tr>
+
+  <tr>
+    <th>Environmental Impact Analysis</th>
+    <th>/ 20</th>
+  </tr>
+  <tr>
+    <td>Has the team conducted a thorough analysis of their environmental impact? (i.e. both quantitatively & qualitatively, etc.)</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Does this idea specifically address climate change?</td>
+    <td> </td>
+  </tr>
+ 
+  <tr>
+    <th>Market / Competitive Landscape</th>
+    <th>/ 15</th>
+  </tr>
+  <tr>
+    <td>Has the team conducted a thorough review of their market?</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Has the team conducted a thorough review of their potential competitors?</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Has the team established or identified their competitive advantage?</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th>Style and Presentation</th>
+    <th>/ 10</th>
+  </tr>
+  <tr>
+    <td>Was the team’s video presentation easy to follow and understand?</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Did the team create a high-quality, professional slide deck?</td>
+    <td> </td>
+  </tr>
+  
+  <tr>
+    <th>Wow Factor [Anything that makes them truly stand out]</th>
+    <th>/ 10</th>
+  </tr>
+  <tr>
+    <th>Total Points</th>
+    <th>/ 100</th>
+  </tr>
+</table>
+</div>
 
 
-## **5. Submissions and Judging**
-
+## **6. Submissions and Judging**
 
 ### **First Round Judging:**
 
