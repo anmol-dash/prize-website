@@ -91,7 +91,7 @@ const EventDetails = ({date, description, buttonText, buttonLink, image}) => {
             <div css={`padding-left: 20px`}>
                 {image && <Headshot imageSrc={image} imageAlt="Image"/> }
                 <Text>{description}</Text>
-                {buttonText && <Button href={buttonLink}>{buttonText}</Button>}
+                {buttonText && <Button href={buttonLink} target="_blank" rel="noopener noreferrer">{buttonText}</Button>}
             </div>
         </div>
     )
@@ -128,20 +128,6 @@ const Timeline = () => (
                     </NumList></>}
                 buttonText="Find Your Track"
                 buttonLink="/rules"/>
-
-            <EventSubtitle>Individual Registration</EventSubtitle>
-            <EventDetails
-                date="MAR 26 11:59 PM EST"
-                description="Register individually and start building your team through our online PCV Prize Discord community and stay up to date with our latest news."
-                buttonText="Register Now!"
-                buttonLink="https://tinyurl.com/PCV22Signup"/>
-
-            <EventSubtitle>Team Registration</EventSubtitle>
-            <EventDetails
-                date="MAR 28 11:59 PM EST"
-                description={<>Teams will need to fully register by the deadline to qualify for the competition. Teams will need to choose a track in which to complete. Full rules can be found <Link href="/rules">here</Link>.</>}
-                buttonText="Will be available on 3/26"
-                buttonLink=""/>
         </EventGroup>
 
         <EventGroup>
@@ -157,40 +143,93 @@ const Timeline = () => (
         <EventGroup>
           <EventTitle>Workshop Your Proposal</EventTitle>
 
+          <EventSubtitle>Pitch Office Hours</EventSubtitle>
+          <EventDetails
+            description="Mentor Office Hours"
+            buttonText="Sign up here!"
+            buttonLink="https://docs.google.com/spreadsheets/d/1Hd1noFthtg_Z1auz-mmUXKaOKLqX9tIHdj1OejQc3UQ/edit#gid=0"
+          />
+
           <EventSubtitle>Pitching 101</EventSubtitle>
           <EventDetails
             date="APR 5 7 PM EST"
-            description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/">Fifty Years</Link></>}
-            image={ShuoYang}/>
-          <EventSubtitle>Pitch Office Hours</EventSubtitle>
-          <EventDetails
-            description="Sign up for mentor office hours."
-            buttonText="Link will be available on 3/26"/>
+            description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/" target="_blank" rel="noreferrer noopener">Fifty Years</Link></>}
+            image={ShuoYang}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJwoc-6prTkqHt18KiW_-v01UyMMZFD7i9aS"
+          />
         </EventGroup>
 
         <EventGroup>
-            <EventTitle>Attend a State-of-the-Field Panel</EventTitle>
-            <Text>Discussions about current research, innovations, and challenges with leading experts in the fields.</Text>
+          <EventTitle>Attend a State-of-the-Field Panel</EventTitle>
+          <Text>Discussions about current research, innovations, and challenges with leading experts in the fields.</Text>
 
-            <EventSubtitle fontSize="0.6rem">Waste & Circularity</EventSubtitle>
-            <Text>Details coming soon</Text>
+          <EventSubtitle>Partnerships for Social Impact</EventSubtitle>
+          <EventDetails
+            date="APR 5 6 PM EST"
+            description={<>
+              Come to learn about community mapping, how to build trust with the community you wish to serve, how to make use of existing work relevant to your project, how to leverage partnerships and foster meaningful collaboration and how to involve beneficiaries throughout your processes.
+              <br/>
+              <ul>
+                <li>Pooja Tilvawala @ <Link href="https://youthcc.org/" target="_blank" rel="noreferrer noopener">Youth Climate Collaborative</Link></li>
+              </ul>
+            </>}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJYtcuCprD0rGd0uc6DxL_LdJpBWGdnm8bbo"
+          />
 
-            <EventSubtitle>Energy & Transportation</EventSubtitle>
-            <Text>Details coming soon</Text>
+          <EventSubtitle>Energy & Transportation</EventSubtitle>
+          <EventDetails
+            date="APR 4 7 PM EST"
+            description={<>
+              Come learn about sustainable investing in the energy and transportation sectors from three venture capitalists leading the charge in the sustainability revolution!
+              <br/>
+              <ul>
+                <li>Marisa Sweeney @ <Link href="https://generatecapital.com/" target="_blank" rel="noreferrer noopener">Generate Capital</Link></li>
+                <li>Ally Warson @ <Link href="https://up.partners/thecrew/" target="_blank" rel="noreferrer noopener">Up Partners</Link></li>
+                <li>Logan Grizzel @ <Link href="https://blackhornvc.com/team/logan-grizzel/" target="_blank" rel="noreferrer noopener">Blackhorn Ventures</Link></li>
+                <li>Moderator by Stephen Sammut @ <Link href="https://executiveeducation.wharton.upenn.edu/faculty/stephen-sammut/" target="_blank" rel="noreferrer noopener">Wharton</Link></li>
+              </ul>
+            </>}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJwucOmtpjwjGNACd_JSUWiltQOgw5ZH2zPq"
+          />
 
-            <EventSubtitle>Food & Agriculture</EventSubtitle>
-            <EventDetails
-                date="APR 6 7 PM EST"
-                description={<>
-                  Dr. David Galligan @ <Link href="https://www.vet.upenn.edu/people/faculty-clinician-search/davidgalligan" target="_blank" rel="noreferrer noopener">Penn Vet</Link>
-                  <br/>
-                  Dr. Linda Baker @ <Link href="https://www.vet.upenn.edu/people/faculty-clinician-search/LINDABAKER" target="_blank" rel="noreferrer noopener">Penn Vet</Link>
-                  <br/>
-                  Kyle Welborn @ <Link href="https://cultivationcapital.com/team/kyle-welborn/" target="_blank" rel="noreferrer noopener">The Yield Lab</Link>
-                  <br/>
-                  Luis Garcia @ <Link href="https://cultiviansbx.com/news-and-events/about/meet-the-team/luis-garcia/" target="_blank" rel="noreferrer noopener">Cultivian Sandbox</Link>
-                </>}/>
-            <Button href="">Link will be available on 3/26</Button>
+          <EventSubtitle>Waste & Circularity</EventSubtitle>
+          <EventDetails
+            date="APR 6 6 PM EST"
+            description={<>
+              Co-hosted by Desiree Izecksohn from Penn Sustainability Consulting
+              <br/>
+              Come to our waste and circularity panel and learn more about the overlap between businesses and sustainability– featuring specialized guest speakers striving to make an environmental impact.
+              <br/>
+              <ul>
+                <li>Thomas Kinnaman @ <Link href="https://www.bucknell.edu/fac-staff/thomas-kinnaman" target="_blank" rel="noreferrer noopener">Bucknell</Link></li>
+                <li>Vasiliki Papanikolopoulos @ <Link href="" target="_blank" rel="noreferrer noopener">Coinmatan</Link></li>
+                <li>Evan Ehlers @ <Link href="" target="_blank" rel="noreferrer noopener">SharingExcess</Link></li>
+                <li>Komal Sinha @ <Link href="" target="_blank" rel="noreferrer noopener">RePurpose</Link></li>
+              </ul>
+            </>}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJ0kf--sqT0sH9ekJSE78W3mlDyP8eRgI4rg"
+          />
+
+          <EventSubtitle>Food & Agriculture</EventSubtitle>
+          <EventDetails
+            date="APR 6 7 PM EST"
+            description={<>
+              Tune in to hear about the future of sustainable Agriculture Tech and more! Featuring PennVet researchers and leading AgTech investors from Yield Lab and Cultivian Sandbox.
+              <br/>
+              <ul>
+                <li>Dr. David Galligan @ <Link href="https://www.vet.upenn.edu/people/faculty-clinician-search/davidgalligan" target="_blank" rel="noreferrer noopener">Penn Vet</Link></li>
+                <li>Dr. Linda Baker @ <Link href="https://www.vet.upenn.edu/people/faculty-clinician-search/LINDABAKER" target="_blank" rel="noreferrer noopener">Penn Vet</Link></li>
+                <li>Kyle Welborn @ <Link href="https://cultivationcapital.com/team/kyle-welborn/" target="_blank" rel="noreferrer noopener">The Yield Lab</Link></li>
+                <li>Luis Garcia @ <Link href="https://cultiviansbx.com/news-and-events/about/meet-the-team/luis-garcia/" target="_blank" rel="noreferrer noopener">Sandbox Sustainability Ventures</Link></li>
+              </ul>
+            </>}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJckcemrrjssHdYHWZ4khSiNeIwRarC-OmGe"
+          />
         </EventGroup>
 
         <RoundedRectangle>
