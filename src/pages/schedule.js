@@ -9,6 +9,7 @@ import {GREEN} from "../utils/constants.js"
 import AndrewBeebe from "../images/2022/andrew_beebe.png"
 import SEO from "../components/seo";
 import ShuoYang from "../images/2022/ShuoYang.jpg"
+import PoojaTilvawala from "../images/2022/Pooja_Tilvawala.jpg"
 
 const EventTitle = s(Subtitle)`
     color: ${GREEN};
@@ -71,15 +72,16 @@ const EventDetails = ({date, description, buttonText, buttonLink, image}) => {
       });
 
     return (
+      <div css={`border-left: 0.3rem solid ${GREEN};
+          margin: 15px 15px 30px 15px;
+        `}>
         <div
             css={`display: flex;
-                  border-left: 0.3rem solid ${GREEN};
                   flex-wrap: wrap;
                   flex-direction: row;
-                  margin: 10px 25px;
                   `}>
             {date && (isDesktop ? (
-                <div css={`flex-basis: 100px; padding-left: 5px; text-align: center; margin: auto 0;`}>
+                <div css={`flex-basis: 120px; padding-left: 5px; text-align: center; display: flex; justify-content: center; align-content: center; flex-direction: column; margin: auto 0;`}>
                     <Text fontSize="1.2rem" roboto bold>{month}</Text>
                     <Text fontSize="2.2rem" roboto bold css={`line-height: 1`}>{day}</Text>
                     <Text fontSize="1.2rem" roboto bold >{time}</Text>
@@ -89,16 +91,19 @@ const EventDetails = ({date, description, buttonText, buttonLink, image}) => {
                 <Text fontSize="1.2rem" roboto bold css={`padding-left: 20px`}>{month} {day} @ {time} EST</Text>
             ))}
             <div css={`padding-left: 20px`}>
-                {image && <Headshot imageSrc={image} imageAlt="Image"/> }
-                <Text>{description}</Text>
-                {buttonText && <Button href={buttonLink} target="_blank" rel="noopener noreferrer">{buttonText}</Button>}
+              {image && <Headshot imageSrc={image} imageAlt="Image"/> }
             </div>
+          </div>
+          <div css={`padding-left: 20px`}>
+            <Text>{description}</Text>
+            {buttonText && <Button href={buttonLink} target="_blank" rel="noopener noreferrer">{buttonText}</Button>}
+          </div>
         </div>
-    )
+      )
 }
 
 const Timeline = () => (
-    <div>
+  <div>
         <EventGroup>
             <EventTitle>Registration</EventTitle>
             <EventSubtitle>Check Your Eligibility</EventSubtitle>
@@ -174,6 +179,7 @@ const Timeline = () => (
                 <li>Pooja Tilvawala @ <Link href="https://youthcc.org/" target="_blank" rel="noreferrer noopener">Youth Climate Collaborative</Link></li>
               </ul>
             </>}
+            image={PoojaTilvawala}
             buttonText="Register here"
             buttonLink="https://upenn.zoom.us/meeting/register/tJYtcuCprD0rGd0uc6DxL_LdJpBWGdnm8bbo"
           />
