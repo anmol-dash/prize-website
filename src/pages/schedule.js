@@ -191,8 +191,8 @@ const Timeline = () => (
                 <li>Moderator by Stephen Sammut @ <Link href="https://executiveeducation.wharton.upenn.edu/faculty/stephen-sammut/" target="_blank" rel="noreferrer noopener">Wharton</Link></li>
               </ul>
             </>}
-            buttonText="Register here"
-            buttonLink="https://upenn.zoom.us/meeting/register/tJwucOmtpjwjGNACd_JSUWiltQOgw5ZH2zPq"
+            buttonText="Link available soon!"
+            buttonLink=""
           />
 
           <EventSubtitle>Waste & Circularity</EventSubtitle>
@@ -233,7 +233,7 @@ const Timeline = () => (
         </EventGroup>
 
         <RoundedRectangle>
-            <Text fontSize="2rem" roboto bold>First Round Judging <br/> Due 4/15 at 11:59 PM EST</Text><br/>
+            <Text fontSize="2rem" roboto bold>First Round Judging <br/> Due 4/08 at 11:59 PM EST</Text><br/>
         </RoundedRectangle>
     </div>
 )
