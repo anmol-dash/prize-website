@@ -52,18 +52,29 @@ export const MiniSchedule = () => (
         </EventDescription>
       </Event>
       <Event>
-        <Date>3/28</Date>
+        <Date style={{textDecoration: 'line-through'}}>3/28</Date>
+        <EventDescription style={{textDecoration: 'line-through'}}>
+          Team Registration Due @ 11:59 PM ET
+        </EventDescription>
+      </Event>
+      <Event>
+        <Date>4/03</Date>
         <EventDescription>
-          Team Registration Due @ 11:59 PM EST
+          Team Registration Due @ 11:59 PM ET (High School Track)
+        </EventDescription>
+      </Event>
+      <Event>
+        <Date>4/08</Date>
+        <EventDescription>
+          Team Registration Due @ 11:59 PM ET (Themed Track)
         </EventDescription>
       </Event>
     </TimelineWrapper>
 
       <br/><br/>
-      <Text>
-        Throughout the week: Panels & Mentorship Office Hours
-      </Text>
-      <br/><br/>
+      <Text>Throughout the week: Panels & Mentorship Office Hours</Text>
+      <Text>For more info, see the full <Link href="/schedule">schedule</Link></Text>
+    <br/><br/>
 
     <TimelineWrapper>
       <Event>
