@@ -133,42 +133,25 @@ const Timeline = () => (
                     </NumList></>}
                 buttonText="Find Your Track"
                 buttonLink="/rules"/>
+            <EventSubtitle>Pitch Office Hours</EventSubtitle>
+            <EventDetails
+              description="Mentor Office Hours"
+              buttonText="Sign up here!"
+              buttonLink="https://docs.google.com/spreadsheets/d/1Hd1noFthtg_Z1auz-mmUXKaOKLqX9tIHdj1OejQc3UQ/edit#gid=0"
+            />
         </EventGroup>
 
         <EventGroup>
-          <EventTitle>PCV Prize Launch Event</EventTitle>
-          <Text>You will be briefed on prize details, hear from Andrew Beebe, and get a chance to network with peers.</Text>
+          <EventTitle>PCV Prize Schedule</EventTitle>
           <EventSubtitle>Opening Keynote with Andrew Beebe</EventSubtitle>
           <EventDetails
             date="MAR 25 6 PM EST"
             description={<>Managing Director @ <Link href="https://obvious.com/team/andrew-beebe/">Obvious Ventures</Link> </>}
-            image={AndrewBeebe}/>
-        </EventGroup>
-
-        <EventGroup>
-          <EventTitle>Workshop Your Proposal</EventTitle>
-
-          <EventSubtitle>Pitch Office Hours</EventSubtitle>
-          <EventDetails
-            description="Mentor Office Hours"
-            buttonText="Sign up here!"
-            buttonLink="https://docs.google.com/spreadsheets/d/1Hd1noFthtg_Z1auz-mmUXKaOKLqX9tIHdj1OejQc3UQ/edit#gid=0"
+            image={AndrewBeebe}
           />
-
-          <EventSubtitle>Pitching 101</EventSubtitle>
-          <EventDetails
-            date="APR 5 7 PM EST"
-            description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/" target="_blank" rel="noreferrer noopener">Fifty Years</Link></>}
-            image={ShuoYang}
-            buttonText="Register here"
-            buttonLink="https://upenn.zoom.us/meeting/register/tJwoc-6prTkqHt18KiW_-v01UyMMZFD7i9aS"
-          />
-        </EventGroup>
-
-        <EventGroup>
-          <EventTitle>Attend a State-of-the-Field Panel</EventTitle>
-          <Text>Discussions about current research, innovations, and challenges with leading experts in the fields.</Text>
-
+          <RoundedRectangle>
+            <Text fontSize="2rem" roboto bold>First Round Judging for High School Track<br/> Due 4/03 at 11:59 PM EST</Text><br/>
+          </RoundedRectangle>
           <EventSubtitle>Energy & Transportation</EventSubtitle>
           <EventDetails
             date="APR 4 7 PM EST"
@@ -200,6 +183,15 @@ const Timeline = () => (
             buttonText="Register here"
             buttonLink="https://upenn.zoom.us/meeting/register/tJYtcuCprD0rGd0uc6DxL_LdJpBWGdnm8bbo"
           />
+
+          <EventSubtitle>Pitching 101</EventSubtitle>
+          <EventDetails
+            date="APR 5 7 PM EST"
+            description={<>Shuo Yang @ <Link href="https://fiftyyears.com/team/shuo-yang/" target="_blank" rel="noreferrer noopener">Fifty Years</Link></>}
+            image={ShuoYang}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJwoc-6prTkqHt18KiW_-v01UyMMZFD7i9aS"
+          />      
 
           <EventSubtitle>Waste & Circularity</EventSubtitle>
           <EventDetails
@@ -239,7 +231,10 @@ const Timeline = () => (
         </EventGroup>
 
         <RoundedRectangle>
-            <Text fontSize="2rem" roboto bold>First Round Judging <br/> Due 4/08 at 11:59 PM EST</Text><br/>
+            <Text fontSize="2rem" roboto bold>First Round Judging for Themed Tracks <br/> Due 4/08 at 11:59 PM EST</Text><br/>
+        </RoundedRectangle>
+        <RoundedRectangle>
+            <Text fontSize="2rem" roboto bold>Second Round Judging for High School Track <br/> Due 4/09 at 11:59 PM EST</Text><br/>
         </RoundedRectangle>
     </div>
 )
@@ -247,7 +242,7 @@ const Timeline = () => (
 
 const Finals = () => (
     <RoundedRectangle>
-        <Text fontSize="2rem" roboto bold>Live Finals, 4/16 at 1 PM EST</Text>
+        <Text fontSize="2rem" roboto bold>Closing Keynote + Final Live Pitch Event <br/> 4/16 at 1 PM EST</Text>
     </RoundedRectangle>
 )
 
