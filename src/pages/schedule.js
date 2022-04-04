@@ -169,21 +169,6 @@ const Timeline = () => (
           <EventTitle>Attend a State-of-the-Field Panel</EventTitle>
           <Text>Discussions about current research, innovations, and challenges with leading experts in the fields.</Text>
 
-          <EventSubtitle>Partnerships for Social Impact</EventSubtitle>
-          <EventDetails
-            date="APR 5 6 PM EST"
-            description={<>
-              Come to learn about community mapping, how to build trust with the community you wish to serve, how to make use of existing work relevant to your project, how to leverage partnerships and foster meaningful collaboration and how to involve beneficiaries throughout your processes.
-              <br/>
-              <ul>
-                <li>Pooja Tilvawala @ <Link href="https://youthcc.org/" target="_blank" rel="noreferrer noopener">Youth Climate Collaborative</Link></li>
-              </ul>
-            </>}
-            image={PoojaTilvawala}
-            buttonText="Register here"
-            buttonLink="https://upenn.zoom.us/meeting/register/tJYtcuCprD0rGd0uc6DxL_LdJpBWGdnm8bbo"
-          />
-
           <EventSubtitle>Energy & Transportation</EventSubtitle>
           <EventDetails
             date="APR 4 7 PM EST"
@@ -197,8 +182,23 @@ const Timeline = () => (
                 <li>Moderator by Stephen Sammut @ <Link href="https://executiveeducation.wharton.upenn.edu/faculty/stephen-sammut/" target="_blank" rel="noreferrer noopener">Wharton</Link></li>
               </ul>
             </>}
-            buttonText="Link available soon!"
-            buttonLink=""
+            buttonText="Register here!"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJwucOmtpjwjGNACd_JSUWiltQOgw5ZH2zPq"
+          />
+
+          <EventSubtitle>Partnerships for Social Impact</EventSubtitle>
+          <EventDetails
+            date="APR 5 6 PM EST"
+            description={<>
+              Come to learn about community mapping, how to build trust with the community you wish to serve, how to make use of existing work relevant to your project, how to leverage partnerships and foster meaningful collaboration and how to involve beneficiaries throughout your processes.
+              <br/>
+              <ul>
+                <li>Pooja Tilvawala @ <Link href="https://youthcc.org/" target="_blank" rel="noreferrer noopener">Youth Climate Collaborative</Link></li>
+              </ul>
+            </>}
+            image={PoojaTilvawala}
+            buttonText="Register here"
+            buttonLink="https://upenn.zoom.us/meeting/register/tJYtcuCprD0rGd0uc6DxL_LdJpBWGdnm8bbo"
           />
 
           <EventSubtitle>Waste & Circularity</EventSubtitle>
