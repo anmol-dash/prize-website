@@ -86,7 +86,7 @@ export const MiniSchedule = () => (
       <Event>
         <Date>4/08</Date>
         <EventDescription>
-          First Round Judging for Themed Tracks  Due @ 11:59 PM ET
+          First Round Judging for Themed Tracks Due @ 11:59 PM ET
         </EventDescription>
       </Event>
       <Event>

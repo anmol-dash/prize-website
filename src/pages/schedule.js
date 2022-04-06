@@ -10,6 +10,7 @@ import AndrewBeebe from "../images/2022/andrew_beebe.png"
 import SEO from "../components/seo";
 import ShuoYang from "../images/2022/ShuoYang.jpg"
 import PoojaTilvawala from "../images/2022/Pooja_Tilvawala.jpg"
+import ElaineHsieh from "../images/2022/ElaineHsieh.jpg"
 
 const EventTitle = s(Subtitle)`
     color: ${GREEN};
@@ -140,15 +141,19 @@ const Timeline = () => (
               buttonLink="https://docs.google.com/spreadsheets/d/1Hd1noFthtg_Z1auz-mmUXKaOKLqX9tIHdj1OejQc3UQ/edit#gid=0"
             />
         </EventGroup>
-
+        
         <EventGroup>
-          <EventTitle>PCV Prize Schedule</EventTitle>
+          <EventTitle> PCV Prize Launch Event </EventTitle>
           <EventSubtitle>Opening Keynote with Andrew Beebe</EventSubtitle>
           <EventDetails
             date="MAR 25 6 PM EST"
             description={<>Managing Director @ <Link href="https://obvious.com/team/andrew-beebe/">Obvious Ventures</Link> </>}
             image={AndrewBeebe}
           />
+        </EventGroup>
+
+        <EventGroup>
+          <EventTitle>PCV Prize Schedule</EventTitle>
           <RoundedRectangle>
             <Text fontSize="2rem" roboto bold>First Round Judging for High School Track<br/> Due 4/03 at 11:59 PM EST</Text><br/>
           </RoundedRectangle>
@@ -228,24 +233,25 @@ const Timeline = () => (
             buttonText="Register here"
             buttonLink="https://upenn.zoom.us/meeting/register/tJckcemrrjssHdYHWZ4khSiNeIwRarC-OmGe"
           />
-        </EventGroup>
-
-        <RoundedRectangle>
+          <RoundedRectangle>
             <Text fontSize="2rem" roboto bold>First Round Judging for Themed Tracks <br/> Due 4/08 at 11:59 PM EST</Text><br/>
-        </RoundedRectangle>
-        <RoundedRectangle>
-            <Text fontSize="2rem" roboto bold>Second Round Judging for High School Track <br/> Due 4/09 at 11:59 PM EST</Text><br/>
-        </RoundedRectangle>
+          </RoundedRectangle>
+          <RoundedRectangle>
+              <Text fontSize="2rem" roboto bold>Second Round Judging for High School Track <br/> Due 4/09 at 11:59 PM EST</Text><br/>
+          </RoundedRectangle>
+        </EventGroup>
+        
+        <EventGroup>
+          <EventTitle> PCV Prize Final Live Pitch Event </EventTitle>
+          <EventSubtitle> Closing Keynote with Elaine Hsieh </EventSubtitle>
+          <EventDetails
+            date="APR 16 1 PM EST"
+            description={<>Co-Founder and Chief Marketing Officer @ <Link href="https://www.third-derivative.org/">Third Derivative</Link> </>}
+            image={ElaineHsieh}
+          />
+        </EventGroup>
     </div>
 )
-
-
-const Finals = () => (
-    <RoundedRectangle>
-        <Text fontSize="2rem" roboto bold>Closing Keynote + Final Live Pitch Event <br/> 4/16 at 1 PM EST</Text>
-    </RoundedRectangle>
-)
-
 
 const Schedule = () => (
     <>
@@ -255,7 +261,6 @@ const Schedule = () => (
             <Title css={`margin-bottom: 15px`}>PCV Prize 2022 Schedule</Title>
             <Subtitle>March 25 — April 16</Subtitle>
             <Timeline />
-            <Finals />
         </div>
         <Footer />
     </>
