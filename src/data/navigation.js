@@ -22,10 +22,10 @@ export const navLinks = [
     url: "/schedule"
   },
   
-  // {
-  //   linkName: "People",
-  //   url: "/people"
-  // },
+  {
+    linkName: "People",
+    url: "/people"
+  },
   
   {
     linkName: "Sponsors",
