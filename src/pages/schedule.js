@@ -11,6 +11,7 @@ import SEO from "../components/seo";
 import ShuoYang from "../images/2022/ShuoYang.jpg"
 import PoojaTilvawala from "../images/2022/Pooja_Tilvawala.jpg"
 import ElaineHsieh from "../images/2022/ElaineHsieh.jpg"
+import EvanHynes from "../images/2022/EvanHynes.jpg"
 
 const EventTitle = s(Subtitle)`
     color: ${GREEN};
@@ -141,7 +142,7 @@ const Timeline = () => (
               buttonLink="https://docs.google.com/spreadsheets/d/1Hd1noFthtg_Z1auz-mmUXKaOKLqX9tIHdj1OejQc3UQ/edit#gid=0"
             />
         </EventGroup>
-        
+
         <EventGroup>
           <EventTitle> PCV Prize Launch Event </EventTitle>
           <EventSubtitle>Opening Keynote with Andrew Beebe</EventSubtitle>
@@ -196,7 +197,7 @@ const Timeline = () => (
             image={ShuoYang}
             buttonText="Register here"
             buttonLink="https://upenn.zoom.us/meeting/register/tJwoc-6prTkqHt18KiW_-v01UyMMZFD7i9aS"
-          />      
+          />
 
           <EventSubtitle>Waste & Circularity</EventSubtitle>
           <EventDetails
@@ -240,13 +241,23 @@ const Timeline = () => (
               <Text fontSize="2rem" roboto bold>Second Round Judging for High School Track <br/> Due 4/09 at 11:59 PM EST</Text><br/>
           </RoundedRectangle>
         </EventGroup>
-        
+
+        <EventGroup>
+          <EventTitle>Career in Climate Tech with Evan Hynes</EventTitle>
+          <EventSubtitle>Career in Climate Tech with Evan Hynes</EventSubtitle>
+          <EventDetails
+            date="APR 15 7 PM EST"
+            description={<>Co-Founder and CEO @ <Link href="https://climatebase.org/" target="_blank" rel="noreferrer noopener">Climatebase</Link> </>}
+            image={EvanHynes}
+          />
+        </EventGroup>
+
         <EventGroup>
           <EventTitle> PCV Prize Final Live Pitch Event </EventTitle>
           <EventSubtitle> Closing Keynote with Elaine Hsieh </EventSubtitle>
           <EventDetails
             date="APR 16 1 PM EST"
-            description={<>Co-Founder and Chief Marketing Officer @ <Link href="https://www.third-derivative.org/">Third Derivative</Link> </>}
+            description={<>Co-Founder and Chief Marketing Officer @ <Link href="https://www.third-derivative.org/" target="_blank" rel="noreferrer noopener">Third Derivative</Link> </>}
             image={ElaineHsieh}
           />
         </EventGroup>
