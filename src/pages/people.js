@@ -125,6 +125,9 @@ const JudgeList = [
     linkedIn: "https://www.linkedin.com/in/ambercluong/",
     bio: "Amber has nearly 20 years of experience across the financial sector, policy, international development, and a range of climate change mitigation and adaptation efforts. In her last role, Amber was the Head of Partnerships for Blue Sky Analytics, a climate tech startup focused on environmental data products combining satellite data and AI."
   },
+]
+
+const FinalJudgesList = [
   {
     imageSrc: MichaelCampos,
     imageAlt: "Dr. Michael Campos",
@@ -283,6 +286,18 @@ const Judges = () => {
   )
 }
 
+//final judges
+const FinalJudges = () => {
+  return (
+    <div>
+      <Subtitle>Final Judges</Subtitle>
+      <GridLayout>
+        {mapPeople(FinalJudgesList)}
+      </GridLayout>
+    </div>
+  )
+}
+
 //moderators
 const Mentors = () => {
   return (
@@ -317,6 +332,8 @@ const People = () => {
         <Keynote/>
         <br />
         <Judges/>
+        <br/>
+        <FinalJudges/>
         <br/>
         <Mentors/>
         {/* <br/>
