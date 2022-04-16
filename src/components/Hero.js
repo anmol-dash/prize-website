@@ -54,7 +54,7 @@ const HeroLayout = ({ className, scrollTo }) => (
     <br />
 
     <Button
-      href="https://tinyurl.com/PCV22team"
+      href="https://upenn.zoom.us/j/94802997930"
       target="blank"
       rel="noreferrer noopener"
       css={`display: block; 
@@ -66,32 +66,8 @@ const HeroLayout = ({ className, scrollTo }) => (
             :hover {
               background-color: #86b3d1;
             }`}>
-      Team Registration Open
+      {'>'} Prize Closing Ceremony {'<'}
     </Button>
-
-    <Button
-      href="https://tinyurl.com/PCV22Submit"
-      target="blank"
-      rel="noreferrer noopener"
-      css={`display: block; 
-            width: 350px; 
-            margin: 50px auto 30px auto;
-            background-color: #86b3d1;
-            font-weight: bold;
-
-            :hover {
-              background-color: #86b3d1;
-            }`}>
-      Submission portal now open!
-    </Button>
-
-    <Banner>
-      <Text>Registration is extended until the submission deadline!</Text>
-      <ul>
-        <li><Text>4/3 for High School Track</Text></li>
-        <li><Text>4/8 for Themed Tracks</Text></li>
-      </ul>
-    </Banner>
 
   </div>
 )
