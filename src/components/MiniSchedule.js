@@ -98,7 +98,8 @@ export const MiniSchedule = () => (
       <Event>
         <Date>4/16</Date>
         <EventDescription>
-          Closing Keynote + Final Live Pitch Event @ 1 PM ET
+          <a target="_blank" rel="noopener noreferrer" href="https://upenn.zoom.us/j/94802997930">Closing Ceremony </a>
+          @ 12:00 PM to 4:15 PM ET
         </EventDescription>
       </Event>
 
