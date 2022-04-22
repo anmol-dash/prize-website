@@ -21,12 +21,12 @@ export const navLinks = [
     linkName: "Schedule",
     url: "/schedule"
   },
-  
+
   {
     linkName: "People",
     url: "/people"
   },
-  
+
   {
     linkName: "Sponsors",
     url: "/sponsors"
@@ -34,6 +34,10 @@ export const navLinks = [
   {
     linkName: "FAQ",
     url: "/faq"
+  },
+  {
+    linkName: "2022 Winners",
+    url: "/winners"
   },
   {
     linkName: "Past Competitions",

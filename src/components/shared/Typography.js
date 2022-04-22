@@ -14,6 +14,14 @@ export const Subtitle = s.h2`
   font-family: ${({avenir}) => avenir ? `Avenir` : `Roboto`};
   font-weight: bold;
   ${({center}) => center && `text-align: center`}
+  margin-top: 90px;
+`
+
+export const SmallTitle = s.h3`
+  font-size:${({ fontSize }) => fontSize || `1.5rem`};
+  font-family: ${({avenir}) => avenir ? `Avenir` : `Roboto`};
+  font-weight: bold;
+  ${({center}) => center && `text-align: center`}
 `
 
 export const Text = s.p`
