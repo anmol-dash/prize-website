@@ -15,7 +15,17 @@ const WinnerGroup = s.div`
   margin: 30px 0;
 `
 
+const WinnerGroupTitle = s(SmallTitle)`
+  text-align: center;
+`
+
 const WinnerTeam = s.div`
+  margin: 15px auto;
+  max-width: 800px;
+`
+
+const WinnerTeamName = s(SmallTitle)`
+  color: ${STEEL_BLUE};
 `
 
 const FinalistsLayout = s.div`
@@ -55,18 +65,21 @@ const Winners = () => (
         {winners.map((group) => (
           <WinnerGroup>
 
-            <SmallTitle>
-              {group.groupTitle}
-            </SmallTitle>
+            <WinnerGroupTitle>{group.groupTitle}</WinnerGroupTitle>
 
             {group.teams.map((team) => (
               <WinnerTeam>
-                {team.teamName}
-                {team.members.map((member) => (
-                  <div>
-                    {member.name}
-                  </div>
-                ))}
+                <WinnerTeamName>{team.teamName}</WinnerTeamName>
+
+                {team.summary}
+
+                <ul>
+                  {team.members.map((member) => (
+                    <li>
+                      {member.name}, {member.school}
+                    </li>
+                  ))}
+                </ul>
               </WinnerTeam>
             ))}
 
