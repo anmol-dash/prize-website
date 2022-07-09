@@ -38,18 +38,14 @@ const FinalistsLayout = s.div`
 `
 
 const FinalistsTrackLayout = s.div`
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
 `
 
 const FinalistTrackTitle = s(SmallTitle)`
   font-size: 1.2rem;
   color: ${STEEL_BLUE};
-`
-
-const FinalistTeam = s.div`
+  margin: 0 auto;
 `
 
 const Winners = () => (
@@ -94,7 +90,14 @@ const Winners = () => (
           <FinalistsTrackLayout>
             <FinalistTrackTitle>{track.track}</FinalistTrackTitle>
             {track.teams.map((team) => (
-              <Text>{team.teamName}</Text>
+              <div>
+                <Text bold>{team.teamName}</Text>
+                {team.members.map((member) => (
+                  <li>
+                    {member.name}, {member.school}
+                  </li>
+                ))}
+              </div>
             ))}
           </FinalistsTrackLayout>
         ))}
