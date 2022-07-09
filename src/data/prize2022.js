@@ -164,7 +164,7 @@ export const finalists = [
         members: [
           {
             name: "Matthias Choi",
-            school: "Northern Valley Regional High School at Old Tappan",
+            school: "Northern Valley Regional High School",
           },
         ]
       },
@@ -230,7 +230,7 @@ export const finalists = [
         members: [
           {
             name: "Lucas Tejedor da Silva",
-            school: "CEFET/RJ - Centro Tecnológico Federal Celso Suckow da Fonseca",
+            school: "Centro Tecnológico Federal Celso Suckow da Fonseca",
           },
         ]
       },
