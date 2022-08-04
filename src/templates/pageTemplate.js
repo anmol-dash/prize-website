@@ -1,9 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import "../pages/styles.scss"
-import "./template.scss"
-
-import { Navbar, Footer } from "../components"
 import SEO from "../components/seo";
 
 const Template = ({ data: {
@@ -14,14 +10,12 @@ const Template = ({ data: {
 } }) => (
     <>
         <SEO title={frontmatter.title} defer={false} />
-        <Navbar />
         <div className="container">
             <div
                 id="markdown"
                 dangerouslySetInnerHTML={{ __html: html }}
             />
         </div>
-      <Footer />
     </>
  )
 
