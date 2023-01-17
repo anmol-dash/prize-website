@@ -1,0 +1,19 @@
+/* variables.scss */
+/* TODO - update fonts, colors */
+
+:root {
+	--font-sans-serif: 'Poppins', 'Avenir', Verdana, Helvetica Neue, Arial, sans-serif;
+	--font-serif: Palatino, American Typewriter, serif;
+
+	--c-bg-elevated: hsl(215, 90%, 90%);
+	--c-bg: hsl(215, 90%, 96%);
+	--c-bg-deeper: hsl(215, 90%, 90%);
+
+	--c-cursor: hsl(219, 28%, 80%);
+	--c-text: hsl(215, 90%, 20%);
+	--c-text-mute: hsl(215, 90%, 70%);
+	--c-selected: hsl(193, 43%, 67%);
+
+	--c-primary: hsl(215, 90%, 60%);
+	--c-shadow: hsl(215, 40%, 90%);
+}
