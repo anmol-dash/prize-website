@@ -1971,18 +1971,13 @@
               a.a.createElement(
                 N.d,
                 null,
-                "April 4th - April 16th | Open to students globally."
+                "April 1st - April 26th | Open to students globally."
               ),
-              a.a.createElement(N.f, null, "Penn Climate Ventures Prize2"),
+              a.a.createElement(N.f, null, "Penn Climate Ventures Prize3"),
               a.a.createElement(
                 N.d,
                 null,
-                "Deep dive into the most pressing environmental issues today"
-              ),
-              a.a.createElement(
-                N.d,
-                null,
-                "with industry leader panels, mentorship opportunities, and cash prizes up to $5000"
+                "Your Vision, Our Planet: One Pitch at a Time [indent] Deep dive into the most pressing environmental issues today with mentorship opportunities and cash prizes."
               )
             ),
             a.a.createElement("br", null),
