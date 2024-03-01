@@ -1971,9 +1971,9 @@
               a.a.createElement(
                 N.d,
                 null,
-                "March 25th - April 16th | Open to students globally."
+                "April 4th - April 16th | Open to students globally."
               ),
-              a.a.createElement(N.f, null, "Penn Climate Ventures Prize1"),
+              a.a.createElement(N.f, null, "Penn Climate Ventures Prize2"),
               a.a.createElement(
                 N.d,
                 null,
