@@ -1694,7 +1694,6 @@
         g = n.n(h),
         y = [
           { linkName: "Official Rules", url: "/rules" },
-          { linkName: "Schedule", url: "/schedule" },
           { linkName: "People", url: "/people" },
           { linkName: "Sponsors", url: "/sponsors" },
           { linkName: "FAQ", url: "/faq" },
@@ -1973,25 +1972,15 @@
                 null,
                 "April 1st - April 26th | Open to students globally."
               ),
-              a.a.createElement(N.f, null, "Penn Climate Ventures Prize3"),
+              a.a.createElement(N.f, null, "Penn Climate Ventures Prize4"),
               a.a.createElement(
                 N.d,
                 null,
-                "Your Vision, Our Planet: One Pitch at a Time [indent] Deep dive into the most pressing environmental issues today with mentorship opportunities and cash prizes."
+                "Your Vision, Our Planet: One Pitch at a Time      Deep dive into the most pressing environmental issues today with mentorship opportunities and cash prizes."
               )
             ),
             a.a.createElement("br", null),
-            a.a.createElement(
-              _,
-              {
-                href: "https://upenn.zoom.us/j/94802997930",
-                target: "blank",
-                rel: "noreferrer noopener",
-              },
-              ">",
-              " Prize Closing Ceremony ",
-              "<"
-            )
+          
           );
         }).withConfig({ displayName: "Hero", componentId: "sc-11gmuh3-5" })([
           "margin:130px auto;",
@@ -2038,10 +2027,7 @@
           displayName: "Weekly__Description",
           componentId: "o9thvd-5",
         })(["padding:0 40px;"]),
-        K = Object(i.a)(N.d).withConfig({
-          displayName: "Weekly___StyledSubtitle",
-          componentId: "o9thvd-6",
-        })(["padding:5px 0;"]),
+        (["padding:5px 0;"]),
         Y = a.a.forwardRef(function (e, t) {
           var n = e.className;
           return a.a.createElement(
@@ -2101,16 +2087,6 @@
                     "4/16: First Round Submissions"
                   ),
                   a.a.createElement("li", null, "4/24: Live Finals Pitches")
-                ),
-                a.a.createElement(
-                  N.a,
-                  {
-                    fontSize: "1.3rem",
-                    roboto: !0,
-                    bold: !0,
-                    href: "/schedule",
-                  },
-                  "Full Event Schedule"
                 )
               ),
               a.a.createElement(
