@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
+    "generate-source-map": "^0.0.5",
+    "webpack": "^5.90.3",
     "yarn": "^1.22.21"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
   }
 }
